@@ -1,4 +1,6 @@
 <script>
+	import Navbar from '$lib/components/Navbar.svelte';
+
 	import '../app.css';
 	import './styles.css';
 </script>
@@ -11,10 +13,7 @@
 
 <div class="app">
 	<!-- Navbar -->
-	<!-- To each page add xxx margin to the top (including image overflow) -->
-	<div class="px-6 py-6">
-		<span class="material-symbols-outlined md:invisible"> menu </span>
-	</div>
+	<Navbar />
 
 	<main>
 		<slot />
