@@ -1,6 +1,8 @@
 <script>
+	import Sidebar from './Sidebar.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 
+	import { _, locale } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
 </script>
@@ -11,11 +13,11 @@
 	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 />
 
-<div class="app">
-	<!-- Navbar -->
-	<Navbar />
+<Navbar />
+<div class="app fixed overflow-hidden h-full w-screen">
+	<Sidebar />
 
-	<main>
+	<main class="overflow-hidden">
 		<slot />
 	</main>
 
