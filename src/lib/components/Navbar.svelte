@@ -12,9 +12,8 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- Navbar -->
 <div
-	class=" h-20 fixed items-center justify-between w-screen px-6 py-6 md:px-10 align-middle flex mt-0 z-50 border-b-[{$sidebar.open
-		? '0px'
-		: '1px'}] border-black"
+	class="fixed z-50 flex items-center justify-between w-screen h-20 px-6 py-6 mt-0 align-middle border-black navbar md:px-10"
+	style="border-bottom-width: {$sidebar.open ? '0px' : '1px'}"
 >
 	<!-- Menu button -->
 	<div
@@ -57,8 +56,8 @@
 >
 	<img
 		alt="logo"
-		class="h-full mix-blend-luminosity max-h-[48px]"
-		src="images/corkscrews/Dancing Corks.svg"
+		class="h-full mix-blend-luminosity max-h-[48px] grayscale"
+		src="images/corkscrews/Dancing Corks.png"
 	/>
 </div>
 
