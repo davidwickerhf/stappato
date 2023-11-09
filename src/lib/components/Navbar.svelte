@@ -32,7 +32,6 @@
 	</ul>
 
 	<!-- Action buttons -->
-
 	<div class=" flex gap-4">
 		<!-- Reserve btn -->
 		<div
@@ -44,4 +43,15 @@
 		<!-- Language btn -->
 		<Language />
 	</div>
+</div>
+
+<!-- Stappato logo -->
+<div
+	class="fixed left-[50%] translate-x-[-50%] w-fit hidden lg:flex flex-col h-20 z-[60] justify-center"
+>
+	<img
+		alt="logo"
+		class="h-full mix-blend-luminosity max-h-[48px]"
+		src="src/lib/images/corkscrews/Dancing Corks.svg"
+	/>
 </div>
