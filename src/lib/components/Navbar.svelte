@@ -58,7 +58,7 @@
 	<img
 		alt="logo"
 		class="h-full mix-blend-luminosity max-h-[48px]"
-		src="src/lib/images/corkscrews/Dancing Corks.svg"
+		src="images/corkscrews/Dancing Corks.svg"
 	/>
 </div>
 

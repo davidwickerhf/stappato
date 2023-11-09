@@ -8,7 +8,7 @@
 
 <!-- Landing picture -->
 <div class="h-screen">
-	<img alt="landing" src="src/lib/images/images/landing.png" class="object-cover h-screen" />
+	<img alt="landing" src="images/images/landing.png" class="object-cover h-screen" />
 </div>
 
 <div class="h-screen">1</div>
