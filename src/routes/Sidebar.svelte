@@ -3,7 +3,9 @@
 </script>
 
 <!-- Sidebar -->
-<div class="h-full {$sidebar.open ? '' : 'hidden'} pt-20 bg-stappatored-three">
+<div
+	class="fixed h-screen w-screen {$sidebar.open ? '' : 'hidden'} pt-20 bg-stappatored-three z-10"
+>
 	<p>Sidebar</p>
 </div>
 

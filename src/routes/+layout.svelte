@@ -17,9 +17,8 @@
 />
 
 <Navbar backgroundHeight={scrollY} {color} />
+<Sidebar />
 <div class="fixed flex flex-col w-screen h-full overflow-hidden app">
-	<Sidebar />
-
 	<main
 		class="overflow-scroll"
 		bind:this={box}

@@ -7,7 +7,9 @@
 </svelte:head>
 
 <!-- Landing picture -->
-<img alt="landing image" src="src/lib/images/images/landing.png" />
+<div class="h-screen">
+	<img alt="landing" src="src/lib/images/images/landing.png" class="object-cover h-screen" />
+</div>
 
 <div class="h-screen">1</div>
 <div class="h-screen">2</div>

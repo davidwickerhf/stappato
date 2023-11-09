@@ -17,7 +17,10 @@
 		: '1px'}] border-black"
 >
 	<!-- Menu button -->
-	<div class="flex flex-col justify-center md:hidden text-background-three">
+	<div
+		class="flex flex-col justify-center transition-colors duration-200 ease-in-out md:hidden"
+		style="color: {color};"
+	>
 		<div
 			class="transition-all duration-100 ease-in-out cursor-default select-none material-symbols-outlined hover:cursor-pointer hover:scale-125"
 			on:click={() => toggleSidebar()}
@@ -60,4 +63,9 @@
 </div>
 
 <!-- Background -->
-<div class="w-screen bg-white max-h-20" style="height: {backgroundHeight}px" />
+<div
+	class="fixed z-40 w-screen bg-white max-h-20"
+	style="height: {backgroundHeight}px; background-color: {$sidebar.open
+		? 'rgba(0,0,0,0)'
+		: 'rgba(255,255,255,1)'}"
+/>
