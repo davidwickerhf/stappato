@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
-
 	export let url: string;
+	export let color: string;
 </script>
 
-<div class="group flex flex-col w-auto bottom-[-4px]">
-	<li class=" font-semibold text-background-three hover:cursor-pointer tracking-[2px] uppercase">
-		<a href={url}> <slot /> </a>
+<div
+	class="transition-colors ease-in-out duration-200 group flex flex-col w-auto bottom-[-4px]"
+	style="color: {color};"
+>
+	<li class="  font-semibold hover:cursor-pointer tracking-[2px] uppercase">
+		<a class="mix-blend-color-burn" href={url}> <slot /> </a>
 	</li>
-	<div
-		class="w-0 h-[2px] bg-background-three group-hover:w-full transition-all ease-in-out duration-100"
-	/>
+	<div class="w-0 h-[2px] group-hover:w-full" style="background-color: {color};" />
 </div>

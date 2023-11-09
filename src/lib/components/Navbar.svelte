@@ -2,6 +2,9 @@
 	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
 	import Language from './Language.svelte';
 	import Underline from './Underline.svelte';
+
+	export let color = '#FEFCF2';
+	export let backgroundHeight = 0;
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -9,14 +12,14 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- Navbar -->
 <div
-	class="h-20 fixed items-center justify-between w-screen px-6 py-6 md:px-10 align-middle flex mt-0 z-50 bg-darkbrown-three border-b-[{$sidebar.open
+	class=" h-20 fixed items-center justify-between w-screen px-6 py-6 md:px-10 align-middle flex mt-0 z-50 border-b-[{$sidebar.open
 		? '0px'
 		: '1px'}] border-black"
 >
 	<!-- Menu button -->
-	<div class="md:hidden text-background-three flex flex-col justify-center">
+	<div class="flex flex-col justify-center md:hidden text-background-three">
 		<div
-			class="material-symbols-outlined cursor-default hover:cursor-pointer hover:scale-125 transition-all ease-in-out duration-100 select-none"
+			class="transition-all duration-100 ease-in-out cursor-default select-none material-symbols-outlined hover:cursor-pointer hover:scale-125"
 			on:click={() => toggleSidebar()}
 		>
 			<span class=""> {$sidebar.open ? 'close' : 'menu'} </span>
@@ -24,15 +27,15 @@
 	</div>
 
 	<!-- Navigation buttons -->
-	<ul class="hidden md:flex gap-8">
-		<Underline url="/">About</Underline>
-		<Underline url="/menu">Menu</Underline>
-		<Underline url="/team">Team</Underline>
-		<Underline url="contact">Contact</Underline>
+	<ul class="hidden gap-8 md:flex">
+		<Underline url="/" {color}>About</Underline>
+		<Underline url="/menu" {color}>Menu</Underline>
+		<Underline url="/team" {color}>Team</Underline>
+		<Underline url="contact" {color}>Contact</Underline>
 	</ul>
 
 	<!-- Action buttons -->
-	<div class=" flex gap-4">
+	<div class="flex gap-4">
 		<!-- Reserve btn -->
 		<div
 			class="hidden sm:flex text-background-three font-semibold uppercase tracking-[2px] py-3 px-6 bg-stappatored-three hover:cursor-pointer hover:bg-black"
@@ -41,7 +44,7 @@
 		</div>
 
 		<!-- Language btn -->
-		<Language />
+		<Language {color} />
 	</div>
 </div>
 
@@ -55,3 +58,6 @@
 		src="src/lib/images/corkscrews/Dancing Corks.svg"
 	/>
 </div>
+
+<!-- Background -->
+<div class="w-screen bg-white max-h-20" style="height: {backgroundHeight}px" />

@@ -1,10 +1,13 @@
-<script>
+<script lang="ts">
 	import Sidebar from './Sidebar.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 
 	import { _, locale } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
+	$: scrollY = 0;
+	$: color = scrollY >= 35 ? '#000' : '#FEFCF2';
+	let box: any;
 </script>
 
 <!-- Import material icons -->
@@ -13,11 +16,17 @@
 	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 />
 
-<Navbar />
-<div class="app fixed overflow-hidden h-full w-screen">
+<Navbar backgroundHeight={scrollY} {color} />
+<div class="fixed flex flex-col w-screen h-full overflow-hidden app">
 	<Sidebar />
 
-	<main class="overflow-hidden">
+	<main
+		class="overflow-scroll"
+		bind:this={box}
+		on:scroll={() => {
+			scrollY = box.scrollTop;
+		}}
+	>
 		<slot />
 	</main>
 

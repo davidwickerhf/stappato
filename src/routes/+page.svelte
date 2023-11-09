@@ -2,8 +2,13 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Stappato</title>
+	<meta name="description" content="Stappato Restaurant in Maastricht" />
 </svelte:head>
 
-<section />
+<!-- Landing picture -->
+<img alt="landing image" src="src/lib/images/images/landing.png" />
+
+<div class="h-screen">1</div>
+<div class="h-screen">2</div>
+<div class="h-screen">3</div>
