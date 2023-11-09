@@ -36,6 +36,6 @@
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.background.three);
-		font-family: Poppins;
+		font-family: 'Poppins', sans-serif;
 	}
 </style>
