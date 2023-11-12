@@ -1,7 +1,10 @@
 <script lang="ts">
+	import Button from './Button.svelte';
+
 	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
 	import Language from './Language.svelte';
 	import Underline from './Underline.svelte';
+	import { theme } from '$lib/constants/theme';
 
 	export let color = '#FEFCF2';
 	export let backgroundHeight = 0;
@@ -38,12 +41,11 @@
 
 	<!-- Action buttons -->
 	<div class="flex gap-4">
-		<!-- Reserve btn -->
-		<div
-			class="hidden sm:flex text-background-three font-semibold uppercase tracking-[2px] py-3 px-6 bg-stappatored-three hover:cursor-pointer hover:bg-black"
+		<Button
+			bgColor={theme.colors.stappatored.three}
+			textColor={theme.colors.background.three}
+			url="https://www.thefork.com/restaurant/stappato-r750369">Reserve</Button
 		>
-			<a href="https://www.thefork.com/restaurant/stappato-r750369">Reserve</a>
-		</div>
 
 		<!-- Language btn -->
 		<Language {color} />
