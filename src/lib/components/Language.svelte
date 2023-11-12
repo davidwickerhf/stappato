@@ -4,26 +4,23 @@
 	export let color = '';
 </script>
 
-<div
-	class="flex justify-between h-12 font-semibold uppercase align-middle transition-colors duration-200 ease-in-out border-2 langbutton"
+<button
+	on:click={() => {
+		locale.set($locales[($locales.indexOf($locale ?? 'en') + 1) % $locales.length]);
+	}}
+	class="flex items-center justify-center h-12 font-semibold text-center uppercase transition-colors duration-200 ease-in-out w-14 langbutton"
 	style="--color: {color}; --white: {theme.colors.background.three}"
 >
-	<button
-		on:click={() => {
-			locale.set($locales[($locales.indexOf($locale ?? 'en') + 1) % $locales.length]);
-		}}
-		class="w-12 h-full text-center uppercase align-middle justify-cente"
-	>
-		{$locale?.substring(0, 2)}
-	</button>
-</div>
+	{$locale?.substring(0, 2)}
+</button>
 
 <style lang="scss">
 	.langbutton {
 		color: var(--color);
 		border-color: var(--color);
+		border-width: 2px;
 
-		:hover {
+		&:hover {
 			background-color: black;
 			color: var(--white);
 			border-color: black;

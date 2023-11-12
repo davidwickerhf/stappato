@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&family=Poppins:wght@300;400;500;600;700&display=block');
 
+html {
+	font-family: 'Poppins', sans-serif;
+}
+
 h1 {
 	font-family: 'Notable', sans-serif;
 	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 6px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
 }

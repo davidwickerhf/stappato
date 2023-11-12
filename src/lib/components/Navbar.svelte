@@ -4,7 +4,7 @@
 	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
 	import Language from './Language.svelte';
 	import Underline from './Underline.svelte';
-	import { theme } from '$lib/constants/theme';
+	import { padding, theme } from '$lib/constants/theme';
 
 	export let color = '#FEFCF2';
 	export let backgroundHeight = 0;
@@ -15,7 +15,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- Navbar -->
 <div
-	class="fixed z-50 flex items-center justify-between w-screen h-20 px-6 py-6 mt-0 align-middle border-black navbar md:px-10"
+	class="fixed z-50 flex items-center justify-between w-screen h-20 py-6 mt-0 align-middle border-black navbar {padding}"
 	style="border-bottom-width: {$sidebar.open ? '0px' : '1px'}"
 >
 	<!-- Menu button -->

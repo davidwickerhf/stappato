@@ -1,6 +1,6 @@
 <script>
 	import Button from '$lib/components/Button.svelte';
-	import { theme } from '$lib/constants/theme';
+	import { padding, paddingY, theme } from '$lib/constants/theme';
 </script>
 
 <svelte:head>
@@ -18,16 +18,18 @@
 	<div class="absolute w-full h-full bg-[rgba(0,0,0,.5)]" />
 
 	<section
-		class="absolute flex flex-col items-center justify-center w-screen h-full gap-8 px-6 pt-20 text-background-three"
+		class="absolute flex flex-col items-center justify-center w-screen h-full gap-8 {padding} pt-20 align-middle text-background-three"
 	>
 		<!-- Heading -->
 		<div class="flex flex-col items-center justify-center gap-6">
-			<h1 class="text-4xl uppercase sm:text-5xl md:text-6xl xl:text-8xl">Stappato</h1>
+			<h1 class="text-5xl uppercase sm:text-6xl md:text-7xl xl:text-8xl">Stappato</h1>
 			<p class="font-thin uppercase text-md tracking-[4px]">Bar & trattoria</p>
 		</div>
 
 		<!-- Action buttons -->
-		<div class="flex flex-col flex-wrap w-full gap-4 font-semibold sm:flex-row">
+		<div
+			class="flex flex-col flex-wrap justify-center w-full gap-4 font-semibold align-middle sm:flex-row"
+		>
 			<Button
 				url="/menu"
 				bgColor={theme.colors.background.three}
@@ -43,7 +45,16 @@
 </div>
 
 <!-- Content Hero Section -->
+<section class="h-screen {padding} {paddingY}">
+	<!-- Heading -->
+	<h2 class="text-darkbrown-three">Welcome to Stappato!</h2>
 
-<div class="h-screen">1</div>
+	<!-- Paragraph and Image -->
+	<div>
+		<p />
+		<!-- Action buttons -->
+		<img />
+	</div>
+</section>
 <div class="h-screen">2</div>
 <div class="h-screen">3</div>
