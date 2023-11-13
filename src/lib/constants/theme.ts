@@ -20,3 +20,4 @@ export const theme = {
 
 export const padding = 'px-6 sm:px-8 md:px-10';
 export const paddingY = 'py-10 sm:py-12 md:py-20';
+export const h2 = 'text-darkbrown-three sm:text-2xl md:text-3xl';

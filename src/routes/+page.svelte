@@ -2,7 +2,7 @@
 	import Logo from '../lib/components/Logo.svelte';
 
 	import Button from '$lib/components/Button.svelte';
-	import { padding, paddingY, theme } from '$lib/constants/theme';
+	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
 </script>
 
 <svelte:head>
@@ -55,7 +55,7 @@
 	>
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
-			<h2 class="text-darkbrown-three sm:text-2xl md:text-3xl">Welcome to Stappato!</h2>
+			<h2 class={h2}>Welcome to Stappato!</h2>
 			<p class="">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -134,7 +134,10 @@
 	</div>
 </section>
 
-<div class="h-screen {padding} {paddingY}">2</div>
+<!-- Menu Preview -->
+<div class="h-screen {padding} {paddingY} bg-darkbrown-three">
+	<h2 class={h2}>A preview of our menu</h2>
+</div>
 <div class="h-screen">3</div>
 
 <style lang="scss">
