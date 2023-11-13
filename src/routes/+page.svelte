@@ -1,4 +1,6 @@
 <script>
+	import Logo from '../lib/components/Logo.svelte';
+
 	import Button from '$lib/components/Button.svelte';
 	import { padding, paddingY, theme } from '$lib/constants/theme';
 </script>
@@ -47,7 +49,7 @@
 </div>
 
 <!-- Content Hero Section -->
-<section class="min-h-screen welcome">
+<section class=" welcome">
 	<div
 		class="relative w-screen {padding} {paddingY} grid grid-flow-row gap-8 lg:gap-10 xl:gap-20 lg:grid-cols-[auto_auto] lg:grid-rows-[auto_minmax(0,1fr)]"
 	>
@@ -93,12 +95,14 @@
 
 			<div class="flex flex-col items-center justify-end sm:flex-grow-0">
 				<div
-					class="flex items-center justify-center w-full gap-6 font-semibold align-middle transition-all duration-200 ease-in-out sm:max-w-fit sm:hover:cursor-pointer sm:hover:scale-105 bg-stappatored-three sm:bg-transparent text-background-three sm:text-darkbrown-three sm:font-normal"
+					class="flex items-center justify-center w-full gap-6 font-semibold align-middle transition-all duration-200 ease-in-out sm:max-w-fit sm:hover:cursor-pointer sm:hover:scale-105 bg-stappatored-three sm:bg-transparent text-background-three sm:text-darkbrown-three sm:font-normal hover:bg-black sm:hover:bg-transparent"
 				>
-					<a href="https://instagram.com/stappato" class="uppercase tracking-[2px] py-3"
+					<a href="https://instagram.com/stappato_maastricht" class="uppercase tracking-[2px] py-3"
 						>Follow us on Instagram</a
 					>
-					<span class="material-symbols-outlined">chevron_right</span>
+					<div class="items-center justify-start hidden align-middle sm:flex">
+						<span class="material-symbols-outlined">chevron_right</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -114,7 +118,23 @@
 	</div>
 </section>
 
-<div class="h-screen">2</div>
+<!-- Partnerships -->
+<section class="{padding} {paddingY}">
+	<div class="flex justify-center w-full">
+		<h3 class="uppercase tracking-[6px]">Partnered with</h3>
+	</div>
+
+	<!-- Partnership scrollview -->
+	<div class="flex justify-between w-full gap-8 pt-8 overflow-scroll">
+		<Logo src={'/images/logos/moretti.svg'} />
+		<Logo src={'/images/logos/segafredo.svg'} />
+		<Logo src={'/images/logos/montetondo.svg'} />
+		<Logo src={'/images/logos/brand.svg'} />
+		<Logo src={'/images/logos/thiessen.svg'} />
+	</div>
+</section>
+
+<div class="h-screen {padding} {paddingY}">2</div>
 <div class="h-screen">3</div>
 
 <style lang="scss">

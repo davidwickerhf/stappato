@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Sidebar from './Sidebar.svelte';
+	import Sidebar from '../lib/components/Sidebar.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 
 	import { _, locale } from 'svelte-i18n';
