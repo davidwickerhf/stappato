@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { theme } from '$lib/constants/theme';
+
 	export let bgColor = '#FEFCF2';
 	export let textColor = '#B65139';
 	export let url: string;
@@ -6,15 +8,20 @@
 
 <!-- Reserve btn -->
 <div
-	style="--color: {textColor}; --bg-color: {bgColor}"
-	class="button flex font-semibold uppercase tracking-[2px] py-3 px-6 hover:cursor-pointer hover:bg-black hover:text-background-three justify-center transition-all ease-in-out duration-200"
+	style="--color: {textColor}; --bg-color: {bgColor}; --white: {theme.colors.background.three}"
+	class="button flex font-semibold uppercase tracking-[2px] py-3 px-6 hover:cursor-pointer justify-center transition-all ease-in-out duration-200"
 >
 	<a href={url}><slot /></a>
 </div>
 
-<style>
+<style lang="scss">
 	.button {
 		color: var(--color);
 		background-color: var(--bg-color);
+
+		&:hover {
+			color: var(--white);
+			background-color: black;
+		}
 	}
 </style>
