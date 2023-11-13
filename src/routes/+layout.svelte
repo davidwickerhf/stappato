@@ -18,7 +18,9 @@
 
 <Navbar backgroundHeight={scrollY} {color} />
 <Sidebar />
-<div class="fixed flex flex-col w-screen h-full overflow-hidden app overscroll-none">
+<div
+	class="fixed flex flex-col w-screen h-full overflow-hidden app overscroll-none bg-background-three"
+>
 	<main
 		class="overflow-scroll overscroll-none"
 		bind:this={box}
