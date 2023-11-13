@@ -49,7 +49,7 @@
 <!-- Content Hero Section -->
 <section class="min-h-screen">
 	<div
-		class="w-screen {padding} {paddingY} grid grid-flow-row gap-20 md:grid-cols-[auto_auto] md:grid-rows-[auto_minmax(0,1fr)]"
+		class="w-screen {padding} {paddingY} grid grid-flow-row gap-8 lg:gap-10 xl:gap-20 lg:grid-cols-[auto_auto] lg:grid-rows-[auto_minmax(0,1fr)]"
 	>
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
@@ -64,7 +64,7 @@
 		</div>
 
 		<!-- Map image -->
-		<div class="flex md:row-span-2 w-full md:max-h-[375px] md:max-w-[550px]">
+		<div class="flex md:row-span-2 w-full max-h-[275px] lg:max-h-[375px] lg:max-w-[550px]">
 			<a
 				href="https://maps.app.goo.gl/Wv3ZNrFMotgb3Qq68"
 				class="w-full h-full map hover:cursor-pointer"
@@ -81,9 +81,9 @@
 
 		<!-- Action buttons -->
 		<div
-			class="flex flex-col justify-end h-full gap-6 md:flex-grow-0 md:gap-10 sm:flex-row max-w-fit"
+			class="flex flex-col justify-start w-full h-full gap-6 sm:flex-wrap md:flex-grow-0 xl:gap-10 sm:flex-row sm:justify-between"
 		>
-			<div class="flex flex-col justify-end flex-grow-0 max-w-fit">
+			<div class="flex flex-col justify-end w-full md:flex-grow-0 sm:max-w-fit">
 				<Button
 					url="/team"
 					bgColor={theme.colors.darkbrown.three}
@@ -91,15 +91,14 @@
 				>
 			</div>
 
-			<div class="flex flex-col justify-end flex-grow-0">
+			<div class="flex flex-col items-center justify-end sm:flex-grow-0">
 				<div
-					class="flex items-center align-middle transition-all duration-200 ease-in-out max-w-fit hover:cursor-pointer hover:scale-105"
+					class="flex items-center justify-center w-full gap-6 font-semibold align-middle transition-all duration-200 ease-in-out sm:max-w-fit sm:hover:cursor-pointer sm:hover:scale-105 bg-stappatored-three sm:bg-transparent text-background-three sm:text-darkbrown-three sm:font-normal"
 				>
-					<a
-						href="https://instagram.com/stappato"
-						class="uppercase tracking-[2px] py-3 text-darkbrown-three">Follow us on Instagram</a
+					<a href="https://instagram.com/stappato" class="uppercase tracking-[2px] py-3"
+						>Follow us on Instagram</a
 					>
-					<span class="material-symbols-outlined text-darkbrown-three">chevron_right</span>
+					<span class="material-symbols-outlined">chevron_right</span>
 				</div>
 			</div>
 		</div>
@@ -115,5 +114,7 @@
 		background-image: url('/images/assets/stappatomap.png');
 		mix-blend-mode: darken;
 		background-size: 100% auto;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 </style>
