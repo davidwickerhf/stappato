@@ -47,9 +47,9 @@
 </div>
 
 <!-- Content Hero Section -->
-<section class="min-h-screen">
+<section class="min-h-screen welcome">
 	<div
-		class="w-screen {padding} {paddingY} grid grid-flow-row gap-8 lg:gap-10 xl:gap-20 lg:grid-cols-[auto_auto] lg:grid-rows-[auto_minmax(0,1fr)]"
+		class="relative w-screen {padding} {paddingY} grid grid-flow-row gap-8 lg:gap-10 xl:gap-20 lg:grid-cols-[auto_auto] lg:grid-rows-[auto_minmax(0,1fr)]"
 	>
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
@@ -102,6 +102,15 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Background Corkscrew Image -->
+		<div class="absolute opacity-20 top-10 lg:top-40 -left-20 -z-10">
+			<img
+				alt="Dancing Corks"
+				src="/images/corkscrews/Dancing Corks.png"
+				class="max-h-[275px] lg:max-h-none"
+			/>
+		</div>
 	</div>
 </section>
 
@@ -110,6 +119,7 @@
 
 <style lang="scss">
 	.map {
+		z-index: 10;
 		background-color: var(--white);
 		background-image: url('/images/assets/stappatomap.png');
 		mix-blend-mode: darken;
