@@ -55,7 +55,7 @@
 	>
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
-			<h2 class={h2}>Welcome to Stappato!</h2>
+			<h2 class="{h2} text-darkbrown-three">Welcome to Stappato!</h2>
 			<p class="">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -136,7 +136,9 @@
 
 <!-- Menu Preview -->
 <div class="h-screen {padding} {paddingY} bg-darkbrown-three">
-	<h2 class={h2}>A preview of our menu</h2>
+	<h2 class="{h2} text-background-three">A preview of our menu</h2>
+	<!-- Menu options -->
+	<div />
 </div>
 <div class="h-screen">3</div>
 

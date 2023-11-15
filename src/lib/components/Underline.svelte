@@ -8,7 +8,7 @@
 	style="color: {color};"
 >
 	<li class="  font-semibold hover:cursor-pointer tracking-[2px] uppercase">
-		<a class="mix-blend-color-burn" href={url}> <slot /> </a>
+		<a class="" href={url}> <slot /> </a>
 	</li>
 	<div
 		class="w-0 h-[2px] group-hover:w-full transition-all ease-in-out duration-200"

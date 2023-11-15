@@ -5,6 +5,7 @@
 	import Language from './Language.svelte';
 	import Underline from './Underline.svelte';
 	import { padding, theme } from '$lib/constants/theme';
+	import { reserveUrl } from '$lib/constants/urls';
 
 	export let color = '#FEFCF2';
 	export let backgroundHeight = 0;
@@ -41,11 +42,13 @@
 
 	<!-- Action buttons -->
 	<div class="flex gap-4">
-		<Button
-			bgColor={theme.colors.stappatored.three}
-			textColor={theme.colors.background.three}
-			url="https://www.thefork.com/restaurant/stappato-r750369">Reserve</Button
-		>
+		<div class="hidden sm:flex">
+			<Button
+				bgColor={theme.colors.stappatored.three}
+				textColor={theme.colors.background.three}
+				url={reserveUrl}>Reserve</Button
+			>
+		</div>
 
 		<!-- Language btn -->
 		<Language {color} />
