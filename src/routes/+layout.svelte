@@ -1,12 +1,17 @@
 <script lang="ts">
 	import Sidebar from '../lib/components/Sidebar.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import { navigating } from '$app/stores';
 
 	import { _, locale } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
+	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
+
 	$: scrollY = 0;
 	$: color = scrollY >= 35 ? '#000' : '#FEFCF2';
+	$: if ($navigating) toggleSidebar(false);
+
 	let box: any;
 </script>
 
