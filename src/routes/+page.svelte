@@ -127,7 +127,7 @@
 
 <!-- Menu Preview -->
 <div
-	class=" relative {paddingY} bg-darkbrown-three background"
+	class=" relative {paddingY} bg-darkbrown-three background bg-[center_top_400px] lg:bg-[center_top_275px]"
 	style="--brown: {theme.colors.darkbrown.three};"
 >
 	<div class="z-10 flex flex-col gap-6">
@@ -202,7 +202,9 @@
 	</div> -->
 </div>
 
-<div class="h-screen {padding} {paddingY}">3</div>
+<section class="h-screen {padding} {paddingY}">
+	<h2 class="text-darkbrown-three {h2}">What people say about us</h2>
+</section>
 
 <style lang="scss">
 	.background {
@@ -212,6 +214,6 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position-x: -100px;
-		background-position-y: 400px;
+		// background-position-y: 400px;
 	}
 </style>
