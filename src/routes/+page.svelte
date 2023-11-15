@@ -126,8 +126,11 @@
 </section>
 
 <!-- Menu Preview -->
-<div class=" relative {paddingY} bg-darkbrown-three">
-	<div class="z-10 flex flex-col gap-6 background" style="--brown: {theme.colors.darkbrown.three};">
+<div
+	class=" relative {paddingY} bg-darkbrown-three background"
+	style="--brown: {theme.colors.darkbrown.three};"
+>
+	<div class="z-10 flex flex-col gap-6">
 		<h2 class="{padding} {h2} text-background-three">A preview of our menu</h2>
 		<!-- Menu options -->
 		<div class="relative h-[460px]">
@@ -174,7 +177,7 @@
 
 		<!-- Vegan or vegetarian divs -->
 		<div class="{padding} flex flex-col gap-16">
-			<div class=" flex flex-col text-background-three uppercase tracking-[2px]">
+			<div class=" flex flex-col text-background-three uppercase tracking-[2px] gap-4">
 				<div class="flex gap-4">
 					<span class="material-symbols-outlined">nutrition</span>
 					Vegetarian
