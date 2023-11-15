@@ -69,12 +69,12 @@
 		<div class="flex md:row-span-2 w-full max-h-[275px] lg:max-h-[375px] lg:max-w-[550px]">
 			<a
 				href="https://maps.app.goo.gl/Wv3ZNrFMotgb3Qq68"
-				class="w-full h-full map hover:cursor-pointer"
+				class="w-full h-full transition-all duration-200 ease-in-out map hover:cursor-pointer"
 				style="--white: {theme.colors.background.three};"
 			>
 				<img
 					class="invisible w-full h-full"
-					alt="map hidden"
+					alt="map hidden "
 					src="/images/assets/stappatomap.png"
 					style="visibility: hidden;"
 				/>
@@ -151,5 +151,9 @@
 		background-size: 100% auto;
 		background-position: center center;
 		background-repeat: no-repeat;
+
+		&:hover {
+			background-size: 120% auto;
+		}
 	}
 </style>
