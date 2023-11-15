@@ -1,4 +1,6 @@
 <script>
+	import Dish from '../lib/components/Dish.svelte';
+
 	import Map from '../lib/components/Map.svelte';
 
 	import Logo from '../lib/components/Logo.svelte';
@@ -124,9 +126,65 @@
 </section>
 
 <!-- Menu Preview -->
-<div class="h-screen {padding} {paddingY} bg-darkbrown-three">
-	<h2 class="{h2} text-background-three">A preview of our menu</h2>
+<div class="  {paddingY} bg-darkbrown-three flex flex-col gap-6">
+	<h2 class="{padding} {h2} text-background-three">A preview of our menu</h2>
 	<!-- Menu options -->
-	<div />
+	<div class="relative h-[460px]">
+		<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[460px]">
+			<!-- First menu item -->
+			<Dish
+				title="Bolognese"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				vegan
+				src="/images/images/dish.jpg"
+			/>
+			<Dish
+				title="Bolognese"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				vegan
+				src="/images/images/dish.jpg"
+			/>
+			<Dish
+				title="Bolognese"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				vegan
+				src="/images/images/dish.jpg"
+			/>
+			<Dish
+				title="Bolognese"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				vegan
+				src="/images/images/dish.jpg"
+			/>
+			<Dish
+				title="Bolognese"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				vegan
+				src="/images/images/dish.jpg"
+			/>
+			<Dish
+				title="Bolognese"
+				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+				vegan
+				src="/images/images/dish.jpg"
+			/>
+		</div>
+	</div>
+
+	<!-- Vegan or vegetarian divs -->
+	<div class="{padding} flex flex-col gap-16">
+		<div class=" flex flex-col text-background-three uppercase tracking-[2px]">
+			<div class="flex gap-4">
+				<span class="material-symbols-outlined">nutrition</span>
+				Vegetarian
+			</div>
+			<div class="flex gap-4">
+				<span class="material-symbols-outlined">nest_eco_leaf</span>
+				Vegan
+			</div>
+		</div>
+		<!-- Full menu button -->
+		<Button url="/menu" textColor={theme.colors.darkbrown.three}>See the full menu</Button>
+	</div>
 </div>
 <div class="h-screen">3</div>
