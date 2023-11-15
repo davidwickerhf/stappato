@@ -22,7 +22,7 @@
 	<!-- Menu button -->
 	<div
 		class="flex flex-col justify-center transition-colors duration-200 ease-in-out md:hidden"
-		style="color: {color};"
+		style="color: {$sidebar.open ? theme.colors.background.three : color};"
 	>
 		<div
 			class="transition-all duration-100 ease-in-out cursor-default select-none material-symbols-outlined hover:cursor-pointer hover:scale-125"
