@@ -66,10 +66,12 @@
 		</div>
 
 		<!-- Map image -->
-		<div class="flex md:row-span-2 w-full max-h-[275px] lg:max-h-[375px] lg:max-w-[550px]">
+		<div
+			class="flex lg:row-span-2 w-full max-h-[275px] lg:max-h-[375px] lg:max-w-[550px] transition-all duration-200 ease-in-out"
+		>
 			<a
 				href="https://maps.app.goo.gl/Wv3ZNrFMotgb3Qq68"
-				class="w-full h-full transition-all duration-200 ease-in-out map hover:cursor-pointer"
+				class="w-full h-full transition-all duration-200 ease-in-out map hover:cursor-pointer lg:bg-[auto_100%] bg-[100%_auto] hover:bg-[120%_auto] lg:hover:bg-[auto_120%]"
 				style="--white: {theme.colors.background.three};"
 			>
 				<img
@@ -83,7 +85,7 @@
 
 		<!-- Action buttons -->
 		<div
-			class="flex flex-col justify-start w-full h-full gap-6 sm:flex-wrap md:flex-grow-0 xl:gap-10 sm:flex-row sm:justify-between"
+			class="flex flex-col justify-start w-full h-full gap-4 sm:flex-wrap-reverse md:flex-grow-0 xl:gap-10 sm:flex-row sm:justify-between"
 		>
 			<div class="flex flex-col justify-end w-full md:flex-grow-0 sm:max-w-fit">
 				<Button
@@ -148,12 +150,7 @@
 		background-color: var(--white);
 		background-image: url('/images/assets/stappatomap.png');
 		mix-blend-mode: darken;
-		background-size: 100% auto;
 		background-position: center center;
 		background-repeat: no-repeat;
-
-		&:hover {
-			background-size: 120% auto;
-		}
 	}
 </style>
