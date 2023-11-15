@@ -126,66 +126,89 @@
 </section>
 
 <!-- Menu Preview -->
-<div class="  {paddingY} bg-darkbrown-three flex flex-col gap-6">
-	<h2 class="{padding} {h2} text-background-three">A preview of our menu</h2>
-	<!-- Menu options -->
-	<div class="relative h-[460px]">
-		<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]">
-			<!-- First menu item -->
-			<Dish
-				title="Bolognese"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-				vegan
-				src="/images/images/dish.jpg"
-			/>
-			<Dish
-				title="Bolognese"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-				vegan
-				src="/images/images/dish.jpg"
-			/>
-			<Dish
-				title="Bolognese"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-				vegan
-				src="/images/images/dish.jpg"
-			/>
-			<Dish
-				title="Bolognese"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-				vegan
-				src="/images/images/dish.jpg"
-			/>
-			<Dish
-				title="Bolognese"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-				vegan
-				src="/images/images/dish.jpg"
-			/>
-			<Dish
-				title="Bolognese"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-				vegan
-				src="/images/images/dish.jpg"
-			/>
+<div class=" relative {paddingY} bg-darkbrown-three">
+	<div class="z-10 flex flex-col gap-6 background" style="--brown: {theme.colors.darkbrown.three};">
+		<h2 class="{padding} {h2} text-background-three">A preview of our menu</h2>
+		<!-- Menu options -->
+		<div class="relative h-[460px]">
+			<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]">
+				<!-- First menu item -->
+				<Dish
+					title="Bolognese"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+					vegan
+					src="/images/images/dish.jpg"
+				/>
+				<Dish
+					title="Bolognese"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+					vegan
+					src="/images/images/dish.jpg"
+				/>
+				<Dish
+					title="Bolognese"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+					vegan
+					src="/images/images/dish.jpg"
+				/>
+				<Dish
+					title="Bolognese"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+					vegan
+					src="/images/images/dish.jpg"
+				/>
+				<Dish
+					title="Bolognese"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+					vegan
+					src="/images/images/dish.jpg"
+				/>
+				<Dish
+					title="Bolognese"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+					vegan
+					src="/images/images/dish.jpg"
+				/>
+			</div>
+		</div>
+
+		<!-- Vegan or vegetarian divs -->
+		<div class="{padding} flex flex-col gap-16">
+			<div class=" flex flex-col text-background-three uppercase tracking-[2px]">
+				<div class="flex gap-4">
+					<span class="material-symbols-outlined">nutrition</span>
+					Vegetarian
+				</div>
+				<div class="flex gap-4">
+					<span class="material-symbols-outlined">nest_eco_leaf</span>
+					Vegan
+				</div>
+			</div>
+			<!-- Full menu button -->
+			<Button url="/menu" textColor={theme.colors.darkbrown.three}>See the full menu</Button>
 		</div>
 	</div>
 
-	<!-- Vegan or vegetarian divs -->
-	<div class="{padding} flex flex-col gap-16">
-		<div class=" flex flex-col text-background-three uppercase tracking-[2px]">
-			<div class="flex gap-4">
-				<span class="material-symbols-outlined">nutrition</span>
-				Vegetarian
-			</div>
-			<div class="flex gap-4">
-				<span class="material-symbols-outlined">nest_eco_leaf</span>
-				Vegan
-			</div>
-		</div>
-		<!-- Full menu button -->
-		<Button url="/menu" textColor={theme.colors.darkbrown.three}>See the full menu</Button>
-	</div>
+	<!-- Background Corkscrew Image -->
+	<!-- <div class="absolute z-0 opacity-20 top-10 lg:top-40 -left-20">
+		<img
+			alt="Dancing Corks"
+			src="/images/corkscrews/Stuck Cork.png"
+			class="max-h-[275px] lg:max-h-none"
+		/>
+	</div> -->
 </div>
 
-<div class="h-screen">3</div>
+<div class="h-screen {padding} {paddingY}">3</div>
+
+<style lang="scss">
+	.background {
+		background-image: url('/images/corkscrews/Stuck Cork.png');
+		background-color: var(--brown);
+		background-blend-mode: darken;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: -100px;
+		background-position-y: 400px;
+	}
+</style>

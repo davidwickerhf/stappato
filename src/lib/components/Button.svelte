@@ -11,7 +11,7 @@
 <div
 	style="--color: {textColor}; --bg-color: {bgColor}; --white: {theme.colors.background
 		.three}; padding-right: {padding}px; padding-left: {padding}px;"
-	class="button flex font-semibold uppercase tracking-[2px] py-3 hover:cursor-pointer justify-center transition-all ease-in-out duration-200 align-middle items-center"
+	class="button flex sm:max-w-fit font-semibold uppercase tracking-[2px] py-3 hover:cursor-pointer justify-center transition-all ease-in-out duration-200 align-middle items-center"
 >
 	<a href={url}><slot /></a>
 </div>
