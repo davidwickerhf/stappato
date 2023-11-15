@@ -130,7 +130,7 @@
 	<h2 class="{padding} {h2} text-background-three">A preview of our menu</h2>
 	<!-- Menu options -->
 	<div class="relative h-[460px]">
-		<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[460px]">
+		<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]">
 			<!-- First menu item -->
 			<Dish
 				title="Bolognese"
@@ -187,4 +187,5 @@
 		<Button url="/menu" textColor={theme.colors.darkbrown.three}>See the full menu</Button>
 	</div>
 </div>
+
 <div class="h-screen">3</div>
