@@ -1,4 +1,6 @@
 <script>
+	import TextButton from '../lib/components/TextButton.svelte';
+
 	import Review from '../lib/components/Review.svelte';
 
 	import Dish from '../lib/components/Dish.svelte';
@@ -89,10 +91,11 @@
 
 			<div class="flex flex-col items-center justify-end sm:flex-grow-0">
 				<div
-					class="flex items-center justify-center w-full gap-6 font-semibold align-middle transition-all duration-200 ease-in-out sm:max-w-fit sm:hover:cursor-pointer sm:hover:scale-105 bg-stappatored-three sm:bg-transparent text-background-three sm:text-darkbrown-three sm:font-normal hover:bg-black sm:hover:bg-transparent"
+					class="flex items-center justify-center w-full gap-4 font-semibold align-middle transition-all duration-200 ease-in-out md:gap-6 sm:max-w-fit sm:hover:cursor-pointer sm:hover:scale-105 bg-stappatored-three sm:bg-transparent text-background-three sm:text-darkbrown-three sm:font-normal hover:bg-black sm:hover:bg-transparent"
 				>
-					<a href="https://instagram.com/stappato_maastricht" class="uppercase tracking-[2px] py-3"
-						>Follow us on Instagram</a
+					<a
+						href="https://instagram.com/stappato_maastricht"
+						class="uppercase sm:normal-case tracking-[2px] py-3">Follow us on Instagram</a
 					>
 					<div class="items-center justify-start hidden align-middle sm:flex">
 						<span class="material-symbols-outlined">chevron_right</span>
@@ -194,18 +197,9 @@
 			<Button url="/menu" textColor={theme.colors.darkbrown.three}>See the full menu</Button>
 		</div>
 	</div>
-
-	<!-- Background Corkscrew Image -->
-	<!-- <div class="absolute z-0 opacity-20 top-10 lg:top-40 -left-20">
-		<img
-			alt="Dancing Corks"
-			src="/images/corkscrews/Stuck Cork.png"
-			class="max-h-[275px] lg:max-h-none"
-		/>
-	</div> -->
 </div>
 
-<section class="h-screen {padding} {paddingY} flex flex-col gap-6">
+<section class=" {padding} {paddingY} flex flex-col gap-8">
 	<h2 class="text-darkbrown-three {h2}">What people say about us</h2>
 
 	<!-- Container grid -->
@@ -248,9 +242,33 @@
 			type={ReviewType.TheFork}
 			rating={9.8}
 		/>
+	</div>
 
-		<!-- Reviews -->
-		<div class="" />
+	<TextButton url="https://www.thefork.com/restaurant/stappato-r750369"
+		>See all the reviews on The Fork</TextButton
+	>
+</section>
+
+<!-- Reserve section -->
+<section class="{padding} {paddingY} h-[600px] bg-white flex flex-col gap-8">
+	<h2 class="text-darkbrown-three {h2}">Reserve a table with us</h2>
+</section>
+
+<!-- Special requests -->
+<section class="{padding} {paddingY} h-[600px] flex flex-col gap-8">
+	<h2 class="text-darkbrown-three {h2}">Any special request?</h2>
+	<p class="">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+		laboris nisi ut aliquip ex ea commodo consequat.
+	</p>
+
+	<div>
+		<Button
+			url="/contact"
+			bgColor={theme.colors.darkbrown.three}
+			textColor={theme.colors.background.three}>Contact us</Button
+		>
 	</div>
 </section>
 
