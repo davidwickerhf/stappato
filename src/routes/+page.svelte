@@ -250,14 +250,22 @@
 </section>
 
 <!-- Reserve section -->
-<section class="{padding} {paddingY} h-[600px] bg-white flex flex-col gap-8">
+<section class="{padding} {paddingY}  bg-white flex flex-col gap-8">
 	<h2 class="text-darkbrown-three {h2}">Reserve a table with us</h2>
+	<div class="h-fit min-h-fit">
+		<iframe
+			title="booking"
+			src="https://widget.thefork.com/aca1fc5b-ac25-4e38-baec-1e4f908fb726"
+			style="width: 100%;  min-height: 450px; overflow:scroll; background-color: {theme.colors
+				.background.three}"
+		/>
+	</div>
 </section>
 
 <!-- Special requests -->
 <section class="{padding} {paddingY} h-[600px] flex flex-col gap-8">
 	<h2 class="text-darkbrown-three {h2}">Any special request?</h2>
-	<p class="">
+	<p class="max-w-[700px]">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 		laboris nisi ut aliquip ex ea commodo consequat.
