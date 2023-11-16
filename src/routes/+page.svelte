@@ -1,4 +1,6 @@
 <script>
+	import Review from '../lib/components/Review.svelte';
+
 	import Dish from '../lib/components/Dish.svelte';
 
 	import Map from '../lib/components/Map.svelte';
@@ -7,6 +9,7 @@
 
 	import Button from '$lib/components/Button.svelte';
 	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
+	import { ReviewType } from '$lib/constants/types';
 </script>
 
 <svelte:head>
@@ -202,8 +205,53 @@
 	</div> -->
 </div>
 
-<section class="h-screen {padding} {paddingY}">
+<section class="h-screen {padding} {paddingY} flex flex-col gap-6">
 	<h2 class="text-darkbrown-three {h2}">What people say about us</h2>
+
+	<!-- Container grid -->
+	<div class="grid gap-4 md:grid-cols-[1fr_1fr] xl:grid-cols-3">
+		<div class="md:col-span-2">
+			<Review
+				comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam."
+				src="/images/images/tim.jpg"
+				name="Tim de Rouw"
+				type={ReviewType.Tim}
+			/>
+		</div>
+
+		<Review
+			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam."
+			name="Tim de Rouw"
+			type={ReviewType.TheFork}
+			rating={10}
+		/>
+		<Review
+			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam."
+			name="Tim de Rouw"
+			type={ReviewType.TripAdvisor}
+			rating={5}
+		/>
+		<Review
+			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam."
+			name="Tim de Rouw"
+			type={ReviewType.TheFork}
+			rating={10}
+		/>
+		<Review
+			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam."
+			name="Tim de Rouw"
+			type={ReviewType.TheFork}
+			rating={9.8}
+		/>
+
+		<!-- Reviews -->
+		<div class="" />
+	</div>
 </section>
 
 <style lang="scss">
@@ -214,6 +262,5 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position-x: -100px;
-		// background-position-y: 400px;
 	}
 </style>
