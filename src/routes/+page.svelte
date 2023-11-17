@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import TextButton from '../lib/components/TextButton.svelte';
 
 	import Review from '../lib/components/Review.svelte';
@@ -199,11 +199,20 @@
 	</div>
 </div>
 
-<section class=" {padding} {paddingY} flex flex-col gap-8">
-	<h2 class="text-darkbrown-three {h2}">What people say about us</h2>
+<section class="relative {padding} {paddingY} flex flex-col gap-8 overflow-x-clip">
+	<!-- Background image -->
+	<div class="absolute z-10 -rotate-45 opacity-100 -top-20 md:-top-40 lg:-top-80 -right-8">
+		<img
+			alt="Dancing Corks"
+			src="/images/corkscrews/Flying Cork 2.png"
+			class="max-h-[375px] md:max-h-[550px] lg:max-h-none mix-blend-darken"
+		/>
+	</div>
+
+	<h2 class="z-20 text-darkbrown-three {h2}">What people say about us</h2>
 
 	<!-- Container grid -->
-	<div class="grid gap-4 md:grid-cols-[1fr_1fr] xl:grid-cols-3">
+	<div class="z-20 grid gap-4 md:grid-cols-[1fr_1fr] xl:grid-cols-3">
 		<div class="md:col-span-2">
 			<Review
 				comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -250,14 +259,22 @@
 </section>
 
 <!-- Reserve section -->
-<section class="{padding} {paddingY}  bg-white flex flex-col gap-8">
+<section class="relative {padding} {paddingY}   bg-white flex flex-col gap-8">
+	<!-- Background image -->
+	<div class="absolute left-0 z-10 rotate-45 opacity-100 -top-2 md:top-20 lg:top-30">
+		<img
+			alt="Dancing Corks"
+			src="/images/corkscrews/Open Bottle.png"
+			class="max-h-[275px] md:max-h-[325px] lg:max-h-[375px]"
+		/>
+	</div>
+
 	<h2 class="text-darkbrown-three {h2}">Reserve a table with us</h2>
-	<div class="h-fit min-h-fit">
+	<div class="border h-fit min-h-fit bg-darkbrown-three">
 		<iframe
 			title="booking"
 			src="https://widget.thefork.com/aca1fc5b-ac25-4e38-baec-1e4f908fb726"
-			style="width: 100%;  min-height: 450px; overflow:scroll; background-color: {theme.colors
-				.background.three}"
+			style="width: 100%; height:100%; min-height: 500px; overflow:scroll; background-color: white;"
 		/>
 	</div>
 </section>
