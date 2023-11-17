@@ -7,6 +7,8 @@
 	import { padding, theme } from '$lib/constants/theme';
 	import { reserveUrl } from '$lib/constants/urls';
 
+	import { page } from '$app/stores';
+
 	export let color = '#FEFCF2';
 	export let backgroundHeight = 0;
 </script>
@@ -34,10 +36,12 @@
 
 	<!-- Navigation buttons -->
 	<ul class="hidden gap-8 md:flex">
-		<Underline url="/" {color}>About</Underline>
-		<Underline url="/menu" {color}>Menu</Underline>
-		<Underline url="/team" {color}>Team</Underline>
-		<Underline url="contact" {color}>Contact</Underline>
+		<Underline url="/" {color} underlined={$page.url.pathname == '/'}>About</Underline>
+		<Underline url="/menu" {color} underlined={$page.url.pathname == '/menu'}>Menu</Underline>
+		<Underline url="/team" {color} underlined={$page.url.pathname == '/team'}>Team</Underline>
+		<Underline url="contact" {color} underlined={$page.url.pathname == '/contact'}
+			>Contact</Underline
+		>
 	</ul>
 
 	<!-- Action buttons -->
