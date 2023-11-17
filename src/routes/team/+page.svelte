@@ -1,5 +1,6 @@
 <script>
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
+	import { h2, padding, paddingY } from '$lib/constants/theme';
 </script>
 
 <svelte:head>
