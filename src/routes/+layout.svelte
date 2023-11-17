@@ -9,14 +9,18 @@
 	import { _, locale } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
-	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
-	import { padding, paddingY } from '$lib/constants/theme';
+	import { toggleSidebar } from '$lib/store/SidebarStore';
+	import { afterNavigate } from '$app/navigation';
 
 	$: scrollY = 0;
 	$: color = scrollY >= 35 ? '#000' : '#FEFCF2';
 	$: if ($navigating) toggleSidebar(false);
 
 	let box: any;
+
+	afterNavigate(() => {
+		document.getElementById('content')?.scrollTo(0, 0);
+	});
 </script>
 
 <!-- Import material icons -->
@@ -44,6 +48,7 @@
 	class="fixed flex flex-col w-screen h-full overflow-hidden app overscroll-none bg-background-three"
 >
 	<div
+		id="content"
 		class="flex flex-col justify-between min-h-screen overflow-scroll overscroll-none"
 		bind:this={box}
 		on:scroll={() => {
