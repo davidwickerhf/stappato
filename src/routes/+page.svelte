@@ -12,6 +12,7 @@
 	import Button from '$lib/components/Button.svelte';
 	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
 	import { ReviewType } from '$lib/constants/types';
+	import { reserveUrl } from '$lib/constants/urls';
 </script>
 
 <svelte:head>
@@ -253,9 +254,7 @@
 		/>
 	</div>
 
-	<TextButton url="https://www.thefork.com/restaurant/stappato-r750369"
-		>See all the reviews on The Fork</TextButton
-	>
+	<TextButton url={reserveUrl}>See all the reviews on The Fork</TextButton>
 </section>
 
 <!-- Reserve section -->

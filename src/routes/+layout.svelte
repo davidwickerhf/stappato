@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Footer from '../lib/components/Footer.svelte';
+
 	import Sidebar from '../lib/components/Sidebar.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { navigating } from '$app/stores';
@@ -8,6 +10,7 @@
 	import '../app.css';
 	import './styles.css';
 	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
+	import { padding, paddingY } from '$lib/constants/theme';
 
 	$: scrollY = 0;
 	$: color = scrollY >= 35 ? '#000' : '#FEFCF2';
@@ -40,18 +43,19 @@
 <div
 	class="fixed flex flex-col w-screen h-full overflow-hidden app overscroll-none bg-background-three"
 >
-	<main
-		class="overflow-scroll overscroll-none"
+	<div
+		class="flex flex-col justify-between min-h-screen overflow-scroll overscroll-none"
 		bind:this={box}
 		on:scroll={() => {
 			scrollY = box.scrollTop;
 		}}
 	>
-		<slot />
-	</main>
+		<main>
+			<slot />
+		</main>
 
-	<!-- Footer -->
-	<footer />
+		<Footer />
+	</div>
 </div>
 
 <style lang="postcss">
