@@ -280,20 +280,26 @@
 </section>
 
 <!-- Special requests -->
-<section class="{padding} {paddingY} h-[600px] flex flex-col gap-8">
-	<h2 class="text-darkbrown-three {h2}">Any special request?</h2>
-	<p class="max-w-[700px]">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-		laboris nisi ut aliquip ex ea commodo consequat.
-	</p>
+<section
+	class="{padding} {paddingY} grid gap-8 grid-cols-[auto_auto] grid-rows-[auto] justify-center align-middle items-center"
+>
+	<div class="flex flex-col w-full min-h-fit">
+		<h2 class="text-darkbrown-three {h2}">Any special request?</h2>
+		<p class="max-w-[700px] pb-8 pt-2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
 
-	<div>
 		<Button
 			url="/contact"
 			bgColor={theme.colors.darkbrown.three}
 			textColor={theme.colors.background.three}>Contact us</Button
 		>
+	</div>
+
+	<div class="flex-grow-0 hidden max-h-full lg:flex">
+		<img alt="Dancing Corks" src="/images/corkscrews/Dancing Corks.png" class="" />
 	</div>
 </section>
 
