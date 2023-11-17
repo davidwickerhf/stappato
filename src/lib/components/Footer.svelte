@@ -4,7 +4,7 @@
 </script>
 
 <!-- Footer -->
-<footer class="flex flex-col w-screen bg-stappatored-three text-background-three">
+<footer class="z-10 flex flex-col w-screen bg-stappatored-three text-background-three">
 	<!--  Contents -->
 	<div class="flex items-start justify-between">
 		<div
