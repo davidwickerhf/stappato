@@ -16,7 +16,7 @@
 
 <svelte:head>
 	<title>Stappato</title>
-	<meta name="description" content="Stappato Restaurant in Maastricht" />
+	<meta name="description" content="Italian Restaurant in Maastricht" />
 </svelte:head>
 
 <!-- Landing picture -->
