@@ -280,7 +280,7 @@
 
 <!-- Special requests -->
 <section
-	class="{padding} {paddingY} grid gap-8 grid-cols-[auto_auto] grid-rows-[auto] justify-center align-middle items-center"
+	class="{padding} {paddingY} grid gap-8 grid-cols-[auto_auto] grid-rows-[auto] justify-between align-middle items-center"
 >
 	<div class="flex flex-col w-full min-h-fit">
 		<h2 class="text-darkbrown-three {h2}">Any special request?</h2>
@@ -297,7 +297,7 @@
 		>
 	</div>
 
-	<div class="flex-grow-0 hidden max-h-full lg:flex">
+	<div class="hidden max-w-[265px] lg:flex">
 		<img alt="Dancing Corks" src="/images/corkscrews/Dancing Corks.png" class="" />
 	</div>
 </section>
