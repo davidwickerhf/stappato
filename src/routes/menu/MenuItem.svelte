@@ -8,6 +8,7 @@
 			? price.toString() + '0'
 			: price.toString()
 		: price.toString() + ',00';
+	priceString = priceString.replace('.', ',');
 </script>
 
 <div class="flex flex-col gap-1 mt-6">
