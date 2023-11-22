@@ -20,7 +20,7 @@
 
 	<!-- Description and price -->
 	<div class="flex items-end justify-between gap-4">
-		<p class="w-full h-fit">{description}</p>
+		<p class="flex min-w-fit">{description}</p>
 		<!-- Divisor -->
 		<div class="hidden sm:flex h-[6px] flex-col justify-start w-full">
 			<div class="w-full h-[1px] bg-darkbrown-three opacity-20" />
