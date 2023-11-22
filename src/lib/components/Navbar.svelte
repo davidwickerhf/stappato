@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Button from './Button.svelte';
 
+	import { _ } from 'svelte-i18n';
+
 	import { sidebar, toggleSidebar } from '$lib/store/SidebarStore';
 	import Language from './Language.svelte';
 	import Underline from './Underline.svelte';
@@ -36,11 +38,17 @@
 
 	<!-- Navigation buttons -->
 	<ul class="hidden gap-8 md:flex">
-		<Underline url="/" {color} underlined={$page.url.pathname == '/'}>About</Underline>
-		<Underline url="/menu" {color} underlined={$page.url.pathname == '/menu'}>Menu</Underline>
-		<Underline url="/team" {color} underlined={$page.url.pathname == '/team'}>Team</Underline>
+		<Underline url="/" {color} underlined={$page.url.pathname == '/'}
+			>{$_('contents.navbar.about')}</Underline
+		>
+		<Underline url="/menu" {color} underlined={$page.url.pathname == '/menu'}
+			>{$_('contents.navbar.menu')}</Underline
+		>
+		<Underline url="/team" {color} underlined={$page.url.pathname == '/team'}
+			>{$_('contents.navbar.team')}</Underline
+		>
 		<Underline url="contact" {color} underlined={$page.url.pathname == '/contact'}
-			>Contact</Underline
+			>{$_('contents.navbar.contact')}</Underline
 		>
 	</ul>
 
@@ -50,7 +58,7 @@
 			<Button
 				bgColor={theme.colors.stappatored.three}
 				textColor={theme.colors.background.three}
-				url={reserveUrl}>Reserve</Button
+				url={reserveUrl}>{$_('contents.navbar.reserve')}</Button
 			>
 		</div>
 

@@ -1,7 +1,27 @@
 {
   "contents": {
     "landing": {
-      "contactBtn": ""
+      "contactBtn": "Uitreiken",
+      "menuText": "Bekijk het volledige menu",
+      "veganText": "Veganistisch",
+      "vegetarianText": "Vegetarisch",
+      "instaBtn": "Volg ons op Instagram",
+      "menuBtn": "Bekijk de menukaart",
+      "partnershipsText": "Samengewerkt met",
+      "requestsTitle": "Een speciaal verzoek?",
+      "reserveBtn": "Reserveer een tafel",
+      "reserveTitle": "Reserveer een tafel bij ons",
+      "reviewsLink": "Bekijk alle recensies op The Fork",
+      "reviewsText": "Wat mensen over ons zeggen",
+      "teamTtitle": "Maak kennis met het hele team!",
+      "welcome": "Welkom bij Stappato!"
+    },
+    "navbar": {
+      "about": "Over",
+      "contact": "Contact",
+      "menu": "Menu",
+      "reserve": "Reserveren",
+      "team": "Team"
     }
   }
 }

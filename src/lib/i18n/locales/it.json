@@ -11,7 +11,17 @@
       "welcome": "Benvenuti da Stappato!",
       "reviewsLink": "Leggi tutte le recensioni su The Fork",
       "instaBtn": "Seguici su Instagram",
-      "partnershipsText": "In collaborazione con"
+      "partnershipsText": "In collaborazione con",
+      "menuText": "Vedi il menu intero",
+      "veganText": "Vegano",
+      "vegetarianText": "Vegetariano"
+    },
+    "navbar": {
+      "about": "Chi siamo",
+      "contact": "Contattaci",
+      "menu": "Menu",
+      "reserve": "Prenota",
+      "team": "Team"
     }
   }
 }

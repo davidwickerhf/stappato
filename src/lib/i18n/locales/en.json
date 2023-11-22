@@ -15,6 +15,13 @@
       "menuText": "See the full menu",
       "vegetarianText": "Vegetarian",
       "veganText": "Vegan"
+    },
+    "navbar": {
+      "about": "About",
+      "menu": "Menu",
+      "team": "Team",
+      "contact": "Contact",
+      "reserve": "Reserve"
     }
   }
 }
