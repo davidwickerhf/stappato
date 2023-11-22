@@ -1,1 +1,20 @@
-{}
+{
+  "contents": {
+    "landing": {
+      "menuBtn": "View the menu",
+      "reserveBtn": "Reserve a table",
+      "welcome": "Welcome to Stappato!",
+      "teamTtitle": "Meet the entire team!",
+      "instaBtn": "Follow us on Instagram",
+      "partnershipsText": "Partnered with",
+      "reviewsText": "What people say about us",
+      "reviewsLink": "See all the reviews on The Fork",
+      "reserveTitle": "Reserve a table with us",
+      "requestsTitle": "Any special request?",
+      "contactBtn": "Contact us",
+      "menuText": "See the full menu",
+      "vegetarianText": "Vegetarian",
+      "veganText": "Vegan"
+    }
+  }
+}

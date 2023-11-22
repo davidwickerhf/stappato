@@ -5,12 +5,20 @@ export enum ReviewType {
 	Tim = 'Founder of STAPPATO'
 }
 
+export interface Review {
+	comment: string;
+	name: string;
+	origin: ReviewType;
+	rating: number;
+}
+
 export interface Dish {
 	title: string;
 	description: string;
 	price: number;
 	vegan?: boolean;
-	vegetarain?: boolean;
+	vegetarian?: boolean;
+	src?: string;
 }
 
 export interface Time {

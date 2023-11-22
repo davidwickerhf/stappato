@@ -9,10 +9,13 @@
 
 	import Logo from '../lib/components/Logo.svelte';
 
+	import { _ } from 'svelte-i18n';
+
 	import Button from '$lib/components/Button.svelte';
 	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
 	import { ReviewType } from '$lib/constants/types';
 	import { reserveUrl } from '$lib/constants/urls';
+	import { contents, menu, previewMenu, reviews } from '$lib/constants/contents';
 </script>
 
 <svelte:head>
@@ -24,7 +27,7 @@
 <div class="relative z-0 h-screen min-h-[500px]">
 	<img
 		alt="landing"
-		src="images/images/landing.png"
+		src={contents.landingPage.landingImage}
 		class="absolute object-cover w-screen h-screen min-h-[500px]"
 	/>
 	<div class="absolute w-full h-full bg-[rgba(0,0,0,.5)]" />
@@ -46,13 +49,13 @@
 				url="/menu"
 				bgColor={theme.colors.background.three}
 				padding={40}
-				textColor={theme.colors.stappatored.three}>View the menu</Button
+				textColor={theme.colors.stappatored.three}>{$_('contents.landing.menuBtn')}</Button
 			>
 			<Button
 				url=""
 				bgColor={theme.colors.stappatored.three}
 				padding={40}
-				textColor={theme.colors.background.three}>Reserve a table</Button
+				textColor={theme.colors.background.three}>{$_('contents.landing.reserveBtn')}</Button
 			>
 		</div>
 	</section>
@@ -65,13 +68,9 @@
 	>
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
-			<h2 class="{h2} text-darkbrown-three">Welcome to Stappato!</h2>
+			<h2 class="{h2} text-darkbrown-three">{$_('contents.landing.welcome')}</h2>
 			<p class="">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				{contents.landingPage.welcomeText}
 			</p>
 		</div>
 
@@ -86,7 +85,7 @@
 				<Button
 					url="/team"
 					bgColor={theme.colors.darkbrown.three}
-					textColor={theme.colors.background.three}>Meet the entire team!</Button
+					textColor={theme.colors.background.three}>{$_('contents.landing.teamTtitle')}</Button
 				>
 			</div>
 
@@ -96,7 +95,8 @@
 				>
 					<a
 						href="https://instagram.com/stappato_maastricht"
-						class="uppercase sm:normal-case tracking-[2px] py-3">Follow us on Instagram</a
+						class="uppercase sm:normal-case tracking-[2px] py-3"
+						>{$_('contents.landing.instaBtn')}</a
 					>
 					<div class="items-center justify-start hidden align-middle sm:flex">
 						<span class="material-symbols-outlined">chevron_right</span>
@@ -119,7 +119,7 @@
 <!-- Partnerships -->
 <section class="{padding} {paddingY}">
 	<div class="flex justify-center w-full">
-		<h3 class="uppercase tracking-[6px]">Partnered with</h3>
+		<h3 class="uppercase tracking-[6px]">{$_('contents.landing.partnershipsText')}</h3>
 	</div>
 
 	<!-- Partnership scrollview -->
@@ -143,42 +143,15 @@
 		<div class="relative h-[460px]">
 			<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]">
 				<!-- First menu item -->
-				<Dish
-					title="Bolognese"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-					vegan
-					src="/images/images/dish.jpg"
-				/>
-				<Dish
-					title="Bolognese"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-					vegan
-					src="/images/images/dish.jpg"
-				/>
-				<Dish
-					title="Bolognese"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-					vegan
-					src="/images/images/dish.jpg"
-				/>
-				<Dish
-					title="Bolognese"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-					vegan
-					src="/images/images/dish.jpg"
-				/>
-				<Dish
-					title="Bolognese"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-					vegan
-					src="/images/images/dish.jpg"
-				/>
-				<Dish
-					title="Bolognese"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-					vegan
-					src="/images/images/dish.jpg"
-				/>
+				{#each previewMenu as dish}
+					<Dish
+						src={dish.src ?? '/images/images/dish.jpg'}
+						title={dish.title}
+						description={dish.description}
+						vegetarian={dish.vegetarian}
+						vegan={dish.vegan}
+					/>
+				{/each}
 			</div>
 		</div>
 
@@ -187,15 +160,17 @@
 			<div class=" flex flex-col text-background-three uppercase tracking-[2px] gap-4">
 				<div class="flex gap-4">
 					<span class="material-symbols-outlined">nutrition</span>
-					Vegetarian
+					{$_('contents.landing.vegetarianText')}
 				</div>
 				<div class="flex gap-4">
 					<span class="material-symbols-outlined">nest_eco_leaf</span>
-					Vegan
+					{$_('contents.landing.veganText')}
 				</div>
 			</div>
 			<!-- Full menu button -->
-			<Button url="/menu" textColor={theme.colors.darkbrown.three}>See the full menu</Button>
+			<Button url="/menu" textColor={theme.colors.darkbrown.three}
+				>{$_('contents.landing.menuText')}</Button
+			>
 		</div>
 	</div>
 </div>
@@ -210,51 +185,30 @@
 		/>
 	</div>
 
-	<h2 class="z-20 text-darkbrown-three {h2}">What people say about us</h2>
+	<h2 class="z-20 text-darkbrown-three {h2}">{$_('contents.landing.reviewsText')}</h2>
 
 	<!-- Container grid -->
 	<div class="z-20 grid gap-4 md:grid-cols-[1fr_1fr] xl:grid-cols-3">
 		<div class="md:col-span-2">
 			<Review
-				comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam."
+				comment={contents.landingPage.timComment}
 				src="/images/images/tim.jpg"
 				name="Tim de Rouw"
-				type={ReviewType.Tim}
+				origin={ReviewType.Tim}
 			/>
 		</div>
 
-		<Review
-			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam."
-			name="Tim de Rouw"
-			type={ReviewType.TheFork}
-			rating={10}
-		/>
-		<Review
-			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam."
-			name="Tim de Rouw"
-			type={ReviewType.TripAdvisor}
-			rating={5}
-		/>
-		<Review
-			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam."
-			name="Tim de Rouw"
-			type={ReviewType.TheFork}
-			rating={10}
-		/>
-		<Review
-			comment="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam."
-			name="Tim de Rouw"
-			type={ReviewType.TheFork}
-			rating={9.8}
-		/>
+		{#each reviews as review}
+			<Review
+				comment={review.comment}
+				name={review.name}
+				origin={review.origin}
+				rating={review.rating}
+			/>
+		{/each}
 	</div>
 
-	<TextButton url={reserveUrl}>See all the reviews on The Fork</TextButton>
+	<TextButton url={reserveUrl}>{$_('contents.landing.reviewsLink')}</TextButton>
 </section>
 
 <!-- Reserve section -->
@@ -268,7 +222,7 @@
 		/>
 	</div>
 
-	<h2 class="text-darkbrown-three {h2}">Reserve a table with us</h2>
+	<h2 class="text-darkbrown-three {h2}">{$_('contents.landing.reserveTitle')}</h2>
 	<div class="border h-fit min-h-fit bg-darkbrown-three">
 		<iframe
 			title="booking"
@@ -283,17 +237,15 @@
 	class="{padding} {paddingY} grid gap-8 grid-cols-[auto_auto] grid-rows-[auto] justify-between align-middle items-center"
 >
 	<div class="flex flex-col w-full min-h-fit">
-		<h2 class="text-darkbrown-three {h2}">Any special request?</h2>
+		<h2 class="text-darkbrown-three {h2}">{$_('contents.landing.requestsTitle')}</h2>
 		<p class="max-w-[700px] pb-8 pt-2">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat.
+			{contents.landingPage.specialRequestsText}
 		</p>
 
 		<Button
 			url="/contact"
 			bgColor={theme.colors.darkbrown.three}
-			textColor={theme.colors.background.three}>Contact us</Button
+			textColor={theme.colors.background.three}>{$_('contents.landing.contactBtn')}</Button
 		>
 	</div>
 

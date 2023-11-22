@@ -1,1 +1,17 @@
-{}
+{
+  "contents": {
+    "landing": {
+      "contactBtn": "Contattaci",
+      "menuBtn": "Vedi il menu",
+      "requestsTitle": "Richieste particolari?",
+      "reserveTitle": "Prenota un tavolo con noi",
+      "reserveBtn": "Prenota un tavolo",
+      "reviewsText": "Cosa dicono di noi",
+      "teamTtitle": "Conosci il nostro team!",
+      "welcome": "Benvenuti da Stappato!",
+      "reviewsLink": "Leggi tutte le recensioni su The Fork",
+      "instaBtn": "Seguici su Instagram",
+      "partnershipsText": "In collaborazione con"
+    }
+  }
+}
