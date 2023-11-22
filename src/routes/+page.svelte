@@ -138,7 +138,7 @@
 	style="--brown: {theme.colors.darkbrown.three};"
 >
 	<div class="z-10 flex flex-col gap-6">
-		<h2 class="{padding} {h2} text-background-three">A preview of our menu</h2>
+		<h2 class="{padding} {h2} text-background-three">{$_('contents.landing.menuTitle')}</h2>
 		<!-- Menu options -->
 		<div class="relative h-[460px]">
 			<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]">

@@ -14,7 +14,8 @@
       "contactBtn": "Contact us",
       "menuText": "See the full menu",
       "vegetarianText": "Vegetarian",
-      "veganText": "Vegan"
+      "veganText": "Vegan",
+      "menuTitle": "A preview of our menu"
     },
     "navbar": {
       "about": "About",
