@@ -7,11 +7,13 @@ import { ReviewType, type Review, type Dish, type MenuSection } from './types';
 // Menu
 export const menu: MenuSection[] = [
 	{
+		id: 'lunch',
 		title: 'Lunch',
 		fromTime: { hour: 12, minutes: 0 },
 		toTime: { hour: 17, minutes: 0 },
 		dishes: [
 			{
+				id: 'bolognese1',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -19,6 +21,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese2',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -26,6 +29,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese3',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -33,6 +37,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese4',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -40,6 +45,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese5',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -49,11 +55,13 @@ export const menu: MenuSection[] = [
 		]
 	},
 	{
-		title: 'Lunch',
+		id: 'dinner',
+		title: 'Dinner',
 		fromTime: { hour: 12, minutes: 0 },
 		toTime: { hour: 17, minutes: 0 },
 		dishes: [
 			{
+				id: 'bolognese6',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -61,6 +69,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese7',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -68,6 +77,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese8',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -75,6 +85,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese9',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -82,6 +93,7 @@ export const menu: MenuSection[] = [
 				vegetarian: true
 			},
 			{
+				id: 'bolognese10',
 				title: 'Bolognese',
 				description:
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -95,6 +107,7 @@ export const menu: MenuSection[] = [
 // Select Menu
 export const previewMenu: Dish[] = [
 	{
+		id: 'bolognese1',
 		title: 'Bolognese',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -102,6 +115,7 @@ export const previewMenu: Dish[] = [
 		vegetarian: true
 	},
 	{
+		id: 'bolognese2',
 		title: 'Bolognese',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -109,6 +123,7 @@ export const previewMenu: Dish[] = [
 		vegetarian: true
 	},
 	{
+		id: 'bolognese3',
 		title: 'Bolognese',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -116,6 +131,7 @@ export const previewMenu: Dish[] = [
 		vegetarian: true
 	},
 	{
+		id: 'bolognese4',
 		title: 'Bolognese',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
@@ -123,6 +139,7 @@ export const previewMenu: Dish[] = [
 		vegetarian: true
 	},
 	{
+		id: 'bolognese5',
 		title: 'Bolognese',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',

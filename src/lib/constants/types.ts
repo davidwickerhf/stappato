@@ -13,6 +13,7 @@ export interface Review {
 }
 
 export interface Dish {
+	id: string;
 	title: string;
 	description: string;
 	price: number;
@@ -27,6 +28,7 @@ export interface Time {
 }
 
 export interface MenuSection {
+	id: string;
 	title: string;
 	description?: string;
 	fromTime: Time;
