@@ -1,6 +1,8 @@
 <script lang="ts">
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
 	import { h2, padding, paddingY } from '$lib/constants/theme';
+
+	import { _ } from 'svelte-i18n';
 </script>
 
 <svelte:head>
@@ -9,7 +11,7 @@
 </svelte:head>
 
 <!-- Landing picture -->
-<LandingPicture title="Reserve" />
+<LandingPicture title={$_('contents.reserve.title')} />
 
 <!-- Reserve section -->
 <section class="relative {padding} {paddingY}   bg-white flex flex-col gap-8">
@@ -22,7 +24,7 @@
 		/>
 	</div>
 
-	<h2 class="text-darkbrown-three {h2}">Reserve a table with us</h2>
+	<h2 class="text-darkbrown-three {h2}">{$_('contents.reserve.heading')}</h2>
 	<div class="border h-fit min-h-fit bg-darkbrown-three">
 		<iframe
 			title="booking"
