@@ -1,11 +1,96 @@
-import { ReviewType, type Review, type Dish } from './types';
+import { ReviewType, type Review, type Dish, type MenuSection } from './types';
 
 // Employees
 
 // Opening times
 
 // Menu
-export const menu: Dish[] = [];
+export const menu: MenuSection[] = [
+	{
+		title: 'Lunch',
+		fromTime: { hour: 12, minutes: 0 },
+		toTime: { hour: 17, minutes: 0 },
+		dishes: [
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			}
+		]
+	},
+	{
+		title: 'Lunch',
+		fromTime: { hour: 12, minutes: 0 },
+		toTime: { hour: 17, minutes: 0 },
+		dishes: [
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			},
+			{
+				title: 'Bolognese',
+				description:
+					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+				price: 18.5,
+				vegetarian: true
+			}
+		]
+	}
+];
 
 // Select Menu
 export const previewMenu: Dish[] = [

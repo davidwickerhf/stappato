@@ -23,6 +23,9 @@
       "team": "Team",
       "contact": "Contact",
       "reserve": "Reserve"
+    },
+    "menu": {
+      "title": "Our menu"
     }
   }
 }

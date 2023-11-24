@@ -3,7 +3,12 @@
 	export let section: string;
 </script>
 
-<a href="/menu/" class="flex items-center gap-4 text-lg group tracking-[3px]">
+<button
+	class="flex items-center gap-4 text-lg group tracking-[3px]"
+	on:click={() => {
+		selected = !selected;
+	}}
+>
 	<p class="group-hover:underline">{section}</p>
 	<div
 		class="flex select-none transition-all duration-200 ease-in-out h-full items-center {selected
@@ -12,4 +17,4 @@
 	>
 		<span class="inline-block select-none material-symbols-outlined"> arrow_right_alt </span>
 	</div>
-</a>
+</button>

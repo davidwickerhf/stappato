@@ -5,8 +5,15 @@
 
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
 	import { padding, paddingY } from '$lib/constants/theme';
+	import { _ } from 'svelte-i18n';
+	import { menu } from '$lib/constants/contents';
 
 	let lunch: boolean = true;
+	let selected: boolean[] = [];
+
+	menu.forEach((element) => {
+		selected.push(true);
+	});
 </script>
 
 <svelte:head>
@@ -15,29 +22,21 @@
 </svelte:head>
 
 <!-- Landing picture -->
-<LandingPicture title="Our menu" />
+<LandingPicture title={$_('contents.menu.title')} />
 
 <div class="flex-row flex {padding} {paddingY} gap-24">
 	<!-- Sidebar -->
 	<div class="flex-col hidden gap-8 text-darkbrown-three lg:flex">
 		<!-- Sidebar item -->
-		<MenuSectionButton bind:selected={lunch} section="Lunch" />
+		{#each menu as section, index}
+			<MenuSectionButton bind:selected={selected[index]} section={section.title} />
+		{/each}
 	</div>
 
 	<!-- Menu contents -->
-	<MenuSection
-		bind:selected={lunch}
-		section={{
-			title: 'Lunch',
-			fromTime: { hour: 12, minutes: 0 },
-			toTime: { hour: 17, minutes: 0 },
-			dishes: [
-				{
-					title: 'Bolognese',
-					description: 'Ask our waiters for the ingredients',
-					price: 7.5
-				}
-			]
-		}}
-	/>
+	<div class="flex flex-col gap-10 lg:border-l-[1px] border-darkbrown-three border-opacity-20">
+		{#each menu as section, index}
+			<MenuSection bind:selected={selected[index]} {section} />
+		{/each}
+	</div>
 </div>

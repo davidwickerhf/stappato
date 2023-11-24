@@ -8,7 +8,7 @@
 	export let selected: boolean;
 </script>
 
-<div class="lg:border-l-[1px] border-darkbrown-three border-opacity-20 lg:pl-16 w-full">
+<div class="w-full lg:pl-16">
 	<!-- Menu section -->
 	<div class="">
 		<!-- Dropdown title -->
