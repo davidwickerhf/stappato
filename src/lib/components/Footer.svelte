@@ -1,6 +1,51 @@
 <script lang="ts">
-	import { padding, paddingRight, paddingTop, paddingY } from '$lib/constants/theme';
+	import FooterLink from './FooterLink.svelte';
+
+	import FooterSectionHeading from './FooterSectionHeading.svelte';
+
+	import { padding, paddingRight, paddingTop } from '$lib/constants/theme';
 	import { mapUrl, reserveUrl } from '$lib/constants/urls';
+	import { times } from '$lib/constants/contents';
+	import type { OpeningTime, Time } from '$lib/constants/types';
+
+	import { _ } from 'svelte-i18n';
+
+	function getTimeString(time: Time) {
+		let timeString = '';
+		// Add hours
+		if (time.hour < 9) {
+			timeString = 0 + time.hour.toString();
+		} else {
+			timeString += time.hour.toString();
+		}
+		timeString += ':';
+
+		// Add minutes
+		if (time.minutes < 9) {
+			timeString = timeString + 0 + time.minutes;
+		} else {
+			timeString = timeString + time.minutes;
+		}
+		return timeString;
+	}
+
+	function getOpeningTimeString(time: OpeningTime) {
+		if (time.open) {
+			let timeString = '';
+
+			// CALCULATE FROM TIME
+			timeString +=
+				$_('contents.footer.from') +
+				' ' +
+				getTimeString(time.fromTime!) +
+				' ' +
+				$_('contents.footer.to') +
+				' ' +
+				getTimeString(time.toTime!);
+			return timeString;
+		}
+		return $_('contents.footer.closed');
+	}
 </script>
 
 <!-- Footer -->
@@ -14,70 +59,52 @@
 			<div class="flex flex-col justify-between gap-10 sm:flex-row md:gap-20">
 				<!-- Opening times -->
 				<div class="flex flex-col gap-2 tracking-[1px]">
-					<div class="flex items-center gap-2 font-medium uppercase">
-						<span class="material-symbols-outlined" style="font-size: 20px"> watch </span>
-						Opening times
-					</div>
-					<p class="font-thin">Monday</p>
-					<p class="font-thin">Tuesday</p>
-					<p class="font-thin">Wednesday</p>
-					<p class="font-thin">Thursday</p>
-					<p class="font-thin">Friday</p>
-					<p class="font-thin">Saturday</p>
-					<p class="font-thin">Sunday</p>
+					<FooterSectionHeading icon="watch"
+						>{$_('contents.footer.openingtimes')}</FooterSectionHeading
+					>
+					{#each times as time}
+						<p class="font-thin">
+							<span class="font-medium">{time.day}</span>: {getOpeningTimeString(time)}
+						</p>
+					{/each}
 				</div>
 
 				<!-- Address -->
 				<div class="flex flex-col gap-2 tracking-[1px]">
-					<div class="flex items-center gap-2 font-medium uppercase">
-						<span class="material-symbols-outlined" style="font-size: 20px"> map </span>
-						Address
-					</div>
+					<FooterSectionHeading icon="map">{$_('contents.footer.address')}</FooterSectionHeading>
 					<p class="font-thin">Markt 36</p>
 					<p class="font-thin">6211 CK Maastricht</p>
-					<p class="font-thin">Netherlands</p>
-					<a href={mapUrl} class="flex items-center gap-4 font-medium max-w-fit"
-						><span class="hover:underline">View on maps </span><span
-							class="material-symbols-outlined">arrow_right_alt</span
-						></a
-					>
+					<p class="font-thin">{$_('contents.footer.netherlands')}</p>
+					<FooterLink href={mapUrl}>{$_('contents.footer.viewonmaps')}</FooterLink>
 				</div>
 			</div>
 
 			<div class="flex flex-col justify-between w-full gap-10 xl:w-fit md:gap-20 sm:flex-row">
 				<!-- Pages -->
 				<div class="flex flex-col gap-2 tracking-[1px]">
-					<div class="flex items-center gap-2 font-medium uppercase">
-						<span class="material-symbols-outlined" style="font-size: 20px"> home </span>
-						Pages
-					</div>
-					<a href="/" class="flex-grow-0 font-thin hover:underline max-w-fit">About</a>
-					<a href="/menu" class="flex-grow-0 font-thin hover:underline max-w-fit">Menu</a>
-					<a href="/team" class="flex-grow-0 font-thin hover:underline max-w-fit">Team</a>
-					<a href="/contact" class="flex-grow-0 font-thin hover:underline max-w-fit">Contact</a>
+					<FooterSectionHeading icon="home">{$_('contents.footer.pages')}</FooterSectionHeading>
+					<a href="/" class="flex-grow-0 font-thin hover:underline max-w-fit"
+						>{$_('contents.navbar.about')}</a
+					>
+					<a href="/menu" class="flex-grow-0 font-thin hover:underline max-w-fit"
+						>{$_('contents.navbar.menu')}</a
+					>
+					<a href="/team" class="flex-grow-0 font-thin hover:underline max-w-fit"
+						>{$_('contents.navbar.team')}</a
+					>
+					<a href="/contact" class="flex-grow-0 font-thin hover:underline max-w-fit"
+						>{$_('contents.navbar.contact')}</a
+					>
 				</div>
 
 				<!-- Get in touch -->
 				<div class="flex flex-col gap-2 tracking-[1px]">
-					<div class="flex items-center gap-2 font-medium uppercase">
-						<span class="material-symbols-outlined" style="font-size: 20px"> phone </span>
-						Get in touch
-					</div>
-					<a href={reserveUrl} class="flex items-center gap-4 font-medium max-w-fit"
-						><span class="hover:underline">Reserve</span><span class="material-symbols-outlined"
-							>arrow_right_alt</span
-						></a
+					<FooterSectionHeading icon="phone"
+						>{$_('contents.footer.getintouch')}</FooterSectionHeading
 					>
-					<a href="/contact" class="flex items-center gap-4 font-medium max-w-fit"
-						><span class="hover:underline">Contact us </span><span class="material-symbols-outlined"
-							>arrow_right_alt</span
-						></a
-					>
-					<a href={mapUrl} class="flex items-center gap-4 font-medium max-w-fit"
-						><span class="hover:underline">View on maps </span><span
-							class="material-symbols-outlined">arrow_right_alt</span
-						></a
-					>
+					<FooterLink href={reserveUrl}>{$_('contents.navbar.reserve')}</FooterLink>
+					<FooterLink href="/contact">{$_('contents.landing.contactBtn')}</FooterLink>
+					<FooterLink href={mapUrl}>{$_('contents.footer.viewonmaps')}</FooterLink>
 				</div>
 			</div>
 		</div>
@@ -108,10 +135,3 @@
 		>
 	</div>
 </footer>
-
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.background.three);
-		font-family: 'Poppins', sans-serif;
-	}
-</style>

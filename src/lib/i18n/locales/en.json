@@ -42,6 +42,17 @@
     "reserve": {
       "title": "Reserve",
       "heading": "Reserve a table with us"
+    },
+    "footer": {
+      "from": "from",
+      "to": "to",
+      "closed": "closed",
+      "openingtimes": "Opening times",
+      "address": "Address",
+      "netherlands": "Netherlands",
+      "viewonmaps": "View on maps",
+      "pages": "Pages",
+      "getintouch": "Get in touch"
     }
   }
 }

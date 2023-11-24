@@ -5,6 +5,7 @@
 		" toggleSidebar()}\n\t\t>\n\t\t\t",
 		" {\n\t\tselected = !selected;\n\t}}\n>\n\t",
 		" {\n\t\t\t\tselected = !selected;\n\t\t\t}}\n\t\t>\n\t\t\t",
-		"staff profile"
+		"staff profile",
+		": {getOpeningTimeString(time)}\n\t\t\t\t\t\t"
 	]
 }

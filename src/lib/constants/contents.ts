@@ -83,27 +83,75 @@ export const times: OpeningTime[] = [
 	},
 	{
 		day: 'Tuesday',
-		open: false
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	},
 	{
 		day: 'Wednesday',
-		open: false
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	},
 	{
 		day: 'Thursday',
-		open: false
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	},
 	{
 		day: 'Friday',
-		open: false
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	},
 	{
 		day: 'Saturday',
-		open: false
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	},
 	{
 		day: 'Sunday',
-		open: false
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	}
 ];
 
