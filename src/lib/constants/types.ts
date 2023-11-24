@@ -35,3 +35,12 @@ export interface MenuSection {
 	toTime: Time;
 	dishes: Dish[];
 }
+
+export interface Employee {
+	id: string;
+	name: string;
+	bio: string;
+	src: string;
+	joined: number;
+	position: string;
+}

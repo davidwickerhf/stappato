@@ -1,6 +1,72 @@
-import { ReviewType, type Review, type Dish, type MenuSection } from './types';
+import { ReviewType, type Review, type Dish, type MenuSection, type Employee } from './types';
 
 // Employees
+export const employees: Employee[] = [
+	{
+		id: 'tim',
+		name: 'Tim de Vrouw',
+		joined: 2022,
+		position: 'Founder and Chef',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'jordi',
+		name: 'Jordi',
+		joined: 2022,
+		position: 'Chef',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'ricardo',
+		name: 'Ricardo',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'breght',
+		name: 'Breght',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'alex',
+		name: 'Alex',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'david',
+		name: 'David Wicker',
+		joined: 2022,
+		position: 'Waiter and Webmaster',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'alessia',
+		name: 'Alessia Burigo',
+		joined: 2022,
+		position: 'Founder and Chef',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	},
+	{
+		id: 'nina',
+		name: 'Nina Trettzel',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/tim.jpg'
+	}
+];
 
 // Opening times
 

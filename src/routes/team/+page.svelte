@@ -4,6 +4,9 @@
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
 	import TextButton from '$lib/components/TextButton.svelte';
 	import { h2, padding, paddingY } from '$lib/constants/theme';
+
+	import { _ } from 'svelte-i18n';
+	import { employees } from '$lib/constants/contents';
 </script>
 
 <svelte:head>
@@ -12,63 +15,24 @@
 </svelte:head>
 
 <!-- Landing picture -->
-<LandingPicture title="Our team" />
+<LandingPicture title={$_('contents.team.title')} />
 
 <!-- Special requests -->
 <section
 	class="relative {padding} {paddingY} grid gap-8 grid-cols-[auto_auto] grid-rows-[auto] justify-between align-middle items-center mb-20 md:mb-30 lg:mb-40"
 >
 	<div class="flex flex-col w-full min-h-fit">
-		<h2 class="text-darkbrown-three {h2}">Meet the stappato team</h2>
+		<h2 class="text-darkbrown-three {h2}">{$_('contents.team.text')}</h2>
 
 		<!-- GRID -->
 		<div class="flex flex-row flex-wrap gap-6 py-10">
-			<Employee
-				bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua."
-				name="Tim de Vrouw"
-				position="Founder and Chef"
-				src="/images/images/tim.jpg"
-			/>
-			<Employee
-				bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua."
-				name="Tim de Vrouw"
-				position="Founder and Chef"
-				src="/images/images/tim.jpg"
-			/>
-			<Employee
-				bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua."
-				name="Tim de Vrouw"
-				position="Founder and Chef"
-				src="/images/images/tim.jpg"
-			/>
-			<Employee
-				bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua."
-				name="Tim de Vrouw"
-				position="Founder and Chef"
-				src="/images/images/tim.jpg"
-			/>
-			<Employee
-				bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua."
-				name="Tim de Vrouw"
-				position="Founder and Chef"
-				src="/images/images/tim.jpg"
-			/>
-			<Employee
-				bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et dolore magna aliqua."
-				name="Tim de Vrouw"
-				position="Founder and Chef"
-				src="/images/images/tim.jpg"
-			/>
+			{#each employees as employee, index}
+				<Employee {employee} />
+			{/each}
 		</div>
 
 		<!-- Link -->
-		<TextButton url="/contact">Want to join the team? Reach out!</TextButton>
+		<TextButton url="/contact">{$_('contents.team.joinText')}</TextButton>
 	</div>
 
 	<div class="absolute right-20 -z-10 opacity-20 -bottom-2 md:bottom-6 lg:bottom-4 lg:right-40">

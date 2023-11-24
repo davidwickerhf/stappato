@@ -26,6 +26,11 @@
     },
     "menu": {
       "title": "Our menu"
+    },
+    "team": {
+      "title": "Our team",
+      "text": "Meet the stappato team",
+      "joinText": "Want to join the team? Reach out!"
     }
   }
 }
