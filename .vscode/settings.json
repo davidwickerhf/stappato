@@ -6,6 +6,7 @@
 		" {\n\t\tselected = !selected;\n\t}}\n>\n\t",
 		" {\n\t\t\t\tselected = !selected;\n\t\t\t}}\n\t\t>\n\t\t\t",
 		"staff profile",
-		": {getOpeningTimeString(time)}\n\t\t\t\t\t\t"
+		": {getOpeningTimeString(time)}\n\t\t\t\t\t\t",
+		": {time.open\n\t\t\t\t\t\t\t\t? $_('contents.footer.from') +\n\t\t\t\t\t\t\t\t  ' ' +\n\t\t\t\t\t\t\t\t  getTimeString(time.fromTime) +\n\t\t\t\t\t\t\t\t  ' ' +\n\t\t\t\t\t\t\t\t  $_('contents.footer.to') +\n\t\t\t\t\t\t\t\t  ' ' +\n\t\t\t\t\t\t\t\t  getTimeString(time.toTime)\n\t\t\t\t\t\t\t\t: $_('contents.footer.closed')}\n\t\t\t\t\t\t"
 	]
 }

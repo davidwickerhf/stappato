@@ -64,7 +64,7 @@
 					>
 					{#each times as time}
 						<p class="font-thin">
-							<span class="font-medium">{time.day}</span>: {time.open
+							<span class="font-medium">{$_(time.day)}</span>: {time.open
 								? $_('contents.footer.from') +
 								  ' ' +
 								  getTimeString(time.fromTime) +

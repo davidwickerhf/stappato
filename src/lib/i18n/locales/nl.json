@@ -1,57 +1,66 @@
 {
-  "contents": {
-    "landing": {
-      "contactBtn": "Uitreiken",
-      "menuText": "Bekijk het volledige menu",
-      "veganText": "Veganistisch",
-      "vegetarianText": "Vegetarisch",
-      "instaBtn": "Volg ons op Instagram",
-      "menuBtn": "Bekijk de menukaart",
-      "partnershipsText": "Samengewerkt met",
-      "requestsTitle": "Een speciaal verzoek?",
-      "reserveBtn": "Reserveer een tafel",
-      "reserveTitle": "Reserveer een tafel bij ons",
-      "reviewsLink": "Bekijk alle recensies op The Fork",
-      "reviewsText": "Wat mensen over ons zeggen",
-      "teamTtitle": "Maak kennis met het hele team!",
-      "welcome": "Welkom bij Stappato!",
-      "menuTitle": "Een voorproefje van onze menukaart"
-    },
-    "navbar": {
-      "about": "Over",
-      "contact": "Contact",
-      "menu": "Menu",
-      "reserve": "Reserveren",
-      "team": "Team"
-    },
-    "contact": {
-      "emailText": "Of mail ons op",
-      "phoneText": "U kunt ons altijd bellen tijdens de openingstijden op",
-      "reachout": "Uitreiken!",
-      "title": "Contact opnemen"
-    },
-    "footer": {
-      "address": "Adres",
-      "closed": "gesloten",
-      "from": "van",
-      "getintouch": "Neem contact op",
-      "netherlands": "Nederland",
-      "openingtimes": "Openingstijden",
-      "pages": "Website pagina's",
-      "to": "naar",
-      "viewonmaps": "Bekijk op kaarten"
-    },
-    "menu": {
-      "title": "Onze menukaart"
-    },
-    "reserve": {
-      "heading": "Reserveer een tafel bij ons",
-      "title": "Reserveren"
-    },
-    "team": {
-      "joinText": "Wil je lid worden van het team? \nUitreiken!",
-      "text": "Ontmoet het Stappato team",
-      "title": "Ons team"
-    }
-  }
+	"contents": {
+		"landing": {
+			"contactBtn": "Contact",
+			"menuText": "Bekijk het volledige menu",
+			"veganText": "Veganistisch",
+			"vegetarianText": "Vegetarisch",
+			"instaBtn": "Volg ons op Instagram",
+			"menuBtn": "Bekijk de menukaart",
+			"partnershipsText": "Samengewerkt met",
+			"requestsTitle": "Een speciaal verzoek?",
+			"reserveBtn": "Reserveer een tafel",
+			"reserveTitle": "Reserveer een tafel bij ons",
+			"reviewsLink": "Bekijk alle recensies op The Fork",
+			"reviewsText": "Wat mensen over ons zeggen",
+			"teamTtitle": "Maak kennis met het hele team!",
+			"welcome": "Welkom bij Stappato!",
+			"menuTitle": "Een voorproefje van onze menukaart"
+		},
+		"navbar": {
+			"about": "Over",
+			"contact": "Contact",
+			"menu": "Menu",
+			"reserve": "Reserveren",
+			"team": "Team"
+		},
+		"contact": {
+			"emailText": "Of mail ons op",
+			"phoneText": "U kunt ons altijd bellen tijdens de openingstijden op",
+			"reachout": "Contact opnemen!",
+			"title": "Contact opnemen"
+		},
+		"footer": {
+			"address": "Adres",
+			"closed": "gesloten",
+			"from": "van",
+			"getintouch": "Neem contact op",
+			"netherlands": "Nederland",
+			"openingtimes": "Openingstijden",
+			"pages": "Pagina's",
+			"to": "naar",
+			"viewonmaps": "Bekijk op kaarten"
+		},
+		"menu": {
+			"title": "Onze menukaart"
+		},
+		"reserve": {
+			"heading": "Reserveer een tafel bij ons",
+			"title": "Reserveren"
+		},
+		"team": {
+			"joinText": "Wil je lid worden van het team? \nContact opnemen!",
+			"text": "Ontmoet het Stappato team",
+			"title": "Ons team"
+		},
+		"days": {
+			"friday": "Vrijdag",
+			"monday": "Maandag",
+			"saturday": "Zaterdag",
+			"sunday": "Zondag",
+			"thursday": "Donderdag",
+			"tuesday": "Dinsdag",
+			"wednesday": "Woensdag"
+		}
+	}
 }

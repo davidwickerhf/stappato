@@ -78,11 +78,11 @@ export const employees: Employee[] = [
 // Opening times
 export const times: OpeningTime[] = [
 	{
-		day: 'Monday',
+		day: 'contents.days.monday',
 		open: false
 	},
 	{
-		day: 'Tuesday',
+		day: 'contents.days.tuesday',
 		open: true,
 		fromTime: {
 			hour: 10,
@@ -94,7 +94,7 @@ export const times: OpeningTime[] = [
 		}
 	},
 	{
-		day: 'Wednesday',
+		day: 'contents.days.wednesday',
 		open: true,
 		fromTime: {
 			hour: 10,
@@ -106,7 +106,7 @@ export const times: OpeningTime[] = [
 		}
 	},
 	{
-		day: 'Thursday',
+		day: 'contents.days.thursday',
 		open: true,
 		fromTime: {
 			hour: 10,
@@ -118,7 +118,7 @@ export const times: OpeningTime[] = [
 		}
 	},
 	{
-		day: 'Friday',
+		day: 'contents.days.friday',
 		open: true,
 		fromTime: {
 			hour: 10,
@@ -130,7 +130,7 @@ export const times: OpeningTime[] = [
 		}
 	},
 	{
-		day: 'Saturday',
+		day: 'contents.days.saturday',
 		open: true,
 		fromTime: {
 			hour: 10,
@@ -142,7 +142,7 @@ export const times: OpeningTime[] = [
 		}
 	},
 	{
-		day: 'Sunday',
+		day: 'contents.days.sunday',
 		open: true,
 		fromTime: {
 			hour: 10,
