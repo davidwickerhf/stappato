@@ -9,7 +9,7 @@
 
 <!-- Sidebar -->
 <div
-	class="fixed h-screen w-screen {$sidebar.open ? '' : 'hidden'} pt-20 bg-stappatored-three z-10"
+	class="fixed h-[100dvh] w-screen {$sidebar.open ? '' : 'hidden'} pt-20 bg-stappatored-three z-10"
 >
 	<nav class="{padding} {paddingY}">
 		<ul class="flex flex-col w-full gap-6">

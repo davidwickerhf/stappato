@@ -5,7 +5,7 @@
 </script>
 
 <div class="relative z-0 h-[550px] overflow-clip">
-	<img alt="landing" {src} class="absolute object-cover w-screen h-screen min-h-[500px]" />
+	<img alt="landing" {src} class="absolute object-cover w-screen h-[100dvh] min-h-[500px]" />
 	<div class="absolute w-full h-full bg-[rgba(0,0,0,.5)]" />
 
 	<section

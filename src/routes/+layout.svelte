@@ -49,7 +49,7 @@
 >
 	<div
 		id="content"
-		class="flex flex-col justify-between min-h-screen overflow-scroll overscroll-none"
+		class="flex flex-col justify-between min-h-[100dvh] overflow-scroll overscroll-none"
 		bind:this={box}
 		on:scroll={() => {
 			scrollY = box.scrollTop;

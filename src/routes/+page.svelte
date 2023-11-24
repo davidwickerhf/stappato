@@ -24,11 +24,11 @@
 </svelte:head>
 
 <!-- Landing picture -->
-<div class="relative z-0 h-screen min-h-[500px]">
+<div class="relative z-0 h-[100dvh] min-h-[500px]">
 	<img
 		alt="landing"
 		src={contents.landingPage.landingImage}
-		class="absolute object-cover w-screen h-screen min-h-[500px]"
+		class="absolute object-cover w-screen h-[100dvh] min-h-[500px]"
 	/>
 	<div class="absolute w-full h-full bg-[rgba(0,0,0,.5)]" />
 
