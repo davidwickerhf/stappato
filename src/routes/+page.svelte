@@ -15,7 +15,7 @@
 	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
 	import { ReviewType } from '$lib/constants/types';
 	import { reserveUrl } from '$lib/constants/urls';
-	import { contents, menu, partnerships, previewMenu, reviews } from '$lib/constants/contents';
+	import { contents, partnerships, previewMenu, reviews } from '$lib/constants/contents';
 </script>
 
 <svelte:head>
@@ -52,7 +52,7 @@
 				textColor={theme.colors.stappatored.three}>{$_('contents.landing.menuBtn')}</Button
 			>
 			<Button
-				url=""
+				url={reserveUrl}
 				bgColor={theme.colors.stappatored.three}
 				padding={40}
 				textColor={theme.colors.background.three}>{$_('contents.landing.reserveBtn')}</Button
