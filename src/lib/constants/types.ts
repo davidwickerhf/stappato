@@ -44,3 +44,10 @@ export interface Employee {
 	joined: number;
 	position: string;
 }
+
+export interface OpeningTime {
+	day: string;
+	open: boolean;
+	fromTime?: Time;
+	toTime?: Time;
+}

@@ -1,4 +1,11 @@
-import { ReviewType, type Review, type Dish, type MenuSection, type Employee } from './types';
+import {
+	ReviewType,
+	type Review,
+	type Dish,
+	type MenuSection,
+	type Employee,
+	type OpeningTime
+} from './types';
 
 // Employees
 export const employees: Employee[] = [
@@ -69,6 +76,36 @@ export const employees: Employee[] = [
 ];
 
 // Opening times
+export const times: OpeningTime[] = [
+	{
+		day: 'Monday',
+		open: false
+	},
+	{
+		day: 'Tuesday',
+		open: false
+	},
+	{
+		day: 'Wednesday',
+		open: false
+	},
+	{
+		day: 'Thursday',
+		open: false
+	},
+	{
+		day: 'Friday',
+		open: false
+	},
+	{
+		day: 'Saturday',
+		open: false
+	},
+	{
+		day: 'Sunday',
+		open: false
+	}
+];
 
 // Menu
 export const menu: MenuSection[] = [
