@@ -4,7 +4,8 @@ import {
 	type Dish,
 	type MenuSection,
 	type Employee,
-	type OpeningTime
+	type OpeningTime,
+	type Partnership
 } from './types';
 
 // Employees
@@ -300,6 +301,37 @@ export const previewMenu: Dish[] = [
 ];
 
 // Partnerships
+export const partnerships: Partnership[] = [
+	{
+		id: 'moretti',
+		title: 'Birra Moretti',
+		src: '/images/logos/moretti.svg',
+		href: 'https://birramoretti.nl'
+	},
+	{
+		id: 'segafredo',
+		title: 'Segafredo Zanetti',
+		src: '/images/logos/segafredo.svg',
+		href: 'https://segafredo.nl'
+	},
+	{
+		id: 'montetondo',
+		title: 'Monte Tondo',
+		src: '/images/logos/montetondo.svg'
+	},
+	{
+		id: 'brand',
+		title: 'Brand',
+		src: '/images/logos/brand.svg',
+		href: 'https://brand.nl'
+	},
+	{
+		id: 'thiessen',
+		title: 'Thiessen Maastricht',
+		src: '/images/logos/thiessen.svg',
+		href: 'https://thiessen.nl'
+	}
+];
 
 // Reviews
 export const reviews: Review[] = [

@@ -5,6 +5,13 @@ export enum ReviewType {
 	Tim = 'Founder of STAPPATO'
 }
 
+export interface Partnership {
+	id: string;
+	title: string;
+	src: string;
+	href?: string;
+}
+
 export interface Review {
 	comment: string;
 	name: string;

@@ -15,7 +15,7 @@
 	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
 	import { ReviewType } from '$lib/constants/types';
 	import { reserveUrl } from '$lib/constants/urls';
-	import { contents, menu, previewMenu, reviews } from '$lib/constants/contents';
+	import { contents, menu, partnerships, previewMenu, reviews } from '$lib/constants/contents';
 </script>
 
 <svelte:head>
@@ -124,11 +124,14 @@
 
 	<!-- Partnership scrollview -->
 	<div class="flex justify-between w-full gap-8 pt-8 overflow-scroll">
-		<Logo src={'/images/logos/moretti.svg'} />
+		{#each partnerships as partnership}
+			<Logo {partnership} />
+		{/each}
+		<!-- <Logo src={'/images/logos/moretti.svg'} />
 		<Logo src={'/images/logos/segafredo.svg'} />
 		<Logo src={'/images/logos/montetondo.svg'} />
 		<Logo src={'/images/logos/brand.svg'} />
-		<Logo src={'/images/logos/thiessen.svg'} />
+		<Logo src={'/images/logos/thiessen.svg'} /> -->
 	</div>
 </section>
 
