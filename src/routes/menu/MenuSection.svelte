@@ -1,14 +1,14 @@
 <script lang="ts">
 	import MenuItem from './MenuItem.svelte';
 
-	import { h2, paddingLeft } from '$lib/constants/theme';
+	import { h2 } from '$lib/constants/theme';
 	import type { MenuSection } from '$lib/constants/types';
 
 	export let section: MenuSection;
 	export let selected: boolean;
 </script>
 
-<div class="lg:border-l-[1px] border-darkbrown-three border-opacity-20 {paddingLeft} w-full">
+<div class="lg:border-l-[1px] border-darkbrown-three border-opacity-20 lg:pl-16 w-full">
 	<!-- Menu section -->
 	<div class="">
 		<!-- Dropdown title -->

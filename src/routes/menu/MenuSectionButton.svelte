@@ -6,7 +6,7 @@
 <a href="/menu/" class="flex items-center gap-4 text-lg group tracking-[3px]">
 	<p class="group-hover:underline">{section}</p>
 	<div
-		class="select-none transition-all duration-200 ease-in-out {selected
+		class="flex select-none transition-all duration-200 ease-in-out h-full items-center {selected
 			? ' inline-block rotate-45'
 			: ''}"
 	>
