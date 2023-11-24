@@ -10,21 +10,21 @@
 
 	import { _ } from 'svelte-i18n';
 
-	function getTimeString(time: Time) {
+	function getTimeString(time: Time | undefined) {
 		let timeString = '';
 		// Add hours
-		if (time.hour < 9) {
-			timeString = 0 + time.hour.toString();
+		if (time!.hour < 9) {
+			timeString = 0 + time!.hour.toString();
 		} else {
-			timeString += time.hour.toString();
+			timeString += time!.hour.toString();
 		}
 		timeString += ':';
 
 		// Add minutes
-		if (time.minutes < 9) {
-			timeString = timeString + 0 + time.minutes;
+		if (time!.minutes < 9) {
+			timeString = timeString + 0 + time!.minutes;
 		} else {
-			timeString = timeString + time.minutes;
+			timeString = timeString + time!.minutes;
 		}
 		return timeString;
 	}
@@ -64,7 +64,15 @@
 					>
 					{#each times as time}
 						<p class="font-thin">
-							<span class="font-medium">{time.day}</span>: {getOpeningTimeString(time)}
+							<span class="font-medium">{time.day}</span>: {time.open
+								? $_('contents.footer.from') +
+								  ' ' +
+								  getTimeString(time.fromTime) +
+								  ' ' +
+								  $_('contents.footer.to') +
+								  ' ' +
+								  getTimeString(time.toTime)
+								: $_('contents.footer.closed')}
 						</p>
 					{/each}
 				</div>

@@ -29,14 +29,14 @@
     },
     "team": {
       "title": "Our team",
-      "text": "Meet the stappato team",
+      "text": "Meet the Stappato team",
       "joinText": "Want to join the team? Reach out!"
     },
     "contact": {
       "title": "Contact us",
       "reachout": "Reach out!",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "phoneText": "Call us anytime during work hours at",
+      "phoneText": "Call us anytime during opening hours at",
       "emailText": "Or email us at"
     },
     "reserve": {

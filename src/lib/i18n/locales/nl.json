@@ -23,6 +23,35 @@
       "menu": "Menu",
       "reserve": "Reserveren",
       "team": "Team"
+    },
+    "contact": {
+      "emailText": "Of mail ons op",
+      "phoneText": "U kunt ons altijd bellen tijdens de openingstijden op",
+      "reachout": "Uitreiken!",
+      "title": "Contact opnemen"
+    },
+    "footer": {
+      "address": "Adres",
+      "closed": "gesloten",
+      "from": "van",
+      "getintouch": "Neem contact op",
+      "netherlands": "Nederland",
+      "openingtimes": "Openingstijden",
+      "pages": "Website pagina's",
+      "to": "naar",
+      "viewonmaps": "Bekijk op kaarten"
+    },
+    "menu": {
+      "title": "Onze menukaart"
+    },
+    "reserve": {
+      "heading": "Reserveer een tafel bij ons",
+      "title": "Reserveren"
+    },
+    "team": {
+      "joinText": "Wil je lid worden van het team? \nUitreiken!",
+      "text": "Ontmoet het Stappato team",
+      "title": "Ons team"
     }
   }
 }

@@ -23,6 +23,35 @@
       "menu": "Menu",
       "reserve": "Prenota",
       "team": "Team"
+    },
+    "contact": {
+      "emailText": "Oppure inviaci un'e-mail a",
+      "phoneText": "Chiamaci in qualsiasi momento durante gli orari di apertura al",
+      "reachout": "Contattaci!",
+      "title": "Contattaci"
+    },
+    "footer": {
+      "address": "Indirizzo",
+      "closed": "chiuso",
+      "from": "dalle",
+      "getintouch": "Mettiti in contatto",
+      "netherlands": "Paesi Bassi",
+      "openingtimes": "Orari di apertura",
+      "pages": "Pagine",
+      "to": "alle",
+      "viewonmaps": "Trovaci sulla mappa"
+    },
+    "menu": {
+      "title": "Il nostro menù"
+    },
+    "reserve": {
+      "heading": "Prenota un tavolo con noi",
+      "title": "Prenota"
+    },
+    "team": {
+      "joinText": "Vuoi unirti al team di Stappato? \nContattaci!",
+      "text": "Conosci il team di Stappato",
+      "title": "Il nostro team"
     }
   }
 }
