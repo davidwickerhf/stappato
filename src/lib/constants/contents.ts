@@ -14,11 +14,11 @@ export const contents = {
 	landingPage: {
 		landingImage: 'images/images/landing.png',
 		welcomeText:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+			"Welcome to Stappato, Maastricht's Italian culinary escape, proudly celebrating our first year! Immerse yourself in the essence of Italy with our authentic menu, meticulously crafted with passion. Our Dutch and Italian staff, friendly and always ready for a chat, are committed to making your experience memorable. Explore a curated selection of the finest Italian wines that perfectly complement our dishes. At Stappato, we invite you to join us for an unforgettable journey where each visit is a celebration of flavors, warmth, and genuine hospitality.",
 		timComment:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		specialRequestsText:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+			"Your dining experience is our top priority! Do you have a special celebration, a large group gathering, or any unique requests in mind? We're here to make your visit extraordinary. For group reservations, special occasions, or any other personalized requests, please don't hesitate to reach out. Our team is dedicated to ensuring your time with us is tailored to your needs. Contact us today, and let's make your dining experience at Stappato exceptional. We look forward to hosting you and creating memorable moments together."
 	},
 
 	// Menu page

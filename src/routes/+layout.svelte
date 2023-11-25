@@ -6,7 +6,7 @@
 	import { navigating } from '$app/stores';
 	import { page } from '$app/stores';
 
-	import { _, locale } from 'svelte-i18n';
+	import { _ } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
 	import { toggleSidebar } from '$lib/store/SidebarStore';

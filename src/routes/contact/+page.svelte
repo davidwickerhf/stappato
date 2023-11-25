@@ -20,7 +20,7 @@
 >
 	<div class="flex flex-col w-full min-h-fit">
 		<h2 class="text-darkbrown-three {h2}">{$_('contents.contact.reachout')}</h2>
-		<p class="max-w-[700px] pb-8 pt-2">
+		<p class="max-w-[700px] pb-8 pt-2 text">
 			{$_('contents.contact.text')}
 		</p>
 

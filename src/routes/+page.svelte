@@ -64,13 +64,13 @@
 <!-- Content Hero Section -->
 <section class=" welcome">
 	<div
-		class="relative w-screen {padding} {paddingY} grid grid-flow-row gap-8 lg:gap-10 xl:gap-20 lg:grid-cols-[auto_auto] lg:grid-rows-[auto_minmax(0,1fr)]"
+		class="relative w-screen {padding} {paddingY} grid grid-flow-row gap-8 lg:gap-10 xl:gap-12 lg:grid-cols-[auto_auto] lg:grid-rows-[auto_minmax(0,1fr)]"
 	>
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
 			<h2 class="{h2} text-darkbrown-three">{$_('contents.landing.welcome')}</h2>
-			<p class="">
-				{contents.landingPage.welcomeText}
+			<p class="text" contenteditable="false" bind:innerHTML={contents.landingPage.welcomeText}>
+				<!-- {contents.landingPage.welcomeText} -->
 			</p>
 		</div>
 
@@ -241,7 +241,7 @@
 >
 	<div class="flex flex-col w-full min-h-fit">
 		<h2 class="text-darkbrown-three {h2}">{$_('contents.landing.requestsTitle')}</h2>
-		<p class="max-w-[700px] pb-8 pt-2">
+		<p class="max-w-[850px] pb-8 pt-2 text">
 			{contents.landingPage.specialRequestsText}
 		</p>
 

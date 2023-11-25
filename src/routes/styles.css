@@ -16,3 +16,8 @@ h2 {
 	text-transform: uppercase;
 	font-weight: 500;
 }
+
+.text {
+	font-size: 1.125rem;
+	line-height: 1.9;
+}
