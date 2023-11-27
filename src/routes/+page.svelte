@@ -150,7 +150,7 @@
 					<Dish
 						src={dish.src ?? '/images/images/dish.jpg'}
 						title={dish.title}
-						description={dish.description}
+						description={dish.description ?? ''}
 						vegetarian={dish.vegetarian}
 						vegan={dish.vegan}
 					/>

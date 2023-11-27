@@ -7,8 +7,10 @@
 	import { padding, paddingY } from '$lib/constants/theme';
 	import { _ } from 'svelte-i18n';
 	import { menu } from '$lib/constants/contents';
+	import type { PageData } from './$types';
 
-	let lunch: boolean = true;
+	//export let data: PageData;
+
 	let selected: boolean[] = [];
 
 	menu.forEach((element) => {

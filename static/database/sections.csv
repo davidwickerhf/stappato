@@ -1,0 +1,12 @@
+id,title_en,title_nl,title_it,from,to
+lunch,Lunch,Lunch,Pranzo,12,17
+appetizers,Appetizers,Appetizers,Aperitivo,12,
+starters,Starters,Starters,Antipasti,17,
+main,Main Courses,Main Courses,Primi Piatti,17,
+desserts,Desserts,Desserts,Dolci,,
+wine-white,White Wines,White Wines,Vini Bianchi,,
+wine-red,Red Wines,Red Wines,Vini Rossi,,
+wine-rose,Rose Wines,Rose Wines,Vini Rose',,
+wine-sparkling,Sparkling Wines,Sparkling Wines,Vini Frizzanti,,
+wine-topper,Topper Wines,Topper Wines,Topper Wines,,
+wine-dessert,Dessert Wines,Dessert Wines,Vini per il dolce,,
