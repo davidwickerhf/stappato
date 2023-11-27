@@ -52,7 +52,7 @@
 	<!-- Options -->
 	{#if dish.options}
 		{#each dish.options as option}
-			<div class="flex items-end justify-between gap-4">
+			<div class="flex items-end justify-between gap-6 pb-4">
 				<p class="flex min-w-min max-w-[80%] shrink-0">{option.title}</p>
 
 				<!-- Divisor -->
@@ -60,7 +60,7 @@
 					<div class=" h-[1px] bg-darkbrown-three opacity-20" />
 				</div>
 
-				<p class="hidden text-lg font-medium sm:flex">{getStringPrice(option.price)}€</p>
+				<p class="flex text-lg font-medium">{getStringPrice(option.price)}€</p>
 			</div>
 		{/each}
 	{/if}

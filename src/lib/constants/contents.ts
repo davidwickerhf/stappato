@@ -201,8 +201,23 @@ export const menu: MenuSection[] = [
 				options: [
 					{
 						id: 'pane-veg',
-						title: 'Vegetable spread',
+						title: 'Vegetable spread (vegetarian on request)',
 						price: 7
+					},
+					{
+						id: 'pane-mortadella',
+						title: 'Mortadella, rucola and garlig oil',
+						price: 8.5
+					},
+					{
+						id: 'pane-salami',
+						title: 'Salami, rucola and garlic oil',
+						price: 8.5
+					},
+					{
+						id: 'pane-veg',
+						title: 'Parma ham, garlic oil and sun-dried tomato',
+						price: 9.5
 					}
 				]
 			},
