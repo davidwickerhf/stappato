@@ -190,20 +190,21 @@ export const menu: MenuSection[] = [
 		toTime: { hour: 17, minutes: 0 },
 		dishes: [
 			{
-				id: 'bolognese1',
-				title: 'Bolognese',
-				description:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-				price: 18.5,
-				vegetarian: true
+				id: 'soup',
+				title: "Chef's soup",
+				price: 7
 			},
 			{
-				id: 'bolognese2',
-				title: 'Bolognese',
-				description:
-					'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-				price: 18.5,
-				vegetarian: true
+				id: 'pane',
+				title: 'Pane',
+				price: 7,
+				options: [
+					{
+						id: 'pane-veg',
+						title: 'Vegetable spread',
+						price: 7
+					}
+				]
 			},
 			{
 				id: 'bolognese3',

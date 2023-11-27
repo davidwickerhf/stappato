@@ -22,11 +22,12 @@ export interface Review {
 export interface Dish {
 	id: string;
 	title: string;
-	description: string;
+	description?: string;
 	price: number;
 	vegan?: boolean;
 	vegetarian?: boolean;
 	src?: string;
+	options?: Dish[];
 }
 
 export interface Time {

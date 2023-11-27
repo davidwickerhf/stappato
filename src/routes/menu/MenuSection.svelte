@@ -48,7 +48,7 @@
 		>
 			<!-- Menu item -->
 			{#each section.dishes as dish}
-				<MenuItem title={dish.title} description={dish.description} price={dish.price} />
+				<MenuItem {dish} />
 			{/each}
 		</div>
 	</div>
