@@ -9,13 +9,14 @@
 		: dish.price.toString() + ',00';
 	priceString = priceString.replace('.', ',');
 
-	function getStringPrice(price: number) {
+	function getStringPrice(price: number, addition?: boolean) {
 		let pString = price.toString().split('.').at(1)
 			? price.toString().split('.').at(1)?.length! < 2
 				? price.toString() + '0'
 				: price.toString()
 			: price.toString() + ',00';
 		pString = pString.replace('.', ',');
+		if (addition) pString = '+' + pString;
 		return pString;
 	}
 </script>
@@ -52,15 +53,15 @@
 	<!-- Options -->
 	{#if dish.options}
 		{#each dish.options as option}
-			<div class="flex items-end justify-between gap-6 pb-4">
-				<p class="flex min-w-min max-w-[80%] shrink-0">{option.title}</p>
+			<div class="flex items-end justify-between gap-6 pb-4 sm:pb-2">
+				<p class="flex min-w-min max-w-[70%] flex-shrink-0">{option.title}</p>
 
 				<!-- Divisor -->
-				<div class="hidden sm:flex h-[6px] flex-col justify-start min-w-[10%] w-full">
+				<div class="hidden sm:flex h-[6px] flex-col justify-start min-w-[8%] w-full flex-grow-0">
 					<div class=" h-[1px] bg-darkbrown-three opacity-20" />
 				</div>
 
-				<p class="flex text-lg font-medium">{getStringPrice(option.price)}€</p>
+				<p class="flex text-lg font-medium">{getStringPrice(option.price, option.addition)}€</p>
 			</div>
 		{/each}
 	{/if}

@@ -34,7 +34,9 @@
 	</div>
 
 	<!-- Menu contents -->
-	<div class="flex flex-col gap-10 lg:border-l-[1px] border-darkbrown-three border-opacity-20">
+	<div
+		class="flex flex-col gap-10 lg:border-l-[1px] border-darkbrown-three border-opacity-20 w-full"
+	>
 		{#each menu as section, index}
 			<MenuSection bind:selected={selected[index]} {section} />
 		{/each}

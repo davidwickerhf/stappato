@@ -10,7 +10,7 @@
 
 <div class="w-full lg:pl-16">
 	<!-- Menu section -->
-	<div class="">
+	<div class="w-full">
 		<!-- Dropdown title -->
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -23,8 +23,11 @@
 			<div class="flex items-center gap-10 text-darkbrown-three">
 				<h2 class=" {h2} ">{section.title}</h2>
 				<p class="font-thin">
-					{section.fromTime.hour}:{section.fromTime.minutes != 0 ? section.fromTime.minutes : '00'} to
-					{section.toTime.hour}:{section.toTime.minutes != 0 ? section.toTime.minutes : '00'}
+					{section.fromTime.hour}:{section.fromTime.minutes != 0 ? section.fromTime.minutes : '00'}
+					{#if section.toTime}
+						to
+						{section.toTime.hour}:{section.toTime.minutes != 0 ? section.toTime.minutes : '00'}
+					{/if}
 				</p>
 			</div>
 

@@ -26,6 +26,7 @@ export interface Dish {
 	price: number;
 	vegan?: boolean;
 	vegetarian?: boolean;
+	addition?: boolean;
 	src?: string;
 	options?: Dish[];
 }
@@ -40,7 +41,7 @@ export interface MenuSection {
 	title: string;
 	description?: string;
 	fromTime: Time;
-	toTime: Time;
+	toTime?: Time;
 	dishes: Dish[];
 }
 
