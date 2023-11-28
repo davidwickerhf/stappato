@@ -333,6 +333,7 @@ export const times: OpeningTime[] = [
 export const previewMenu: Dish[] = [
 	{
 		id: 'bolognese1',
+		section_id: 'lunch',
 		title_en: 'Bolognese',
 		title_it: 'Bolognese',
 		title_nl: 'Bolognese',
@@ -343,6 +344,7 @@ export const previewMenu: Dish[] = [
 	},
 	{
 		id: 'bolognese2',
+		section_id: 'lunch',
 		title_en: 'Bolognese',
 		title_it: 'Bolognese',
 		title_nl: 'Bolognese',
@@ -353,26 +355,7 @@ export const previewMenu: Dish[] = [
 	},
 	{
 		id: 'bolognese3',
-		title_en: 'Bolognese',
-		title_it: 'Bolognese',
-		title_nl: 'Bolognese',
-		description_en:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		price: 18.5,
-		vegetarian: true
-	},
-	{
-		id: 'bolognese4',
-		title_en: 'Bolognese',
-		title_it: 'Bolognese',
-		title_nl: 'Bolognese',
-		description_en:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		price: 18.5,
-		vegetarian: true
-	},
-	{
-		id: 'bolognese5',
+		section_id: 'lunch',
 		title_en: 'Bolognese',
 		title_it: 'Bolognese',
 		title_nl: 'Bolognese',

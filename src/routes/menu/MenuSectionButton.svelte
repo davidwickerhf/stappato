@@ -4,12 +4,12 @@
 </script>
 
 <button
-	class="flex items-center gap-4 text-lg group tracking-[3px]"
+	class="flex justify-between items-center gap-4 text-lg group tracking-[3px]"
 	on:click={() => {
 		selected = !selected;
 	}}
 >
-	<p class="group-hover:underline">{section}</p>
+	<p class="group-hover:underline text-start">{section}</p>
 	<div
 		class="flex select-none transition-all duration-200 ease-in-out h-full items-center {selected
 			? ' inline-block rotate-45'

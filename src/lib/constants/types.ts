@@ -21,13 +21,14 @@ export interface Review {
 
 export interface Dish {
 	id: string;
+	section_id: string;
 	title_en: string;
 	title_it: string;
 	title_nl: string;
 	description_en?: string;
 	description_it?: string;
 	description_nl?: string;
-	price: number;
+	price?: number;
 	vegan?: boolean;
 	vegetarian?: boolean;
 	addition?: boolean;

@@ -52,6 +52,7 @@ export async function load({ fetch, params }) {
 			let rawDish = dishData[a];
 			let dish: Dish = {
 				id: rawDish.id,
+				section_id: rawDish.section_id,
 				title_en: rawDish.title_en,
 				title_it: rawDish.title_it,
 				title_nl: rawDish.title_nl,
@@ -69,6 +70,7 @@ export async function load({ fetch, params }) {
 			let rawDish = dishData[a];
 			let dish: Dish = {
 				id: rawDish.id,
+				section_id: rawDish.section_id,
 				title_en: rawDish.title_en,
 				title_it: rawDish.title_it,
 				title_nl: rawDish.title_nl,
@@ -83,9 +85,9 @@ export async function load({ fetch, params }) {
 			dishes.push(dish);
 		}
 	}
+	console.log(dishes);
 
 	//Parse sections contents
-
 	let sections: MenuSection[] = [];
 	sectionData!.forEach((el: any) => {
 		sections.push({
@@ -105,10 +107,10 @@ export async function load({ fetch, params }) {
 						minutes: 0
 				  }
 				: undefined,
-			dishes: dishes
+			dishes: dishes.filter((dish) => dish.section_id == el.id)
 		});
 	});
-	console.log(sections);
+	sections = sections.filter((section) => section.dishes.length > 0);
 
 	return {
 		sections: sections
