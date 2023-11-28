@@ -1,15 +1,21 @@
 <script lang="ts">
+	import type { MenuSection } from '$lib/constants/types';
+	import { locale } from 'svelte-i18n';
 	export let selected: boolean = true;
-	export let section: string;
+	export let section: MenuSection;
+	export let inView: string;
 </script>
 
 <button
 	class="flex justify-between items-center gap-4 text-lg group tracking-[3px]"
 	on:click={() => {
-		selected = !selected;
+		inView = section.id;
+		selected = true;
 	}}
 >
-	<p class="group-hover:underline text-start">{section}</p>
+	<p class="group-hover:underline text-start">
+		{$locale == 'en' ? section.title_en : $locale == 'it' ? section.title_it : section.title_nl}
+	</p>
 	<div
 		class="flex select-none transition-all duration-200 ease-in-out h-full items-center {selected
 			? ' inline-block rotate-45'

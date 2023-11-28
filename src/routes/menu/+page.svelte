@@ -10,6 +10,21 @@
 
 	export let data: PageData;
 
+	function scrollWindow(section_id: string) {
+		let sectionElement;
+		try {
+			sectionElement = document.getElementById(section_id);
+		} catch (error) {}
+		if (!sectionElement) return;
+		sectionElement.scrollIntoView({
+			behavior: 'smooth',
+			block: 'center'
+		});
+	}
+
+	let inView = '';
+	$: inView, scrollWindow(inView);
+
 	let selected: boolean[] = [];
 
 	data.sections.forEach((section) => {
@@ -30,14 +45,7 @@
 	<div class="flex-col hidden gap-8 text-darkbrown-three lg:flex">
 		<!-- Sidebar item -->
 		{#each data.sections as section, index}
-			<MenuSectionButton
-				bind:selected={selected[index]}
-				section={$locale == 'en'
-					? section.title_en
-					: $locale == 'it'
-					? section.title_it
-					: section.title_nl}
-			/>
+			<MenuSectionButton bind:inView bind:selected={selected[index]} {section} />
 		{/each}
 	</div>
 

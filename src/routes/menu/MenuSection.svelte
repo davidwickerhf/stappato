@@ -9,7 +9,7 @@
 	export let selected: boolean;
 </script>
 
-<div class="w-full lg:pl-16">
+<div class="w-full lg:pl-16" id={section.id}>
 	<!-- Menu section -->
 	<div class="w-full">
 		<!-- Dropdown title -->
