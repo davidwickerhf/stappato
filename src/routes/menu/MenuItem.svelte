@@ -36,7 +36,7 @@
 				<div class=" h-[1px] bg-darkbrown-three opacity-20" />
 			</div>
 		{/if}
-		{#if !dish.options && priceString}
+		{#if priceString}
 			<p class="text-lg font-medium {dish.description_en ? 'sm:hidden' : ''} ">{priceString}€</p>
 		{/if}
 	</div>
