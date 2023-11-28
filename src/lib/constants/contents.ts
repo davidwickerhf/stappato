@@ -182,191 +182,201 @@ export const times: OpeningTime[] = [
 ];
 
 // Menu
-export const menu: MenuSection[] = [
-	{
-		id: 'lunch',
-		title: 'Lunch',
-		fromTime: { hour: 12, minutes: 0 },
-		toTime: { hour: 17, minutes: 0 },
-		dishes: [
-			{
-				id: 'soup',
-				title: "Chef's soup",
-				price: 7
-			},
-			{
-				id: 'pane',
-				title: 'Pane',
-				price: 7,
-				options: [
-					{
-						id: 'pane-veg',
-						title: 'Vegetable spread (vegetarian on request)',
-						price: 7
-					},
-					{
-						id: 'pane-mortadella',
-						title: 'Mortadella, rucola and garlig oil',
-						price: 8.5
-					},
-					{
-						id: 'pane-salami',
-						title: 'Salami, rucola and garlic oil',
-						price: 8.5
-					},
-					{
-						id: 'pane-ham',
-						title: 'Parma ham, garlic oil and sun-dried tomato',
-						price: 9.5
-					},
-					{
-						id: 'pane-chicken',
-						title: 'Fried chicken, aioli and tomato',
-						price: 9.5
-					},
-					{
-						id: 'pane-tuna',
-						title: 'Home made tuna salad',
-						price: 9.5
-					},
-					{
-						id: 'pane-vitello',
-						title: 'Vitello Tonnato, sliced veal and tuna mayonnaise',
-						price: 12.5
-					},
-					{
-						id: 'pane-carpaccio',
-						title: 'Carpaccio, truffle mayonnaise, pine nuts and Parmesan cheese',
-						price: 12.5
-					}
-				]
-			},
-			{
-				id: 'tosti',
-				title: 'Tosti Italiana',
-				price: 9.5,
-				options: [
-					{
-						id: 'tosti-mozzarella',
-						title: 'Mozzarella, tomato and pesto',
-						price: 9.5
-					},
-					{
-						id: 'tosti-mozzarella-ham',
-						title: 'With Parma ham',
-						price: 2.5,
-						addition: true
-					}
-				]
-			},
-			{
-				id: 'insalata-mare',
-				title: 'Instalata di Mare',
-				description: 'Scampi, tuna, anchovies',
-				price: 14.5
-			},
-			{
-				id: 'insalata-burrata',
-				title: 'Insalata Burrata',
-				price: 14.5,
-				options: [
-					{
-						id: 'insta-burrata-balsamic',
-						title: 'Balsamic (vegetarian on request)',
-						price: 14.5
-					},
-					{
-						id: 'insta-burrata-nduja',
-						title: 'With Nduja (salsiccia Calabrese)',
-						price: 1.5,
-						addition: true
-					}
-				]
-			}
-		]
-	},
-	{
-		id: 'appetizers',
-		title: 'Appetizers',
-		fromTime: {
-			hour: 12,
-			minutes: 0
-		},
-		dishes: [
-			{
-				id: 'bruschetta',
-				title: 'Bruschetta',
-				price: 6.5,
-				options: [
-					{
-						id: 'mushrooms',
-						title: 'Wilde mushrooms (vegetarian on request)',
-						price: 6.5,
-						vegetarian: true
-					},
-					{
-						id: 'tomato',
-						title: 'Tomato and basil (vegetarian on request)',
-						price: 6.5,
-						vegetarian: true
-					},
-					{
-						id: 'day',
-						title: 'Of the day (vegetarian on request)',
-						price: 6.5,
-						vegetarian: true
-					}
-				]
-			},
-			{
-				id: 'olives',
-				title: 'Olives',
-				description: 'Home marinated (vegetarian)',
-				vegetarian: true,
-				price: 4
-			}
-		]
-	}
-];
+// export const menu: MenuSection[] = [
+// 	{
+// 		id: 'lunch',
+// 		title: 'Lunch',
+// 		fromTime: { hour: 12, minutes: 0 },
+// 		toTime: { hour: 17, minutes: 0 },
+// 		dishes: [
+// 			{
+// 				id: 'soup',
+// 				title: "Chef's soup",
+// 				price: 7
+// 			},
+// 			{
+// 				id: 'pane',
+// 				title: 'Pane',
+// 				price: 7,
+// 				options: [
+// 					{
+// 						id: 'pane-veg',
+// 						title: 'Vegetable spread (vegetarian on request)',
+// 						price: 7
+// 					},
+// 					{
+// 						id: 'pane-mortadella',
+// 						title: 'Mortadella, rucola and garlig oil',
+// 						price: 8.5
+// 					},
+// 					{
+// 						id: 'pane-salami',
+// 						title: 'Salami, rucola and garlic oil',
+// 						price: 8.5
+// 					},
+// 					{
+// 						id: 'pane-ham',
+// 						title: 'Parma ham, garlic oil and sun-dried tomato',
+// 						price: 9.5
+// 					},
+// 					{
+// 						id: 'pane-chicken',
+// 						title: 'Fried chicken, aioli and tomato',
+// 						price: 9.5
+// 					},
+// 					{
+// 						id: 'pane-tuna',
+// 						title: 'Home made tuna salad',
+// 						price: 9.5
+// 					},
+// 					{
+// 						id: 'pane-vitello',
+// 						title: 'Vitello Tonnato, sliced veal and tuna mayonnaise',
+// 						price: 12.5
+// 					},
+// 					{
+// 						id: 'pane-carpaccio',
+// 						title: 'Carpaccio, truffle mayonnaise, pine nuts and Parmesan cheese',
+// 						price: 12.5
+// 					}
+// 				]
+// 			},
+// 			{
+// 				id: 'tosti',
+// 				title: 'Tosti Italiana',
+// 				price: 9.5,
+// 				options: [
+// 					{
+// 						id: 'tosti-mozzarella',
+// 						title: 'Mozzarella, tomato and pesto',
+// 						price: 9.5
+// 					},
+// 					{
+// 						id: 'tosti-mozzarella-ham',
+// 						title: 'With Parma ham',
+// 						price: 2.5,
+// 						addition: true
+// 					}
+// 				]
+// 			},
+// 			{
+// 				id: 'insalata-mare',
+// 				title: 'Instalata di Mare',
+// 				description: 'Scampi, tuna, anchovies',
+// 				price: 14.5
+// 			},
+// 			{
+// 				id: 'insalata-burrata',
+// 				title: 'Insalata Burrata',
+// 				price: 14.5,
+// 				options: [
+// 					{
+// 						id: 'insta-burrata-balsamic',
+// 						title: 'Balsamic (vegetarian on request)',
+// 						price: 14.5
+// 					},
+// 					{
+// 						id: 'insta-burrata-nduja',
+// 						title: 'With Nduja (salsiccia Calabrese)',
+// 						price: 1.5,
+// 						addition: true
+// 					}
+// 				]
+// 			}
+// 		]
+// 	},
+// 	{
+// 		id: 'appetizers',
+// 		title: 'Appetizers',
+// 		fromTime: {
+// 			hour: 12,
+// 			minutes: 0
+// 		},
+// 		dishes: [
+// 			{
+// 				id: 'bruschetta',
+// 				title: 'Bruschetta',
+// 				price: 6.5,
+// 				options: [
+// 					{
+// 						id: 'mushrooms',
+// 						title: 'Wilde mushrooms (vegetarian on request)',
+// 						price: 6.5,
+// 						vegetarian: true
+// 					},
+// 					{
+// 						id: 'tomato',
+// 						title: 'Tomato and basil (vegetarian on request)',
+// 						price: 6.5,
+// 						vegetarian: true
+// 					},
+// 					{
+// 						id: 'day',
+// 						title: 'Of the day (vegetarian on request)',
+// 						price: 6.5,
+// 						vegetarian: true
+// 					}
+// 				]
+// 			},
+// 			{
+// 				id: 'olives',
+// 				title: 'Olives',
+// 				description: 'Home marinated (vegetarian)',
+// 				vegetarian: true,
+// 				price: 4
+// 			}
+// 		]
+// 	}
+// ];
 
 // Select Menu
 export const previewMenu: Dish[] = [
 	{
 		id: 'bolognese1',
-		title: 'Bolognese',
-		description:
+		title_en: 'Bolognese',
+		title_it: 'Bolognese',
+		title_nl: 'Bolognese',
+		description_en:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
 		price: 18.5,
 		vegetarian: true
 	},
 	{
 		id: 'bolognese2',
-		title: 'Bolognese',
-		description:
+		title_en: 'Bolognese',
+		title_it: 'Bolognese',
+		title_nl: 'Bolognese',
+		description_en:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
 		price: 18.5,
 		vegetarian: true
 	},
 	{
 		id: 'bolognese3',
-		title: 'Bolognese',
-		description:
+		title_en: 'Bolognese',
+		title_it: 'Bolognese',
+		title_nl: 'Bolognese',
+		description_en:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
 		price: 18.5,
 		vegetarian: true
 	},
 	{
 		id: 'bolognese4',
-		title: 'Bolognese',
-		description:
+		title_en: 'Bolognese',
+		title_it: 'Bolognese',
+		title_nl: 'Bolognese',
+		description_en:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
 		price: 18.5,
 		vegetarian: true
 	},
 	{
 		id: 'bolognese5',
-		title: 'Bolognese',
-		description:
+		title_en: 'Bolognese',
+		title_it: 'Bolognese',
+		title_nl: 'Bolognese',
+		description_en:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
 		price: 18.5,
 		vegetarian: true

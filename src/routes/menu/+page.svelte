@@ -5,15 +5,14 @@
 
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
 	import { padding, paddingY } from '$lib/constants/theme';
-	import { _ } from 'svelte-i18n';
-	import { menu } from '$lib/constants/contents';
+	import { _, locale } from 'svelte-i18n';
 	import type { PageData } from './$types';
 
-	//export let data: PageData;
+	export let data: PageData;
 
 	let selected: boolean[] = [];
 
-	menu.forEach((element) => {
+	data.sections.forEach((section) => {
 		selected.push(true);
 	});
 </script>
@@ -30,8 +29,15 @@
 	<!-- Sidebar -->
 	<div class="flex-col hidden gap-8 text-darkbrown-three lg:flex">
 		<!-- Sidebar item -->
-		{#each menu as section, index}
-			<MenuSectionButton bind:selected={selected[index]} section={section.title} />
+		{#each data.sections as section, index}
+			<MenuSectionButton
+				bind:selected={selected[index]}
+				section={$locale == 'en'
+					? section.title_en
+					: $locale == 'it'
+					? section.title_it
+					: section.title_nl}
+			/>
 		{/each}
 	</div>
 
@@ -39,7 +45,7 @@
 	<div
 		class="flex flex-col gap-10 lg:border-l-[1px] border-darkbrown-three border-opacity-20 w-full"
 	>
-		{#each menu as section, index}
+		{#each data.sections as section, index}
 			<MenuSection bind:selected={selected[index]} {section} />
 		{/each}
 	</div>

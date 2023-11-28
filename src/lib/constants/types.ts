@@ -21,8 +21,12 @@ export interface Review {
 
 export interface Dish {
 	id: string;
-	title: string;
-	description?: string;
+	title_en: string;
+	title_it: string;
+	title_nl: string;
+	description_en?: string;
+	description_it?: string;
+	description_nl?: string;
 	price: number;
 	vegan?: boolean;
 	vegetarian?: boolean;
@@ -38,9 +42,11 @@ export interface Time {
 
 export interface MenuSection {
 	id: string;
-	title: string;
+	title_en: string;
+	title_nl: string;
+	title_it: string;
 	description?: string;
-	fromTime: Time;
+	fromTime?: Time;
 	toTime?: Time;
 	dishes: Dish[];
 }

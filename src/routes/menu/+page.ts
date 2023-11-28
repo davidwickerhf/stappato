@@ -1,152 +1,116 @@
 import type { MenuSection, Dish } from '$lib/constants/types.js';
 import Papa from 'papaparse';
-import type { PageLoad } from '../$types';
-import { BASE_URL } from '$env/static/private';
-
-/** @type {import('./$types').PageLoad} */
-// export const load = async ({ fetch }) => {
-// 	const sectionResults = await fetch('/database/sections.csv', {
-// 		headers: { 'content-type': 'text/csv;charset=UTF-8' }
-// 	});
-// 	const dishesResults = await fetch('/database/dishes.csv', {
-// 		headers: { 'content-type': 'text/csv;charset=UTF-8' }
-// 	});
-
-// 	if (!sectionResults.ok && !dishesResults.ok) {
-// 		throw new Error('Failed to fetch data');
-// 	}
-
-// 	const sectionsContent = await sectionResults.text();
-// 	const dishesContent = await dishesResults.text();
-
-// 	let sectionsRaw: any;
-// 	let dishesRaw: any;
-// 	// Parse Sections RAW
-// 	// await new Promise((resolve, reject) => {
-// 	// 	// Papa.parse(sectionsContent, {
-// 	// 	// 	header: true,
-// 	// 	// 	dynamicTyping: true,
-// 	// 	// 	complete: (parseResult) => {
-// 	// 	// 		console.log(parseResult.data);
-// 	// 	// 		// handle errors etc.
-// 	// 	// 		//resolve();
-// 	// 	// 		sectionsRaw = parseResult.data;
-// 	// 	// 	}
-// 	// 	// });
-// 	// });
-// 	await new Promise((resolve, reject) => {
-// 		Papa.parse('/database/sections.csv', {
-// 			download: true,
-// 			header: true,
-// 			dynamicTyping: true,
-// 			complete: (parseResult) => {
-// 				console.log(parseResult); // check for errors etc.
-
-// 				//resolve();
-// 			}
-// 		});
-// 	});
-// 	return undefined;
-
-// 	// await new Promise((resolve, reject) => {
-// 	// 	Papa.parse(dishesContent, {
-// 	// 		header: true,
-// 	// 		dynamicTyping: true,
-// 	// 		complete: (parseResult) => {
-// 	// 			console.log(parseResult.data);
-// 	// 			// handle errors etc.
-// 	// 			//resolve();
-// 	// 			dishesRaw = parseResult.data;
-// 	// 		}
-// 	// 	});
-// 	// });
-
-// 	// let dishes: Dish[] = [];
-// 	// let lastMainDish: Dish;
-// 	// for (let a = 0; a < dishesRaw.length; a++) {
-// 	// 	if (dishesRaw[a].dish_id) {
-// 	// 		// Treat this as the subdish of the previous main dish
-// 	// 		let rawDish = dishesRaw[a];
-// 	// 		let dish: Dish = {
-// 	// 			id: rawDish.id,
-// 	// 			title: rawDish.title,
-// 	// 			description: rawDish.description,
-// 	// 			price: rawDish.price,
-// 	// 			vegetarian: rawDish.vegetarian,
-// 	// 			addition: rawDish.addition
-// 	// 		};
-// 	// 		if (lastMainDish!.options == undefined) lastMainDish!.options = [];
-// 	// 		lastMainDish!.options.push(dish);
-// 	// 	} else {
-// 	// 		// This is a main dish
-// 	// 		let rawDish = dishesRaw[a];
-// 	// 		let dish: Dish = {
-// 	// 			id: rawDish.id,
-// 	// 			title: rawDish.title,
-// 	// 			description: rawDish.description,
-// 	// 			price: rawDish.price,
-// 	// 			vegetarian: rawDish.vegetarian,
-// 	// 			addition: false
-// 	// 		};
-// 	// 		lastMainDish = dish;
-// 	// 		dishes.push(dish);
-// 	// 	}
-// 	// }
-// 	// console.log(dishes);
-
-// 	// Parse sections contents
-// 	// let sections: MenuSection[];
-// 	// sectionsRaw!.forEach((el: any) => {
-// 	// 	sections.push({
-// 	// 		id: el.id,
-// 	// 		title: el.title_en,
-// 	// 		fromTime: el.from,
-// 	// 		dishes: []
-// 	// 	});
-// 	// });
-// };
-
-// export const load = (async () => {
-// 	await new Promise((resolve, reject) => {
-// 		Papa.parse('/database/sections.csv', {
-// 			download: true,
-// 			header: true,
-// 			dynamicTyping: true,
-// 			complete: (parseResult) => {
-// 				console.log(parseResult); // check for errors etc.
-
-// 				//resolve();
-// 			}
-// 		});
-// 	});
-// 	return null;
-// }) satisfies PageLoad;
 
 export async function load({ fetch, params }) {
-	const result = await fetch(`/database/sections.csv`, {
+	const sectionRes = await fetch(`/database/sections.csv`, {
+		headers: { 'content-type': 'text/csv;charset=UTF-8' }
+	});
+	const dishRes = await fetch(`/database/dishes.csv`, {
 		headers: { 'content-type': 'text/csv;charset=UTF-8' }
 	});
 
-	if (!result.ok) {
+	if (!sectionRes.ok || !dishRes.ok) {
 		throw new Error('Failed to fetch data');
 	}
-	const fileContent = await result.text();
+
+	let sectionData;
+	let dishData: Array<any> = [];
+
+	const sectionFile = await sectionRes.text();
 	new Promise((resolve, reject) => {
-		Papa.parse(fileContent, {
+		Papa.parse(sectionFile, {
 			header: true,
 			dynamicTyping: true,
 			complete: (parseResult) => {
-				console.log(parseResult);
+				//console.log(parseResult);
+				sectionData = parseResult.data;
+				// handle errors etc.
+				//resolve();
+			}
+		});
+	});
+	const dishFile = await dishRes.text();
+	new Promise((resolve, reject) => {
+		Papa.parse(dishFile, {
+			header: true,
+			dynamicTyping: true,
+			complete: (parseResult) => {
+				//console.log(parseResult);
+				dishData = parseResult.data as Object[];
 				// handle errors etc.
 				//resolve();
 			}
 		});
 	});
 
-	return {
-		post: {
-			title: `Title for goes here`,
-			content: `Content forgoes here`
+	// Parse data into predefined types
+	let dishes: Dish[] = [];
+	let lastMainDish: Dish;
+	for (let a = 0; a < dishData.length; a++) {
+		if (dishData[a].dish_id) {
+			// Treat this as the subdish of the previous main dish
+			let rawDish = dishData[a];
+			let dish: Dish = {
+				id: rawDish.id,
+				title_en: rawDish.title_en,
+				title_it: rawDish.title_it,
+				title_nl: rawDish.title_nl,
+				description_en: rawDish.description_en,
+				description_it: rawDish.description_it,
+				description_nl: rawDish.description_nl,
+				price: rawDish.price,
+				vegetarian: rawDish.vegetarian,
+				addition: rawDish.addition
+			};
+			if (lastMainDish!.options == undefined) lastMainDish!.options = [];
+			lastMainDish!.options.push(dish);
+		} else {
+			// This is a main dish
+			let rawDish = dishData[a];
+			let dish: Dish = {
+				id: rawDish.id,
+				title_en: rawDish.title_en,
+				title_it: rawDish.title_it,
+				title_nl: rawDish.title_nl,
+				description_en: rawDish.description_en,
+				description_it: rawDish.description_it,
+				description_nl: rawDish.description_nl,
+				price: rawDish.price,
+				vegetarian: rawDish.vegetarian,
+				addition: false
+			};
+			lastMainDish = dish;
+			dishes.push(dish);
 		}
+	}
+
+	//Parse sections contents
+
+	let sections: MenuSection[] = [];
+	sectionData!.forEach((el: any) => {
+		sections.push({
+			id: el.id,
+			title_en: el.title_en,
+			title_it: el.title_it,
+			title_nl: el.title_nl,
+			fromTime: el.from
+				? {
+						hour: el.from,
+						minutes: 0
+				  }
+				: undefined,
+			toTime: el.to
+				? {
+						hour: el.to,
+						minutes: 0
+				  }
+				: undefined,
+			dishes: dishes
+		});
+	});
+	console.log(sections);
+
+	return {
+		sections: sections
 	};
 }

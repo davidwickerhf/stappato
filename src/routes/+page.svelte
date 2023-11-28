@@ -9,7 +9,7 @@
 
 	import Logo from '../lib/components/Logo.svelte';
 
-	import { _ } from 'svelte-i18n';
+	import { _, locale } from 'svelte-i18n';
 
 	import Button from '$lib/components/Button.svelte';
 	import { h2, padding, paddingY, theme } from '$lib/constants/theme';
@@ -127,11 +127,6 @@
 		{#each partnerships as partnership}
 			<Logo {partnership} />
 		{/each}
-		<!-- <Logo src={'/images/logos/moretti.svg'} />
-		<Logo src={'/images/logos/segafredo.svg'} />
-		<Logo src={'/images/logos/montetondo.svg'} />
-		<Logo src={'/images/logos/brand.svg'} />
-		<Logo src={'/images/logos/thiessen.svg'} /> -->
 	</div>
 </section>
 
@@ -149,8 +144,16 @@
 				{#each previewMenu as dish}
 					<Dish
 						src={dish.src ?? '/images/images/dish.jpg'}
-						title={dish.title}
-						description={dish.description ?? ''}
+						title={$locale == 'en'
+							? dish.title_en
+							: $locale == 'it'
+							? dish.title_it
+							: dish.title_nl}
+						description={$locale == 'en'
+							? dish.description_en
+							: $locale == 'it'
+							? dish.description_it
+							: dish.description_nl}
 						vegetarian={dish.vegetarian}
 						vegan={dish.vegan}
 					/>

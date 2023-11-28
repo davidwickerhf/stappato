@@ -3,6 +3,7 @@
 
 	import { h2 } from '$lib/constants/theme';
 	import type { MenuSection } from '$lib/constants/types';
+	import { locale } from 'svelte-i18n';
 
 	export let section: MenuSection;
 	export let selected: boolean;
@@ -21,14 +22,24 @@
 			}}
 		>
 			<div class="flex items-center gap-10 text-darkbrown-three">
-				<h2 class=" {h2} ">{section.title}</h2>
-				<p class="font-thin">
-					{section.fromTime.hour}:{section.fromTime.minutes != 0 ? section.fromTime.minutes : '00'}
-					{#if section.toTime}
-						to
-						{section.toTime.hour}:{section.toTime.minutes != 0 ? section.toTime.minutes : '00'}
-					{/if}
-				</p>
+				<h2 class=" {h2} ">
+					{$locale == 'en'
+						? section.title_en
+						: $locale == 'it'
+						? section.title_it
+						: section.title_nl}
+				</h2>
+				{#if section.fromTime != undefined}
+					<p class="font-thin">
+						{section.fromTime.hour}:{section.fromTime.minutes != 0
+							? section.fromTime.minutes
+							: '00'}
+						{#if section.toTime}
+							to
+							{section.toTime.hour}:{section.toTime.minutes != 0 ? section.toTime.minutes : '00'}
+						{/if}
+					</p>
+				{/if}
 			</div>
 
 			<div

@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let title: string;
-	export let description: string;
+	export let description: string | undefined;
 	export let vegetarian: boolean = false;
 	export let vegan: boolean = false;
 	export let src: string;
@@ -23,7 +23,7 @@
 
 		<!-- Description -->
 		<p>
-			{description}
+			{description ?? ''}
 		</p>
 	</div>
 </div>
