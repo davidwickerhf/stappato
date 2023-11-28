@@ -12,8 +12,8 @@
 	import { toggleSidebar } from '$lib/store/SidebarStore';
 	import { afterNavigate } from '$app/navigation';
 
-	$: scrollY = 0;
-	$: color = scrollY >= 35 ? '#000' : '#FEFCF2';
+	$: verticalScroll = 0;
+	$: color = verticalScroll >= 35 ? '#000' : '#FEFCF2';
 	$: if ($navigating) toggleSidebar(false);
 
 	let box: any;
@@ -39,7 +39,7 @@
 />
 
 <Navbar
-	backgroundHeight={$page.url.pathname != '/' ? 80 : scrollY}
+	backgroundHeight={$page.url.pathname != '/' ? 80 : verticalScroll}
 	color={$page.url.pathname != '/' ? 'black' : color}
 />
 
@@ -52,7 +52,7 @@
 		class="flex flex-col justify-between min-h-[100dvh] overflow-scroll overscroll-none"
 		bind:this={box}
 		on:scroll={() => {
-			scrollY = box.scrollTop;
+			verticalScroll = box.scrollTop;
 		}}
 	>
 		<main>

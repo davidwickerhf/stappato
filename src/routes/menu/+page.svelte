@@ -1,12 +1,12 @@
 <script lang="ts">
-	import MenuSectionButton from './MenuSectionButton.svelte';
-
-	import MenuSection from './MenuSection.svelte';
-
-	import LandingPicture from '$lib/components/LandingPicture.svelte';
-	import { padding, paddingY } from '$lib/constants/theme';
-	import { _, locale } from 'svelte-i18n';
+	import { page } from '$app/stores';
+	import { _ } from 'svelte-i18n';
 	import type { PageData } from './$types';
+	import { padding, paddingY } from '$lib/constants/theme';
+
+	import MenuSectionButton from './MenuSectionButton.svelte';
+	import MenuSection from './MenuSection.svelte';
+	import LandingPicture from '$lib/components/LandingPicture.svelte';
 
 	export let data: PageData;
 
@@ -40,13 +40,16 @@
 <!-- Landing picture -->
 <LandingPicture title={$_('contents.menu.title')} />
 
-<div class="flex-row flex {padding} {paddingY} gap-24">
+<div class="flex-row flex {padding} {paddingY} gap-20">
 	<!-- Sidebar -->
-	<div class="flex-col hidden gap-8 text-darkbrown-three lg:flex">
+	<div class="flex-col hidden text-darkbrown-three lg:flex">
+		<div class="w-full bg-black" style="height: {$page.params.verticalScroll} " />
 		<!-- Sidebar item -->
-		{#each data.sections as section, index}
-			<MenuSectionButton bind:inView bind:selected={selected[index]} {section} />
-		{/each}
+		<dvi class="flex flex-col gap-8 min-w-max">
+			{#each data.sections as section, index}
+				<MenuSectionButton bind:inView bind:selected={selected[index]} {section} />
+			{/each}
+		</dvi>
 	</div>
 
 	<!-- Menu contents -->

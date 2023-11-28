@@ -7,13 +7,13 @@
 </script>
 
 <button
-	class="flex justify-between items-center gap-4 text-lg group tracking-[3px]"
+	class="flex justify-between items-center gap-4 text-lg group tracking-[3px] w-full"
 	on:click={() => {
 		inView = section.id;
 		selected = true;
 	}}
 >
-	<p class="group-hover:underline text-start">
+	<p class="w-full group-hover:underline text-start">
 		{$locale == 'en' ? section.title_en : $locale == 'it' ? section.title_it : section.title_nl}
 	</p>
 	<div
