@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { _ } from 'svelte-i18n';
 	import type { PageData } from './$types';
 	import { padding, paddingY } from '$lib/constants/theme';
@@ -7,6 +6,8 @@
 	import MenuSectionButton from './MenuSectionButton.svelte';
 	import MenuSection from './MenuSection.svelte';
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
+
+	import { verticalScroll } from '$lib/store/ScrollStore';
 
 	export let data: PageData;
 
@@ -24,6 +25,7 @@
 
 	let inView = '';
 	$: inView, scrollWindow(inView);
+	$: verticalScrollPresent = $verticalScroll;
 
 	let selected: boolean[] = [];
 
@@ -43,7 +45,7 @@
 <div class="flex-row flex {padding} {paddingY} gap-20">
 	<!-- Sidebar -->
 	<div class="flex-col hidden text-darkbrown-three lg:flex">
-		<div class="w-full bg-black" style="height: {$page.params.verticalScroll} " />
+		<div class="w-full bg-black" style="height: {verticalScrollPresent};" />
 		<!-- Sidebar item -->
 		<dvi class="flex flex-col gap-8 min-w-max">
 			{#each data.sections as section, index}

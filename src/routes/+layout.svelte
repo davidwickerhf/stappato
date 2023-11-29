@@ -9,14 +9,20 @@
 	import { _ } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
-	import { toggleSidebar } from '$lib/store/SidebarStore';
+	import { setScrolled, toggleSidebar } from '$lib/store/SidebarStore';
 	import { afterNavigate } from '$app/navigation';
 
-	$: verticalScroll = 0;
-	$: color = verticalScroll >= 35 ? '#000' : '#FEFCF2';
+	import { setVerticalScroll, verticalScroll } from '$lib/store/ScrollStore';
+
+	setVerticalScroll(0);
+	$: color = $verticalScroll >= 35 ? '#000' : '#FEFCF2';
 	$: if ($navigating) toggleSidebar(false);
 
 	let box: any;
+	$: $verticalScroll,
+		() => {
+			console.log($verticalScroll);
+		};
 
 	afterNavigate(() => {
 		document.getElementById('content')?.scrollTo(0, 0);
@@ -39,7 +45,7 @@
 />
 
 <Navbar
-	backgroundHeight={$page.url.pathname != '/' ? 80 : verticalScroll}
+	backgroundHeight={$page.url.pathname != '/' ? 80 : $verticalScroll}
 	color={$page.url.pathname != '/' ? 'black' : color}
 />
 
@@ -52,7 +58,7 @@
 		class="flex flex-col justify-between min-h-[100dvh] overflow-scroll overscroll-none"
 		bind:this={box}
 		on:scroll={() => {
-			verticalScroll = box.scrollTop;
+			setVerticalScroll(box.scrollTop);
 		}}
 	>
 		<main>
