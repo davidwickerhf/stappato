@@ -11,6 +11,7 @@
 
 	export let data: PageData;
 
+	// Handle scroll to view
 	function scrollWindow(section_id: string) {
 		let sectionElement;
 		try {
@@ -25,8 +26,25 @@
 
 	let inView = '';
 	$: inView, scrollWindow(inView);
-	$: verticalScrollPresent = $verticalScroll;
 
+	// Handle moving menu navbar
+
+	let nav: any;
+	let contents: any;
+	let divHeight = 0;
+	$: console.log($verticalScroll);
+	$: divHeight = setHeight($verticalScroll, nav, contents, divHeight);
+
+	function setHeight(scroll: number, nav: HTMLDivElement, box: HTMLDivElement, divHeight: number) {
+		if (box && nav) {
+			if (scroll - 500 < box.clientHeight) {
+				return scroll - 500 - nav.clientHeight;
+			}
+		}
+		return divHeight;
+	}
+
+	// Handle contents
 	let selected: boolean[] = [];
 
 	data.sections.forEach((section) => {
@@ -42,10 +60,10 @@
 <!-- Landing picture -->
 <LandingPicture title={$_('contents.menu.title')} />
 
-<div class="flex-row flex {padding} {paddingY} gap-20">
+<div class=" flex-row flex {padding} {paddingY} gap-20 max-h-fit">
 	<!-- Sidebar -->
-	<div class="flex-col hidden text-darkbrown-three lg:flex">
-		<div class="w-full bg-black" style="height: {verticalScrollPresent};" />
+	<div class="flex-col hidden max-h-full text-darkbrown-three lg:flex" bind:this={nav}>
+		<!-- <div class="w-full bg-black" style="height: {divHeight}px;" /> -->
 		<!-- Sidebar item -->
 		<dvi class="flex flex-col gap-8 min-w-max">
 			{#each data.sections as section, index}
@@ -56,6 +74,7 @@
 
 	<!-- Menu contents -->
 	<div
+		bind:this={contents}
 		class="flex flex-col gap-10 lg:border-l-[1px] border-darkbrown-three border-opacity-20 w-full"
 	>
 		{#each data.sections as section, index}

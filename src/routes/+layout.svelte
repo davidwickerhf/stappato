@@ -9,20 +9,17 @@
 	import { _ } from 'svelte-i18n';
 	import '../app.css';
 	import './styles.css';
-	import { setScrolled, toggleSidebar } from '$lib/store/SidebarStore';
+	import { toggleSidebar } from '$lib/store/SidebarStore';
 	import { afterNavigate } from '$app/navigation';
 
 	import { setVerticalScroll, verticalScroll } from '$lib/store/ScrollStore';
 
 	setVerticalScroll(0);
 	$: color = $verticalScroll >= 35 ? '#000' : '#FEFCF2';
-	$: if ($navigating) toggleSidebar(false);
-
 	let box: any;
-	$: $verticalScroll,
-		() => {
-			console.log($verticalScroll);
-		};
+
+	// Handle navbar on navigation
+	$: if ($navigating) toggleSidebar(false);
 
 	afterNavigate(() => {
 		document.getElementById('content')?.scrollTo(0, 0);

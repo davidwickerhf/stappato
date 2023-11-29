@@ -7,7 +7,7 @@
 </script>
 
 <button
-	class="flex justify-between items-center gap-4 text-lg group tracking-[3px] w-full"
+	class="flex justify-between items-center gap-6 text-lg group tracking-[3px] w-full"
 	on:click={() => {
 		inView = section.id;
 		selected = true;

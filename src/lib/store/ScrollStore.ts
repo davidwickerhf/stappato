@@ -10,5 +10,5 @@ export const setVerticalScroll = (scroll: number) => {
 };
 
 verticalScroll.subscribe((value) => {
-	console.log(value);
+	//console.log(value);
 }); // logs '0'
