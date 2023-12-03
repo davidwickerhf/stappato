@@ -4,9 +4,9 @@
 </script>
 
 <!-- Individual grid item -->
-<div class="w-[295px] h-[445px] shadow-2xl bg-background-three">
+<div class="w-[395px] h-[585px] shadow-2xl bg-background-three">
 	<!-- Profile picture -->
-	<div class="relative overflow-hidden h-[195px]">
+	<div class="relative overflow-hidden h-[250px]">
 		<img class="absolute top-0 w-full" alt="staff profile" src={employee.src} />
 	</div>
 
