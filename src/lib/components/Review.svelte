@@ -30,14 +30,14 @@
 			<!-- Rating -->
 			{#if rating}
 				<div class="flex pb-4">
-					{#if origin == ReviewType.TheFork}
-						<div
-							class="h-[68px] w-[68px] rounded-full bg-darkbrown-three flex justify-center items-center align-middle"
-						>
-							<p class="text-xl font-medium text-background-three">{rating}</p>
-						</div>
-					{:else}
-						<div class="flex w-full gap-2">
+					<!-- {#if origin == ReviewType.TheFork} -->
+					<div
+						class="h-[68px] w-[68px] rounded-full bg-darkbrown-three flex justify-center items-center align-middle"
+					>
+						<p class="text-xl font-medium text-background-three">{rating}</p>
+					</div>
+					<!-- {:else} -->
+					<!-- <div class="flex w-full gap-2">
 							{#each Array(rating).keys() as num}
 								<span
 									class=" material-symbols-outlined text-darkbrown-three"
@@ -45,7 +45,7 @@
 								>
 							{/each}
 						</div>
-					{/if}
+					{/if} -->
 				</div>
 			{/if}
 

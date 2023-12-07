@@ -424,30 +424,30 @@ export const partnerships: Partnership[] = [
 export const reviews: Review[] = [
 	{
 		comment:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		name: 'Tim de Rouw',
+			'Dit was onze eerste keer in Maastricht en we zochten een romantisch plekje om te dineren..na wat Google werk hier uitgekomen en dat beviel prima! Buiten op het terras kunnen zitten en fijn gegeten.',
+		name: 'T. d.',
 		origin: ReviewType.TheFork,
 		rating: 10
 	},
 	{
 		comment:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		name: 'Tim de Rouw',
+			'Op een mooie warme oktoberavond heerlijke vegetarische pasta gegeten. Vervolgens een lekkere panna cotta. En als afsluiter een eigen gemaakte limoncello van het huis. Fijne attente bediening.',
+		name: 'Marco B.',
+		origin: ReviewType.TheFork,
+		rating: 8.5
+	},
+	{
+		comment:
+			'Authentiek Italiaans restaurant met uitstekende gerechten. Kwaliteit smaak en beleving zoals gewend in Italiaanse keuken. En…. de limoncello van het huis was niet te versmaden',
+		name: 'Dirk Klaas K.',
 		origin: ReviewType.TheFork,
 		rating: 10
 	},
 	{
 		comment:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		name: 'Tim de Rouw',
-		origin: ReviewType.TheFork,
-		rating: 10
-	},
-	{
-		comment:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		name: 'Tim de Rouw',
-		origin: ReviewType.TheFork,
+			'Op de markt in Maastricht, sfeervol, klein, gezellig restaurant met Italiaans getinte gerechtjes, geluncht met een heerlijke zeebaars en ravioli met truffel saus, afsluiter met homemade limoncello, vooral vaker doen 😊',
+		name: 'Anja',
+		origin: ReviewType.TripAdvisor,
 		rating: 10
 	}
 ];
