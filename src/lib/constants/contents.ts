@@ -13,12 +13,9 @@ export const contents = {
 	// Landing page
 	landingPage: {
 		landingImage: 'images/images/landing.png',
-		welcomeText:
-			"Welcome to Stappato, Maastricht's Italian culinary escape, proudly celebrating our first year! Immerse yourself in the essence of Italy with our authentic menu, meticulously crafted with passion. Our Dutch and Italian staff, friendly and always ready for a chat, are committed to making your experience memorable. Explore a curated selection of the finest Italian wines that perfectly complement our dishes. At Stappato, we invite you to join us for an unforgettable journey where each visit is a celebration of flavors, warmth, and genuine hospitality.",
-		timComment:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-		specialRequestsText:
-			"Your dining experience is our top priority! Do you have a special celebration, a large group gathering, or any unique requests in mind? We're here to make your visit extraordinary. For group reservations, special occasions, or any other personalized requests, please don't hesitate to reach out. Our team is dedicated to ensuring your time with us is tailored to your needs. Contact us today, and let's make your dining experience at Stappato exceptional. We look forward to hosting you and creating memorable moments together."
+		welcomeText: 'database.welcome',
+		timComment: 'database.timComment',
+		specialRequestsText: 'database.specialRequests'
 	},
 
 	// Menu page
@@ -40,7 +37,7 @@ export const employees: Employee[] = [
 		name: 'Tim de Vrouw',
 		joined: 2022,
 		position: 'Founder and Chef',
-		bio: 'Tim can be found every day as a host at Stappato. Thanks to his knowledge of wines and his years of experience in the Maastricht catering industry, he knows how to serve everyone. 🍷 He’s also always up for a nice conversation about hockey, padel, Formula 1 and much more. 🏎',
+		bio: 'database.bio.tim',
 		src: '/images/images/tim.jpg'
 	},
 	{
@@ -48,7 +45,7 @@ export const employees: Employee[] = [
 		name: 'Jordi',
 		joined: 2022,
 		position: 'Chef',
-		bio: 'Jordi grew up in Roosendaal, however he has been living in Maastricht for a while. During his days off, he likes to play padel, go out for a hike or go out for diner. Of course he also loves to cook for his friends and family. That’s where he likes to experiment in the kitchen, and new dishes will be featured on the future menus of Stappato.',
+		bio: 'database.bio.jordi',
 		src: '/images/images/tim.jpg'
 	},
 	{
@@ -56,7 +53,7 @@ export const employees: Employee[] = [
 		name: 'Ricardo',
 		joined: 2022,
 		position: 'Waiter and Bartender',
-		bio: 'Ricardo will always greet you with a pleasant chat. Even a little in Italian. 🇮🇹 In his spare time, Ricardo likes to make music. He is a producer of all-round types of music such as techno, house and electro. You can find his records on Spotify! 🎧',
+		bio: 'database.bio.ricardo',
 		src: '/images/images/tim.jpg'
 	},
 	{
@@ -64,7 +61,7 @@ export const employees: Employee[] = [
 		name: 'Breght',
 		joined: 2022,
 		position: 'Waiter and Bartender',
-		bio: 'Breght doesn’t like to sit still, in his spare time he likes to tinker with his old Renault 4, with which he will drive a rally through the Italian Alps each summer. In addition to his studies, he also helps people with computers and will happily uncork a nice bottle of wine for you! Or he will pour you a nice beer! 🍺',
+		bio: 'database.bio.breght',
 		src: '/images/images/tim.jpg'
 	},
 	{
@@ -88,14 +85,6 @@ export const employees: Employee[] = [
 		name: 'Alessia Burigo',
 		joined: 2022,
 		position: 'Founder and Chef',
-		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		src: '/images/images/tim.jpg'
-	},
-	{
-		id: 'nina',
-		name: 'Nina Trettzel',
-		joined: 2022,
-		position: 'Waiter and Bartender',
 		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		src: '/images/images/tim.jpg'
 	}

@@ -1,66 +1,78 @@
 {
-	"contents": {
-		"landing": {
-			"contactBtn": "Contact",
-			"menuText": "Bekijk het volledige menu",
-			"veganText": "Veganistisch",
-			"vegetarianText": "Vegetarisch",
-			"instaBtn": "Volg ons op Instagram",
-			"menuBtn": "Bekijk de menukaart",
-			"partnershipsText": "Samengewerkt met",
-			"requestsTitle": "Een speciaal verzoek?",
-			"reserveBtn": "Reserveer een tafel",
-			"reserveTitle": "Reserveer een tafel bij ons",
-			"reviewsLink": "Bekijk alle recensies op The Fork",
-			"reviewsText": "Wat mensen over ons zeggen",
-			"teamTtitle": "Maak kennis met het hele team!",
-			"welcome": "Welkom bij Stappato!",
-			"menuTitle": "Een voorproefje van onze menukaart"
-		},
-		"navbar": {
-			"about": "Over",
-			"contact": "Contact",
-			"menu": "Menu",
-			"reserve": "Reserveren",
-			"team": "Team"
-		},
-		"contact": {
-			"emailText": "Of mail ons op",
-			"phoneText": "U kunt ons altijd bellen tijdens de openingstijden op",
-			"reachout": "Contact opnemen!",
-			"title": "Contact opnemen"
-		},
-		"footer": {
-			"address": "Adres",
-			"closed": "gesloten",
-			"from": "van",
-			"getintouch": "Neem contact op",
-			"netherlands": "Nederland",
-			"openingtimes": "Openingstijden",
-			"pages": "Pagina's",
-			"to": "tot",
-			"viewonmaps": "Bekijk op kaarten"
-		},
-		"menu": {
-			"title": "Onze menukaart"
-		},
-		"reserve": {
-			"heading": "Reserveer een tafel bij ons",
-			"title": "Reserveren"
-		},
-		"team": {
-			"joinText": "Wil je lid worden van het team? \nContact opnemen!",
-			"text": "Ontmoet het Stappato team",
-			"title": "Ons team"
-		},
-		"days": {
-			"friday": "Vrijdag",
-			"monday": "Maandag",
-			"saturday": "Zaterdag",
-			"sunday": "Zondag",
-			"thursday": "Donderdag",
-			"tuesday": "Dinsdag",
-			"wednesday": "Woensdag"
-		}
-	}
+  "contents": {
+    "landing": {
+      "contactBtn": "Contact",
+      "menuText": "Bekijk het volledige menu",
+      "veganText": "Veganistisch",
+      "vegetarianText": "Vegetarisch",
+      "instaBtn": "Volg ons op Instagram",
+      "menuBtn": "Bekijk de menukaart",
+      "partnershipsText": "Samengewerkt met",
+      "requestsTitle": "Een speciaal verzoek?",
+      "reserveBtn": "Reserveer een tafel",
+      "reserveTitle": "Reserveer een tafel bij ons",
+      "reviewsLink": "Bekijk alle recensies op The Fork",
+      "reviewsText": "Wat mensen over ons zeggen",
+      "teamTtitle": "Maak kennis met het hele team!",
+      "welcome": "Welkom bij Stappato!",
+      "menuTitle": "Een voorproefje van onze menukaart"
+    },
+    "navbar": {
+      "about": "Over",
+      "contact": "Contact",
+      "menu": "Menu",
+      "reserve": "Reserveren",
+      "team": "Team"
+    },
+    "contact": {
+      "emailText": "Of mail ons op",
+      "phoneText": "U kunt ons altijd bellen tijdens de openingstijden op",
+      "reachout": "Contact opnemen!",
+      "title": "Contact opnemen",
+      "text": "Lekker een avondje Italiaans eten en drinken, dan zit je bij ons goed. Wij zijn 6 dagen per week open, van dinsdag tot zondag. Vanaf 10 uur is het heerlijk vertoeven in de ochtendzon op ons terras, onze keuken is geopend vanaf 12 uur."
+    },
+    "footer": {
+      "address": "Adres",
+      "closed": "gesloten",
+      "from": "van",
+      "getintouch": "Neem contact op",
+      "netherlands": "Nederland",
+      "openingtimes": "Openingstijden",
+      "pages": "Pagina's",
+      "to": "tot",
+      "viewonmaps": "Bekijk op kaarten"
+    },
+    "menu": {
+      "title": "Onze menukaart"
+    },
+    "reserve": {
+      "heading": "Reserveer een tafel bij ons",
+      "title": "Reserveren"
+    },
+    "team": {
+      "joinText": "Wil je lid worden van het team? \nContact opnemen!",
+      "text": "Ontmoet het Stappato team",
+      "title": "Ons team"
+    },
+    "days": {
+      "friday": "Vrijdag",
+      "monday": "Maandag",
+      "saturday": "Zaterdag",
+      "sunday": "Zondag",
+      "thursday": "Donderdag",
+      "tuesday": "Dinsdag",
+      "wednesday": "Woensdag"
+    }
+  },
+  "database": {
+    "bio": {
+      "breght": "Breght zit niet graag stil, in zijn vrije tijd sleutelt hij graag aan zijn oude Renault 4, waarmee hij in de zomer een rally door de Italiaanse Alpen gaat rijden. Naast zijn studie helpt hij ook nog mensen met computers en ontkurkt 🍾 hij met alle plezier een lekkere fles wijn voor je! Of schenkt hij je een lekker biertje in! 🍺",
+      "jordi": "Jordi is opgegroeid in Roosendaal, maar woont inmiddels al een aantal jaar in het mooie Maastricht. In zijn vrije tijd gaat hij graag padellen, wandelen en uit eten. Daarnaast staat hij natuurlijk ook graag zelf te koken voor vrienden en familie. Zo krijgt hij nooit genoeg van het experimenteren in de keuken en zullen zijn nieuwe creaties op de toekomstige kaarten van Stappato terug te vinden zijn.",
+      "tim": "Tim is dagelijks te vinden als gastheer bij Stappato. Door zijn kennis van wijnen en zijn jarenlange ervaring in de Maastrichtse horeca weet hij iedereen op zijn wenken te bedienen. 🍷 Maar daarnaast is hij ook altijd in voor een gezellig gesprek over hockey, padel, Formule 1 en nog veel meer. 🏎",
+      "ricardo": "Onze topper in de bediening. Ricardo zal jou altijd met een gezellig praatje begroeten. Zelfs een beetje in het Italiaans. 🇮🇹 In zijn vrije tijd maakt Ricardo graag muziek. Hij is een producer van allround muzieksoorten zoals techno, house en electro. Je kunt zijn platen vinden op Spotify! 🎧"
+    },
+    "timComment": "Welkom bij Stappato, een plek om een heerlijk glaasje wijn te drinken met een klein borrelhapje of om lekker met de familie een authentiek Italiaans diner te nuttigen, voor ieder wat wils. Wij staan altijd klaar om een warme cappuccino te zetten, een mooie fles wijn voor u te ontkurken of een lekker glas bier te tappen. Door onze kleine kaart hebben we altijd mooie verse producten voor u klaarstaan.",
+    "welcome": "Welkom bij Stappato, Maastrichts Italiaanse culinaire ontsnapping, trots vieren wij ons eerste jaar! Dompel jezelf onder in de onze authentieke menukaart, minutieus en met passie gemaakt. Ons personeel Nederlands en Italiaans, vriendelijk en altijd klaar voor een praatje, zijn toegewijd om uw een onvergetelijke ervaring te geven. Ontdek ook onze selectie wijnen mede dankzij Thiessens Wijnkoopers samengesteld als aanvulling op onze gerechten. Bij Stappato, nodigen wij u uit om met ons mee te doen, ieder bezoek is een viering van smaken, warmte en oprechte gastvrijheid.",
+    "specialRequests": "Uw eetervaring is onze topprioriteit! Heeft u een speciaal feest, een grote groepsbijeenkomst of een uniek verzoek in gedachten? Wij zijn er om uw bezoek buitengewoon te maken. Voor groepsreserveringen, speciale gelegenheden of andere persoonlijke verzoeken kunt u contact met ons opnemen. Ons team doet er alles aan om ervoor te zorgen dat uw bezoek bij ons is afgestemd op uw behoeften. Neem vandaag nog contact met ons op en laten we uw eetervaring bij Stappato uitzonderlijk maken. We kijken ernaar uit u te mogen verwelkomen en samen onvergetelijke momenten te creëren."
+  }
 }

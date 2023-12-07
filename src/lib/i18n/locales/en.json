@@ -35,7 +35,7 @@
     "contact": {
       "title": "Contact us",
       "reachout": "Reach out!",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "text": "If you want to enjoy an evening of Italian food and drinks, then you've come to the right place. We are open 6 days a week, from Tuesday to Sunday. From 10 is our wonderful terrace open to relax in the morning sun, our kitchen is open from 12 noon.",
       "phoneText": "Call us anytime during opening hours at",
       "emailText": "Or email us at"
     },
@@ -62,6 +62,17 @@
       "friday": "Friday",
       "saturday": "Saturday",
       "sunday": "Sunday"
+    }
+  },
+  "database": {
+    "welcome": "Welcome to Stappato, Maastricht's Italian culinary escape, proudly celebrating our first year! Immerse yourself in the essence of Italy with our authentic menu, meticulously crafted with passion. Our Dutch and Italian staff, friendly and always ready for a chat, are committed to making your experience memorable. Explore a curated selection of the finest Italian wines that perfectly complement our dishes. At Stappato, we invite you to join us for an unforgettable journey where each visit is a celebration of flavors, warmth, and genuine hospitality.",
+    "timComment": "Welcome to Stappato, a place to drink a delicious glass of wine with a small snack or to enjoy an authentic Italian dinner with the family. We are always ready to make you a warm cappuccino, to open a nice bottle of wine for you or to tap a nice glass of beer. Thanks to our small menu, we always have beautiful fresh products ready for you.",
+    "specialRequests": "Your dining experience is our top priority! Do you have a special celebration, a large group gathering, or any unique requests in mind? We're here to make your visit extraordinary. For group reservations, special occasions, or any other personalized requests, please don't hesitate to reach out. Our team is dedicated to ensuring your time with us is tailored to your needs. Contact us today, and let's make your dining experience at Stappato exceptional. We look forward to hosting you and creating memorable moments together.",
+    "bio": {
+      "tim": "Tim can be found every day as a host at Stappato. Thanks to his knowledge of wines and his years of experience in the Maastricht catering industry, he knows how to serve everyone. 🍷 He’s also always up for a nice conversation about hockey, padel, Formula 1 and much more. 🏎",
+      "jordi": "Jordi grew up in Roosendaal, however he has been living in Maastricht for a while. During his days off, he likes to play padel, go out for a hike or go out for diner. Of course he also loves to cook for his friends and family. That’s where he likes to experiment in the kitchen, and new dishes will be featured on the future menus of Stappato.",
+      "ricardo": "Ricardo will always greet you with a pleasant chat. Even a little in Italian. 🇮🇹 In his spare time, Ricardo likes to make music. He is a producer of all-round types of music such as techno, house and electro. You can find his records on Spotify! 🎧",
+      "breght": "Breght likes to be active, in his spare time he likes to tinker with his old Renault 4, with which he will drive a rally through the Italian Alps each summer. In addition to his studies, he also helps people with computers and will happily uncork a nice bottle of wine for you! Or he will pour you a nice beer! 🍺"
     }
   }
 }

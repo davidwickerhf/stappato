@@ -1,66 +1,78 @@
 {
-	"contents": {
-		"landing": {
-			"contactBtn": "Contattaci",
-			"menuBtn": "Vedi il menu",
-			"requestsTitle": "Richieste particolari?",
-			"reserveTitle": "Prenota un tavolo con noi",
-			"reserveBtn": "Prenota un tavolo",
-			"reviewsText": "Cosa dicono di noi",
-			"teamTtitle": "Conosci il nostro team!",
-			"welcome": "Benvenuti da Stappato!",
-			"reviewsLink": "Leggi tutte le recensioni su The Fork",
-			"instaBtn": "Seguici su Instagram",
-			"partnershipsText": "In collaborazione con",
-			"menuText": "Vedi il menu intero",
-			"veganText": "Vegano",
-			"vegetarianText": "Vegetariano",
-			"menuTitle": "Un'anteprima del nostro menù"
-		},
-		"navbar": {
-			"about": "Chi siamo",
-			"contact": "Contattaci",
-			"menu": "Menu",
-			"reserve": "Prenota",
-			"team": "Team"
-		},
-		"contact": {
-			"emailText": "Oppure inviaci un'e-mail a",
-			"phoneText": "Chiamaci durante gli orari di apertura al",
-			"reachout": "Contattaci!",
-			"title": "Contattaci"
-		},
-		"footer": {
-			"address": "Indirizzo",
-			"closed": "chiuso",
-			"from": "dalle",
-			"getintouch": "Mettiti in contatto",
-			"netherlands": "Paesi Bassi",
-			"openingtimes": "Orari di apertura",
-			"pages": "Pagine",
-			"to": "alle",
-			"viewonmaps": "Trovaci sulla mappa"
-		},
-		"menu": {
-			"title": "Il nostro menù"
-		},
-		"reserve": {
-			"heading": "Prenota un tavolo con noi",
-			"title": "Prenota"
-		},
-		"team": {
-			"joinText": "Vuoi unirti al team di Stappato? \nContattaci!",
-			"text": "Conosci il team di Stappato",
-			"title": "Il nostro team"
-		},
-		"days": {
-			"friday": "Venerdì",
-			"monday": "Lunedi",
-			"saturday": "Sabato",
-			"sunday": "Domenica",
-			"thursday": "Giovedì",
-			"tuesday": "Martedì",
-			"wednesday": "Mercoledì"
-		}
-	}
+  "contents": {
+    "landing": {
+      "contactBtn": "Contattaci",
+      "menuBtn": "Vedi il menu",
+      "requestsTitle": "Richieste particolari?",
+      "reserveTitle": "Prenota un tavolo con noi",
+      "reserveBtn": "Prenota un tavolo",
+      "reviewsText": "Cosa dicono di noi",
+      "teamTtitle": "Conosci il nostro team!",
+      "welcome": "Benvenuti da Stappato!",
+      "reviewsLink": "Leggi tutte le recensioni su The Fork",
+      "instaBtn": "Seguici su Instagram",
+      "partnershipsText": "In collaborazione con",
+      "menuText": "Vedi il menu intero",
+      "veganText": "Vegano",
+      "vegetarianText": "Vegetariano",
+      "menuTitle": "Un'anteprima del nostro menù"
+    },
+    "navbar": {
+      "about": "Chi siamo",
+      "contact": "Contattaci",
+      "menu": "Menu",
+      "reserve": "Prenota",
+      "team": "Team"
+    },
+    "contact": {
+      "emailText": "Oppure inviaci un'e-mail a",
+      "phoneText": "Chiamaci durante gli orari di apertura al",
+      "reachout": "Contattaci!",
+      "title": "Contattaci",
+      "text": "Se vuoi goderti una serata all'insegna del cibo e delle bevande italiane, allora sei nel posto giusto. \nSiamo aperti 6 giorni su 7, dal martedì alla domenica. \nDalle 10 è aperta la nostra meravigliosa terrazza per rilassarsi al sole del mattino, la nostra cucina è aperta dalle 12.00."
+    },
+    "footer": {
+      "address": "Indirizzo",
+      "closed": "chiuso",
+      "from": "dalle",
+      "getintouch": "Mettiti in contatto",
+      "netherlands": "Paesi Bassi",
+      "openingtimes": "Orari di apertura",
+      "pages": "Pagine",
+      "to": "alle",
+      "viewonmaps": "Trovaci sulla mappa"
+    },
+    "menu": {
+      "title": "Il nostro menù"
+    },
+    "reserve": {
+      "heading": "Prenota un tavolo con noi",
+      "title": "Prenota"
+    },
+    "team": {
+      "joinText": "Vuoi unirti al team di Stappato? \nContattaci!",
+      "text": "Conosci il team di Stappato",
+      "title": "Il nostro team"
+    },
+    "days": {
+      "friday": "Venerdì",
+      "monday": "Lunedi",
+      "saturday": "Sabato",
+      "sunday": "Domenica",
+      "thursday": "Giovedì",
+      "tuesday": "Martedì",
+      "wednesday": "Mercoledì"
+    }
+  },
+  "database": {
+    "bio": {
+      "breght": "A Breght non piace stare fermo, nel tempo libero gli piace armeggiare con la sua vecchia Renault 4, con la quale ogni estate guiderà un rally attraverso le Alpi italiane. \nOltre ai suoi studi aiuta anche le persone con i computer e stapperà volentieri per voi una bella bottiglia di vino! \nOppure vi verserà una bella birra! \n🍺",
+      "jordi": "Jordi è cresciuto a Roosendaal, ma vive da tempo a Maastricht. \nDurante i suoi giorni liberi gli piace giocare a paddle, fare un'escursione o uscire a cena. \nNaturalmente ama anche cucinare per i suoi amici e la sua famiglia. \nÈ lì che gli piace sperimentare in cucina, e nuovi piatti saranno protagonisti nei futuri menù di Stappato.",
+      "tim": "Tim lo trovate tutti i giorni come host presso Stappato. \nGrazie alla sua conoscenza dei vini e alla sua esperienza pluriennale nel settore della ristorazione di Maastricht, sa come servire tutti. \n🍷 È anche sempre pronto per una bella conversazione su hockey, padel, Formula 1 e molto altro. 🏎",
+      "ricardo": "Ricardo ti accoglierà sempre con una piacevole chiacchierata. \nAnche un po' in italiano. \n🇮🇹 Nel tempo libero, Ricardo ama fare musica. \nÈ un produttore di generi musicali a tutto tondo come techno, house ed electro. \nPotete trovare i suoi dischi su Spotify! \n🎧"
+    },
+    "timComment": "Benvenuti da Stappato, un posto dove bere un delizioso bicchiere di vino con un piccolo spuntino o dove godersi un'autentica cena italiana in famiglia. \nSiamo sempre pronti a prepararvi un cappuccino caldo, ad aprire per voi una bella bottiglia di vino o a spillare un bel bicchiere di birra. \nGrazie al nostro piccolo menù, abbiamo sempre pronti per voi bellissimi prodotti freschi.",
+    "welcome": "Benvenuti a Stappato, la fuga culinaria italiana di Maastricht, che festeggia con orgoglio il nostro primo anno! \nImmergiti nell'essenza dell'Italia con il nostro menu autentico, meticolosamente realizzato con passione. \nIl nostro staff olandese e italiano, cordiale e sempre pronto per una chiacchierata, si impegna a rendere la tua esperienza memorabile. \nEsplora una selezione curata dei migliori vini italiani che completano perfettamente i nostri piatti. \nA Stappato ti invitiamo ad unirti a noi per un viaggio indimenticabile dove ogni visita è una celebrazione di sapori, calore e genuina ospitalità.",
+    "specialRequests": "La tua esperienza culinaria è la nostra massima priorità! \nHai in mente una celebrazione speciale, una riunione di gruppo numerosa o qualche richiesta unica? \nSiamo qui per rendere la tua visita straordinaria. \nPer prenotazioni di gruppo, occasioni speciali o qualsiasi altra richiesta personalizzata, non esitate a contattarci. \nIl nostro team si impegna a garantire che il tempo che trascorri con noi sia adattato alle tue esigenze. \nContattaci oggi e rendiamo eccezionale la tua esperienza culinaria allo Stappato. \nNon vediamo l'ora di ospitarvi e di creare momenti memorabili insieme."
+  }
 }
