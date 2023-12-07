@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="bg-background-three w-[290px] h-[440px] flex flex-col text-darkbrown-three shadow-2xl flex-shrink-0"
+	class="bg-background-three w-[290px] h-[445px] min-h-fit flex flex-col text-darkbrown-three shadow-2xl flex-shrink-0"
 >
 	<!-- Image -->
 	<img alt="dish" {src} />

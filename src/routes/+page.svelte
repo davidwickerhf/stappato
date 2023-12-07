@@ -138,9 +138,9 @@
 	<div class="z-10 flex flex-col gap-6">
 		<h2 class="{padding} {h2} text-background-three">{$_('contents.landing.menuTitle')}</h2>
 		<!-- Menu options -->
-		<div class="relative h-[460px]">
+		<div class="relative h-[480px]">
 			<div
-				class="absolute {padding} flex grow-0 flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]"
+				class="absolute {padding} flex grow-0 flex-shrink-0 w-full gap-6 overflow-y-hidden overflow-x-scroll h-[480px]"
 			>
 				<!-- First menu item -->
 				{#each previewMenu as dish}

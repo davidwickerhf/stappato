@@ -338,6 +338,7 @@ export const previewMenu: Dish[] = [
 		vegetarian: false
 	},
 	{
+		src: 'images/preview/burrata.jpg',
 		id: 'burrata',
 		section_id: 'starters',
 		title_en: 'Burrata',
@@ -346,41 +347,43 @@ export const previewMenu: Dish[] = [
 		description_en:
 			'Enjoy the refined creaminess of Burrata, an Italian cheese with a mozzarella-like outer layer and a creamy interior. Burrata is an Italian play on words, referring to its buttery.',
 		description_it:
-			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. Burrata è un gioco di parole italiano che si riferisce alla cremosità del formaggio stesso',
+			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. ',
 		description_nl:
 			'Geniet van de verfijnde romigheid van Burrata, een Italiaanse kaas met een mozzarella achtige buitenkant en een romige binnenkant. Burrata is een Italiaanse woordspeling voor boterachtig',
 		price: 12.5,
 		vegetarian: true
 	},
 	{
+		src: 'images/preview/day.fish.jpg',
 		id: 'day.fish',
 		section_id: 'main',
 		title_en: 'Fish of the day',
 		title_it: 'Pesce del giorno',
-		title_nl: 'Burrata',
+		title_nl: 'Vis van de dag',
 		description_en:
-			'Enjoy the refined creaminess of Burrata, an Italian cheese with a mozzarella-like outer layer and a creamy interior. Burrata is an Italian play on words, referring to its buttery.',
+			'Savor the catch of the day – a delectable fish dish served alongside a side of crisp salad, warm bread, or flavorful pasta.',
 		description_it:
-			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. Burrata è un gioco di parole italiano che si riferisce alla cremosità del formaggio stesso',
+			'Assapora il pesce del giorno: un piatto delizioso di pesce servito con un contorno di insalata fresca, pane caldo o pasta saporita.',
 		description_nl:
-			'Geniet van de verfijnde romigheid van Burrata, een Italiaanse kaas met een mozzarella achtige buitenkant en een romige binnenkant. Burrata is een Italiaanse woordspeling voor boterachtig',
-		price: 12.5,
-		vegetarian: true
+			'Geniet van de vis van de dag - een heerlijk visgerecht geserveerd met een bijgerecht van knapperige salade, warm brood of smaakvolle pasta.',
+		vegetarian: false,
+		vegan: false
 	},
 	{
+		src: 'images/preview/day.meat.jpg',
 		id: 'day.meat',
 		section_id: 'main',
 		title_en: 'Meat of the day',
 		title_it: 'Carne del giorno',
-		title_nl: 'Burrata',
+		title_nl: 'Vlees van de dag',
 		description_en:
-			'Enjoy the refined creaminess of Burrata, an Italian cheese with a mozzarella-like outer layer and a creamy interior. Burrata is an Italian play on words, referring to its buttery.',
+			'Relish the daily meat special, served with a side of refreshing salad, crusty bread, or flavorful pasta for a delightful dining experience.',
 		description_it:
-			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. Burrata è un gioco di parole italiano che si riferisce alla cremosità del formaggio stesso',
+			"Delizia del giorno: carne accompagnata da un contorno di insalata fresca, pane croccante o pasta saporita per un'esperienza gastronomica deliziosa.",
 		description_nl:
-			'Geniet van de verfijnde romigheid van Burrata, een Italiaanse kaas met een mozzarella achtige buitenkant en een romige binnenkant. Burrata is een Italiaanse woordspeling voor boterachtig',
-		price: 12.5,
-		vegetarian: true
+			'Geniet van het vlees van de dag, vergezeld van een frisse salade, knapperig brood of smaakvolle pasta voor een heerlijke eetervaring.',
+
+		vegetarian: false
 	}
 ];
 
