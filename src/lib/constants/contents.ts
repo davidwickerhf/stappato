@@ -25,7 +25,9 @@ export const contents = {
 	teamPage: {},
 
 	// Contact page
-	contactPage: {}
+	contactPage: {
+		contactText: 'contents.contact.text'
+	}
 };
 
 // DYNAMIC
@@ -321,36 +323,63 @@ export const times: OpeningTime[] = [
 // Select Menu
 export const previewMenu: Dish[] = [
 	{
-		id: 'bolognese1',
+		id: 'bolognese',
 		section_id: 'lunch',
-		title_en: 'Bolognese',
-		title_it: 'Bolognese',
-		title_nl: 'Bolognese',
+		title_en: 'Tagliatelle al ragu',
+		title_it: 'Tagliatelle al ragu',
+		title_nl: 'Tagliatelle al ragu',
 		description_en:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+			'Rich Italian Bolognese pasta features savory meat sauce simmered to perfection, generously coating al dente pasta for a hearty, comforting dish.',
+		description_it:
+			'La pasta alla Bolognese è un piatto italiano ricco, con una deliziosa salsa di carne cotta a perfezione che avvolge la pasta al dente.',
+		description_nl:
+			'Rijke Italiaanse Bolognese-pasta kenmerkt zich door een smaakvolle vleessaus die perfect suddert en genereus de al dente pasta bedekt voor een hartig en troostrijk gerecht.',
 		price: 18.5,
+		vegetarian: false
+	},
+	{
+		id: 'burrata',
+		section_id: 'starters',
+		title_en: 'Burrata',
+		title_it: 'Burrata',
+		title_nl: 'Burrata',
+		description_en:
+			'Enjoy the refined creaminess of Burrata, an Italian cheese with a mozzarella-like outer layer and a creamy interior. Burrata is an Italian play on words, referring to its buttery.',
+		description_it:
+			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. Burrata è un gioco di parole italiano che si riferisce alla cremosità del formaggio stesso',
+		description_nl:
+			'Geniet van de verfijnde romigheid van Burrata, een Italiaanse kaas met een mozzarella achtige buitenkant en een romige binnenkant. Burrata is een Italiaanse woordspeling voor boterachtig',
+		price: 12.5,
 		vegetarian: true
 	},
 	{
-		id: 'bolognese2',
-		section_id: 'lunch',
-		title_en: 'Bolognese',
-		title_it: 'Bolognese',
-		title_nl: 'Bolognese',
+		id: 'day.fish',
+		section_id: 'main',
+		title_en: 'Fish of the day',
+		title_it: 'Pesce del giorno',
+		title_nl: 'Burrata',
 		description_en:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		price: 18.5,
+			'Enjoy the refined creaminess of Burrata, an Italian cheese with a mozzarella-like outer layer and a creamy interior. Burrata is an Italian play on words, referring to its buttery.',
+		description_it:
+			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. Burrata è un gioco di parole italiano che si riferisce alla cremosità del formaggio stesso',
+		description_nl:
+			'Geniet van de verfijnde romigheid van Burrata, een Italiaanse kaas met een mozzarella achtige buitenkant en een romige binnenkant. Burrata is een Italiaanse woordspeling voor boterachtig',
+		price: 12.5,
 		vegetarian: true
 	},
 	{
-		id: 'bolognese3',
-		section_id: 'lunch',
-		title_en: 'Bolognese',
-		title_it: 'Bolognese',
-		title_nl: 'Bolognese',
+		id: 'day.meat',
+		section_id: 'main',
+		title_en: 'Meat of the day',
+		title_it: 'Carne del giorno',
+		title_nl: 'Burrata',
 		description_en:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-		price: 18.5,
+			'Enjoy the refined creaminess of Burrata, an Italian cheese with a mozzarella-like outer layer and a creamy interior. Burrata is an Italian play on words, referring to its buttery.',
+		description_it:
+			'Goditi la raffinata cremosità della Burrata, un formaggio italiano contornato da mozzarella e con un cuore cremoso di stracciatella. Burrata è un gioco di parole italiano che si riferisce alla cremosità del formaggio stesso',
+		description_nl:
+			'Geniet van de verfijnde romigheid van Burrata, een Italiaanse kaas met een mozzarella achtige buitenkant en een romige binnenkant. Burrata is een Italiaanse woordspeling voor boterachtig',
+		price: 12.5,
 		vegetarian: true
 	}
 ];

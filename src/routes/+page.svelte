@@ -69,8 +69,8 @@
 		<!-- Paragraph and Heading -->
 		<div class="flex flex-col gap-6">
 			<h2 class="{h2} text-darkbrown-three">{$_('contents.landing.welcome')}</h2>
-			<p class="text" contenteditable="false" bind:innerHTML={contents.landingPage.welcomeText}>
-				<!-- {contents.landingPage.welcomeText} -->
+			<p class="text" contenteditable="false">
+				{$_(contents.landingPage.welcomeText)}
 			</p>
 		</div>
 
@@ -139,7 +139,9 @@
 		<h2 class="{padding} {h2} text-background-three">{$_('contents.landing.menuTitle')}</h2>
 		<!-- Menu options -->
 		<div class="relative h-[460px]">
-			<div class="absolute {padding} flex flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]">
+			<div
+				class="absolute {padding} flex grow-0 flex-shrink-0 w-full gap-6 overflow-scroll h-[480px]"
+			>
 				<!-- First menu item -->
 				{#each previewMenu as dish}
 					<Dish
@@ -197,7 +199,7 @@
 	<div class="z-20 grid gap-4 md:grid-cols-[1fr_1fr] xl:grid-cols-3">
 		<div class="md:col-span-2">
 			<Review
-				comment={contents.landingPage.timComment}
+				comment={$_(contents.landingPage.timComment)}
 				src="/images/images/tim.jpg"
 				name="Tim de Rouw"
 				origin={ReviewType.Tim}
@@ -245,7 +247,7 @@
 	<div class="flex flex-col w-full min-h-fit">
 		<h2 class="text-darkbrown-three {h2}">{$_('contents.landing.requestsTitle')}</h2>
 		<p class="max-w-[850px] pb-8 pt-2 text">
-			{contents.landingPage.specialRequestsText}
+			{$_(contents.landingPage.specialRequestsText)}
 		</p>
 
 		<Button

@@ -4,6 +4,7 @@
 	import { h2, padding, paddingY } from '$lib/constants/theme';
 
 	import { _ } from 'svelte-i18n';
+	import { contents } from '$lib/constants/contents';
 </script>
 
 <svelte:head>
@@ -21,7 +22,7 @@
 	<div class="flex flex-col w-full min-h-fit">
 		<h2 class="text-darkbrown-three {h2}">{$_('contents.contact.reachout')}</h2>
 		<p class="max-w-[700px] pb-8 pt-2 text">
-			{$_('contents.contact.text')}
+			{$_(contents.contactPage.contactText)}
 		</p>
 
 		<!-- Contact info -->
