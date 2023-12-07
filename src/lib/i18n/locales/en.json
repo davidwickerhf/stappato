@@ -25,7 +25,10 @@
       "reserve": "Reserve"
     },
     "menu": {
-      "title": "Our menu"
+      "title": "Our menu",
+      "downloadMenu": "Download the menu",
+      "downloadWines": "Download the wine card",
+      "downloadDrinks": "Download the drinks menu"
     },
     "team": {
       "title": "Our team",

@@ -43,7 +43,10 @@
       "viewonmaps": "Trovaci sulla mappa"
     },
     "menu": {
-      "title": "Il nostro menù"
+      "title": "Il nostro menù",
+      "downloadDrinks": "Scarica il menu delle bevande",
+      "downloadMenu": "Scarica il menù",
+      "downloadWines": "Scarica la carta dei vini"
     },
     "reserve": {
       "heading": "Prenota un tavolo con noi",

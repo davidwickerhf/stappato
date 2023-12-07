@@ -43,7 +43,10 @@
       "viewonmaps": "Bekijk op kaarten"
     },
     "menu": {
-      "title": "Onze menukaart"
+      "title": "Onze menukaart",
+      "downloadDrinks": "Download de drankenkaart",
+      "downloadMenu": "Download de menukaart",
+      "downloadWines": "Download de wijnkaart"
     },
     "reserve": {
       "heading": "Reserveer een tafel bij ons",
