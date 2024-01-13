@@ -36,7 +36,7 @@ export const contents = {
 export const employees: Employee[] = [
 	{
 		id: 'tim',
-		name: 'Tim de Vrouw',
+		name: 'Tim de Rouw',
 		joined: 2022,
 		position: 'Founder and Chef',
 		bio: 'database.bio.tim',
@@ -325,9 +325,9 @@ export const previewMenu: Dish[] = [
 	{
 		id: 'bolognese',
 		section_id: 'lunch',
-		title_en: 'Tagliatelle al ragu',
-		title_it: 'Tagliatelle al ragu',
-		title_nl: 'Tagliatelle al ragu',
+		title_en: 'Tagliatelle al ragù',
+		title_it: 'Tagliatelle al ragù',
+		title_nl: 'Tagliatelle al ragù',
 		description_en:
 			'Rich Italian Bolognese pasta features savory meat sauce simmered to perfection, generously coating al dente pasta for a hearty, comforting dish.',
 		description_it:
