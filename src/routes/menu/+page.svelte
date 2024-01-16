@@ -84,7 +84,7 @@
 			{/each}
 		</div>
 	</div>
-	<div class="flex flex-row gap-6">
+	<div class="flex flex-col flex-wrap w-full gap-6 md:flex-row">
 		<Button url="/menus/Menukaart.pdf" bgColor={theme.colors.darkbrown.three} textColor={'white'}
 			>{$_('contents.menu.downloadMenu')}</Button
 		>
