@@ -33,7 +33,6 @@
 	let nav: any;
 	let contents: any;
 	let divHeight = 0;
-	$: console.log($verticalScroll);
 	$: divHeight = setHeight($verticalScroll, nav, contents, divHeight);
 
 	function setHeight(scroll: number, nav: HTMLDivElement, box: HTMLDivElement, divHeight: number) {

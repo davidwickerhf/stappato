@@ -28,7 +28,8 @@
       "title": "Our menu",
       "downloadMenu": "Download the menu",
       "downloadWines": "Download the wine card",
-      "downloadDrinks": "Download the drinks menu"
+      "downloadDrinks": "Download the drinks menu",
+      "priceOfDay": "Price of the day"
     },
     "team": {
       "title": "Our team",
