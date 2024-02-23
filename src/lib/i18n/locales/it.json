@@ -46,7 +46,8 @@
       "title": "Il nostro menù",
       "downloadDrinks": "Scarica il menu delle bevande",
       "downloadMenu": "Scarica il menù",
-      "downloadWines": "Scarica la carta dei vini"
+      "downloadWines": "Scarica la carta dei vini",
+      "priceOfDay": "Prezzo del giorno"
     },
     "reserve": {
       "heading": "Prenota un tavolo con noi",

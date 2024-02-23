@@ -46,7 +46,8 @@
       "title": "Onze menukaart",
       "downloadDrinks": "Download de drankenkaart",
       "downloadMenu": "Download de menukaart",
-      "downloadWines": "Download de wijnkaart"
+      "downloadWines": "Download de wijnkaart",
+      "priceOfDay": "Prijs van de dag"
     },
     "reserve": {
       "heading": "Reserveer een tafel bij ons",
