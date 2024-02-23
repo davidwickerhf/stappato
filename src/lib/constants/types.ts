@@ -5,6 +5,14 @@ export enum ReviewType {
 	Tim = 'Founder of STAPPATO'
 }
 
+export enum SectionCategory {
+	Food = 'food',
+	Wines = 'wines',
+	Drinks = 'drinks',
+	Beer = 'beers',
+	Cocktails = 'cocktails'
+}
+
 export interface Partnership {
 	id: string;
 	title: string;
@@ -50,6 +58,7 @@ export interface MenuSection {
 	fromTime?: Time;
 	toTime?: Time;
 	dishes: Dish[];
+	category: SectionCategory;
 }
 
 export interface Employee {

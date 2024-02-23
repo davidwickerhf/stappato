@@ -124,7 +124,8 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 						minutes: 0
 				  }
 				: undefined,
-			dishes: dishes.filter((dish) => dish.section_id == el.id)
+			dishes: dishes.filter((dish) => dish.section_id == el.id),
+			category: el.category
 		});
 	});
 	sections = sections.filter((section) => section.dishes.length > 0);

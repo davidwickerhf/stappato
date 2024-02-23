@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { MenuSection } from '$lib/constants/types';
 	import { locale } from 'svelte-i18n';
+
 	export let selected: boolean = true;
 	export let section: MenuSection;
 	export let inView: string;

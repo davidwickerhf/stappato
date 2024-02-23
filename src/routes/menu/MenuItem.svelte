@@ -35,7 +35,9 @@
 <div class="flex flex-col gap-1 mt-6">
 	<!-- Title -->
 	<div class="flex items-end justify-between w-full gap-4">
-		<p class="text-lg font-medium min-w-min max-w-[80%] shrink-0">{title}</p>
+		<p class="text-lg font-medium min-w-min max-w-[80%] shrink-0">
+			{$locale == 'en' ? dish.title_en : $locale == 'it' ? dish.title_it : dish.title_nl}
+		</p>
 		{#if !dish.description_en && !dish.options}
 			<!-- Divisor -->
 			<div class="hidden sm:flex h-[6px] flex-col justify-start min-w-[10%] w-full">
@@ -69,7 +71,7 @@
 				{#if dish.price && dish.price > 0}
 					<p class="hidden text-lg font-medium sm:flex">{$_(priceString)}€</p>
 				{:else}
-					<p class="flex font-medium sm:min-w-fit text-end">Day Price</p>
+					<p class="flex font-medium sm:min-w-fit text-end">{$_('contents.menu.priceOfDay')}</p>
 				{/if}
 			{/if}
 		</div>

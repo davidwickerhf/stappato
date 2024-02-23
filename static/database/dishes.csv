@@ -1,5 +1,5 @@
 id,section_id,dish_id,addition,price,vegetarian,title_en,title_nl,title_it,description_en,description_nl,description_it
-soup-chef,lunch,,,7,FALSE,Soup of the chef,Soep van de chef,Suppa di chef,,,
+soup-chef,lunch,,,7,FALSE,Soup of the chef,Soep van de chef,Zuppa dello Chef,,,
 pinsa,lunch,,,,,Pinsa Romana,Pinsa Romana,Pinsa,,,
 pinsa-mortadella-mozzarella,lunch,pinsa,,9.5,FALSE,Mortadella and mozarella out of the oven,Mortadella en mozarella uit de oven,Mortadella e mozzarella,,,
 pinsa-salami,lunch,pinsa,,9.5,FALSE,"Salami, rucola and garlic oil","Salami, rucola en knoflookolie","Salame, rucola e aglio",,,

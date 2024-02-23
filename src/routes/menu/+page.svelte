@@ -69,6 +69,16 @@
 			<dvi class="flex flex-col gap-8 min-w-max">
 				{#each data.sections as section, index}
 					<MenuSectionButton bind:inView bind:selected={selected[index]} {section} />
+
+					<!-- Show border between menu categories -->
+					{#if index == 0 ? false : data.sections[index - 1].category != section.category}
+						<!-- Menu category border -->
+						<div class="relative w-full h-[1px]">
+							<div
+								class="absolute w-[300%] h-full bg-darkbrown-three opacity-20 translate-x-[-30%]"
+							/>
+						</div>
+					{/if}
 				{/each}
 			</dvi>
 		</div>
@@ -76,7 +86,7 @@
 		<!-- Menu contents -->
 		<div
 			bind:this={contents}
-			class="flex flex-col gap-10 lg:border-l-[1px] border-darkbrown-three border-opacity-20 w-full"
+			class="flex flex-col gap-10 lg:border-l-[1px] z-10 border-darkbrown-three border-opacity-20 w-full bg-background-three"
 		>
 			{#each data.sections as section, index}
 				<MenuSection bind:selected={selected[index]} {section} />

@@ -2,7 +2,6 @@ import {
 	ReviewType,
 	type Review,
 	type Dish,
-	type MenuSection,
 	type Employee,
 	type OpeningTime,
 	type Partnership
