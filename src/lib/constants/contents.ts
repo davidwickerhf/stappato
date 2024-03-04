@@ -33,61 +33,71 @@ export const contents = {
 
 // Employees
 export const employees: Employee[] = [
-	{
-		id: 'tim',
-		name: 'Tim de Rouw',
-		joined: 2022,
-		position: 'Founder and Chef',
-		bio: 'database.bio.tim',
-		src: '/images/images/tim.jpg'
-	},
-	{
-		id: 'jordi',
-		name: 'Jordi',
-		joined: 2022,
-		position: 'Chef',
-		bio: 'database.bio.jordi',
-		src: '/images/images/tim.jpg'
-	},
-	{
-		id: 'ricardo',
-		name: 'Ricardo',
-		joined: 2022,
-		position: 'Waiter and Bartender',
-		bio: 'database.bio.ricardo',
-		src: '/images/images/tim.jpg'
-	},
-	{
-		id: 'breght',
-		name: 'Breght',
-		joined: 2022,
-		position: 'Waiter and Bartender',
-		bio: 'database.bio.breght',
-		src: '/images/images/tim.jpg'
-	},
-	{
-		id: 'alex',
-		name: 'Alex',
-		joined: 2022,
-		position: 'Waiter and Bartender',
-		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		src: '/images/images/tim.jpg'
-	},
+	// {
+	// 	id: 'tim',
+	// 	name: 'Tim de Rouw',
+	// 	joined: 2022,
+	// 	position: 'Founder and Chef',
+	// 	bio: 'database.bio.tim',
+	// 	src: '/images/images/tim.png'
+	// },
+	// {
+	// 	id: 'jordi',
+	// 	name: 'Jordi',
+	// 	joined: 2022,
+	// 	position: 'Chef',
+	// 	bio: 'database.bio.jordi',
+	// 	src: '/images/images/jordi.png'
+	// },
+	// {
+	// 	id: 'antonio',
+	// 	name: 'Antonio ',
+	// 	joined: 2023,
+	// 	position: 'Chef',
+	// 	bio: 'database.bio.antonio',
+	// 	src: '/images/images/antonio.png'
+	// },
+	// {
+	// 	id: 'ricardo',
+	// 	name: 'Ricardo Luckers',
+	// 	joined: 2022,
+	// 	position: 'Waiter and Bartender',
+	// 	bio: 'database.bio.ricardo',
+	// 	src: '/images/images/ricardo.png'
+	// },
+	// {
+	// 	id: 'breght',
+	// 	name: 'Breght',
+	// 	joined: 2022,
+	// 	position: 'Waiter and Bartender',
+	// 	bio: 'database.bio.breght',
+	// 	src: '/images/images/breght.png'
+	// },
+	// {
+	// 	id: 'alex',
+	// 	name: 'Alexander Rutten',
+	// 	joined: 2022,
+	// 	position: 'Waiter and Bartender',
+	// 	bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	// 	src: '/images/images/alex.png'
+	// },
 	{
 		id: 'david',
 		name: 'David Wicker',
 		joined: 2022,
 		position: 'Waiter and Webmaster',
-		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		src: '/images/images/tim.jpg'
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.',
+		src: '/images/images/david.png',
+		srcColored: '/images/images/david-colored.png'
 	},
 	{
 		id: 'alessia',
 		name: 'Alessia Burigo',
 		joined: 2022,
-		position: 'Founder and Chef',
+		position: 'Waiter and Bartender',
 		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		src: '/images/images/tim.jpg'
+		src: '/images/images/alessia.png',
+		srcColored: '/images/images/alessia-colored.png'
 	}
 ];
 

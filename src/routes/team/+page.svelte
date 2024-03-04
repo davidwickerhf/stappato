@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Employee from '../../lib/components/Employee.svelte';
 
 	import LandingPicture from '$lib/components/LandingPicture.svelte';
@@ -7,6 +7,8 @@
 
 	import { _ } from 'svelte-i18n';
 	import { employees } from '$lib/constants/contents';
+
+	let open: string = '';
 </script>
 
 <svelte:head>
@@ -18,16 +20,14 @@
 <LandingPicture title={$_('contents.team.title')} />
 
 <!-- Special requests -->
-<section
-	class="relative {padding} {paddingY} grid gap-8 grid-cols-[auto_auto] grid-rows-[auto] justify-between align-middle items-center mb-20 md:mb-30 lg:mb-40"
->
-	<div class="flex flex-col w-full min-h-fit">
+<section class="relative {padding} {paddingY} mb-20 md:mb-30 lg:mb-40">
+	<div class="flex flex-col min-h-fit">
 		<h2 class="text-darkbrown-three {h2}">{$_('contents.team.text')}</h2>
 
 		<!-- GRID -->
-		<div class="flex flex-row flex-wrap gap-6 py-10">
+		<div class="grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3 w-fit">
 			{#each employees as employee, index}
-				<Employee {employee} />
+				<Employee {employee} bind:open />
 			{/each}
 		</div>
 

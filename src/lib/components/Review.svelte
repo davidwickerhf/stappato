@@ -19,11 +19,6 @@
 		? 'bg-stappatored-three text-background-three sm:text-black sm:bg-background-three'
 		: 'bg-background-three'}"
 >
-	<!-- Profile picture -->
-	{#if src != undefined}
-		<img alt="Tim's profile" class="hidden sm:flex max-w-[35%] object-cover" {src} />
-	{/if}
-
 	<!-- Content -->
 	<div class="flex flex-col justify-between px-8 py-10">
 		<div class="flex flex-col gap-6">
@@ -61,6 +56,11 @@
 			<p class="font-thin tracking-[1px]">{origin}</p>
 		</div>
 	</div>
+
+	<!-- Profile picture -->
+	{#if src != undefined}
+		<img alt="Tim's profile" class="hidden sm:flex max-w-[35%] object-cover mt-10" {src} />
+	{/if}
 </div>
 
 <style>

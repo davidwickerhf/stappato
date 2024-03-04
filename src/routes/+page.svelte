@@ -200,7 +200,7 @@
 		<div class="md:col-span-2">
 			<Review
 				comment={$_(contents.landingPage.timComment)}
-				src="/images/images/tim.jpg"
+				src="/images/images/tim.png"
 				name="Tim de Rouw"
 				origin={ReviewType.Tim}
 			/>

@@ -66,6 +66,7 @@ export interface Employee {
 	name: string;
 	bio: string;
 	src: string;
+	srcColored: string;
 	joined: number;
 	position: string;
 }
