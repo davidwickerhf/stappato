@@ -46,7 +46,8 @@
 		<!-- Button -->
 		<div class="">
 			<span
-				class="text-2xl material-symbols-outlined transition-all duration-200 ease-in-out {open
+				class="text-2xl material-symbols-outlined transition-all duration-200 ease-in-out {open ===
+				employee.id
 					? 'rotate-90'
 					: ''}">chevron_right</span
 			>

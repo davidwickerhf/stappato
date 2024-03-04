@@ -33,46 +33,51 @@ export const contents = {
 
 // Employees
 export const employees: Employee[] = [
-	// {
-	// 	id: 'tim',
-	// 	name: 'Tim de Rouw',
-	// 	joined: 2022,
-	// 	position: 'Founder and Chef',
-	// 	bio: 'database.bio.tim',
-	// 	src: '/images/images/tim.png'
-	// },
-	// {
-	// 	id: 'jordi',
-	// 	name: 'Jordi',
-	// 	joined: 2022,
-	// 	position: 'Chef',
-	// 	bio: 'database.bio.jordi',
-	// 	src: '/images/images/jordi.png'
-	// },
-	// {
-	// 	id: 'antonio',
-	// 	name: 'Antonio ',
-	// 	joined: 2023,
-	// 	position: 'Chef',
-	// 	bio: 'database.bio.antonio',
-	// 	src: '/images/images/antonio.png'
-	// },
-	// {
-	// 	id: 'ricardo',
-	// 	name: 'Ricardo Luckers',
-	// 	joined: 2022,
-	// 	position: 'Waiter and Bartender',
-	// 	bio: 'database.bio.ricardo',
-	// 	src: '/images/images/ricardo.png'
-	// },
-	// {
-	// 	id: 'breght',
-	// 	name: 'Breght',
-	// 	joined: 2022,
-	// 	position: 'Waiter and Bartender',
-	// 	bio: 'database.bio.breght',
-	// 	src: '/images/images/breght.png'
-	// },
+	{
+		id: 'tim',
+		name: 'Tim de Rouw',
+		joined: 2022,
+		position: 'Founder and Chef',
+		bio: 'database.bio.tim',
+		src: '/images/images/tim.png',
+		srcColored: '/images/images/tim-colored.png'
+	},
+	{
+		id: 'jordi',
+		name: 'Jordi',
+		joined: 2022,
+		position: 'Chef',
+		bio: 'database.bio.jordi',
+		src: '/images/images/jordi.png',
+		srcColored: '/images/images/jordi-colored.png'
+	},
+	{
+		id: 'antonio',
+		name: 'Antonio ',
+		joined: 2023,
+		position: 'Chef',
+		bio: 'database.bio.antonio',
+		src: '/images/images/antonio.png',
+		srcColored: '/images/images/antonio-colored.png'
+	},
+	{
+		id: 'ricardo',
+		name: 'Ricardo Luckers',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'database.bio.ricardo',
+		src: '/images/images/ricardo.png',
+		srcColored: '/images/images/ricardo-colored.png'
+	},
+	{
+		id: 'breght',
+		name: 'Breght',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'database.bio.breght',
+		src: '/images/images/breght.png',
+		srcColored: '/images/images/breght-colored.png'
+	},
 	// {
 	// 	id: 'alex',
 	// 	name: 'Alexander Rutten',
