@@ -25,7 +25,9 @@
 		<h2 class="text-darkbrown-three {h2}">{$_('contents.team.text')}</h2>
 
 		<!-- GRID -->
-		<div class="grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-fit">
+		<div
+			class="grid w-full grid-cols-1 gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:w-fit"
+		>
 			{#each employees as employee, index}
 				<Employee {employee} bind:open />
 			{/each}
