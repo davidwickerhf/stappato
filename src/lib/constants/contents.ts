@@ -83,7 +83,7 @@ export const employees: Employee[] = [
 		name: 'Alexander Rutten',
 		joined: 2022,
 		position: 'Waiter and Bartender',
-		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		bio: 'Alex has studied in Maastricht for 4 years and enjoys the city to the fullest extent! Always here for a chat and catch up, and takes great pride in ensuring the best of experiences at Stappato for every occasion',
 		src: '/images/images/alex.png',
 		srcColored: '/images/images/alex-colored.png'
 	},
