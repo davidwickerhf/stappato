@@ -78,14 +78,15 @@ export const employees: Employee[] = [
 		src: '/images/images/breght.png',
 		srcColored: '/images/images/breght-colored.png'
 	},
-	// {
-	// 	id: 'alex',
-	// 	name: 'Alexander Rutten',
-	// 	joined: 2022,
-	// 	position: 'Waiter and Bartender',
-	// 	bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-	// 	src: '/images/images/alex.png'
-	// },
+	{
+		id: 'alex',
+		name: 'Alexander Rutten',
+		joined: 2022,
+		position: 'Waiter and Bartender',
+		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		src: '/images/images/alex.png',
+		srcColored: '/images/images/alex-colored.png'
+	},
 	{
 		id: 'david',
 		name: 'David Wicker',
