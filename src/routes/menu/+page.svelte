@@ -90,6 +90,14 @@
 		>
 			{#each data.sections as section, index}
 				<MenuSection bind:selected={selected[index]} {section} />
+
+				<!-- Show border between menu categories -->
+				{#if index == 0 ? false : data.sections[index - 1].category != section.category}
+					<!-- Menu category border -->
+					<div class="relative w-full h-[1px]">
+						<div class="absolute w-[200%] h-full bg-darkbrown-three opacity-20" />
+					</div>
+				{/if}
 			{/each}
 		</div>
 	</div>

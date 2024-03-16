@@ -28,8 +28,6 @@
 		if (addition) pString = '+' + pString;
 		return pString;
 	}
-
-	let title = $locale == 'en' ? dish.title_en : $locale == 'it' ? dish.title_it : dish.title_nl;
 </script>
 
 <div class="flex flex-col gap-1 mt-6">
@@ -62,12 +60,12 @@
 					: dish.description_nl}
 			</p>
 
-			<!-- Divisor -->
-			<div class="hidden sm:flex h-[6px] flex-col justify-start min-w-[10%] w-full">
-				<div class="h-0 border-dashed border-b-[1px] border-darkbrown-three opacity-20" />
-			</div>
-
 			{#if priceString}
+				<!-- Divisor -->
+				<div class="hidden sm:flex h-[6px] flex-col justify-start min-w-[10%] w-full">
+					<div class="h-0 border-dashed border-b-[1px] border-darkbrown-three opacity-20" />
+				</div>
+
 				{#if dish.price && dish.price > 0}
 					<p class="hidden text-lg font-medium sm:flex">{$_(priceString)}€</p>
 				{:else}

@@ -26,12 +26,16 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 	const dishRes = await fetch(`/database/dishes.csv`, {
 		headers: { 'content-type': 'text/csv;charset=UTF-8' }
 	});
+	const wineRes = await fetch(`/database/wines.csv`, {
+		headers: { 'content-type': 'text/csv;charset=UTF-8' }
+	})
 
 	if (!sectionRes.ok || !dishRes.ok) {
 		throw new Error('Failed to fetch data');
 	}
 
 	let sectionData;
+	let wineData: Array<any> = [];
 	let dishData: Array<any> = [];
 
 	const sectionFile = await sectionRes.text();
@@ -60,6 +64,16 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 			}
 		});
 	});
+	const wineFile = await wineRes.text();
+	new Promise((resolve, reject) => {
+		Papa.parse(wineFile, {
+			header: true,
+			dynamicTyping: true,
+			complete: (parseResult) => {
+				wineData = parseResult.data as Object[];
+			}
+		})
+	})
 
 	// Parse data into predefined types
 	let dishes: Dish[] = [];
@@ -103,6 +117,61 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 			dishes.push(dish);
 		}
 	}
+
+	// Parse wines into predefined Dish types
+	let wines: Dish[] = [];
+	for (let a = 0; a < wineData.length; a++) {
+		let rawWine = wineData[a];
+
+		let bottlePrice: Dish | undefined = undefined;
+		if (rawWine.bottle) {
+			bottlePrice = {
+				id: rawWine.id + '-bottle',
+				section_id: rawWine.section_id,
+				title_en: 'Price per bottle',
+				title_it: 'Prezzo per bottiglia',
+				title_nl: 'Prijs per fles',
+				price: rawWine.bottle
+			}
+		}
+
+		let glassPrice: Dish | undefined = undefined;
+		if (rawWine.glass) {
+			glassPrice = {
+				id: rawWine.id + '-glass',
+				section_id: rawWine.section_id,
+				title_en: 'Price per glass',
+				title_it: 'Prezzo per calice',
+				title_nl: 'Prijs per glas',
+				price: rawWine.glass
+			}
+		}
+
+		let wine: Dish = {
+			id: rawWine.id,
+			section_id: rawWine.section_id,
+			title_en: rawWine.title,
+			title_it: rawWine.title,
+			title_nl: rawWine.title,
+			description_en: `(${rawWine.liters}) ` + rawWine.grapes,
+			description_it: `(${rawWine.liters}) ` +rawWine.grapes,
+			description_nl: `(${rawWine.liters}) ` +rawWine.grapes,
+		}
+
+		if (glassPrice) {
+			if (wine.options == undefined) wine.options = [];
+			wine.options.push(glassPrice);
+		}
+
+		if (bottlePrice) {
+			if (wine.options == undefined) wine.options = [];
+			wine.options.push(bottlePrice);
+		}		
+		wines.push(wine);
+	}
+
+	// Join all dishes and wines
+	dishes = dishes.concat(wines);
 
 	//Parse sections contents
 	let sections: MenuSection[] = [];

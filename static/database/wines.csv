@@ -1,0 +1,34 @@
+id,section_id,grapes,liters,glass,bottle,title
+Cantine-Pirovano-Casa-Coller-Spumante-Brut,wine-sparkling,Garganega / Trebbiano,0.75,30.5,6.1,Cantine Pirovano Casa Coller Spumante Brut
+Cantine-Pirovano-Casa-Coller-Spumante-Brut-Rose,wine-sparkling,Trebbiano / Pinot nero / Garganega,0.75,30.5,6.1,Cantine Pirovano Casa Coller Spumante Brut Rose
+Visela-Prosecco-Superiore-DOCG,wine-sparkling,Glera,0.75,37,,Visela Prosecco Superiore DOCG
+Monte-Tondo-Spumante-Brut-2017-Metodo-Classico,wine-sparkling,Garganega,0.75,63,,Monte Tondo Spumante Brut 2017 Metodo Classico
+Cielo-Pinot-Griggio,wine-white,Pinot Griggio,0.75,25.5,5.1,Cielo Pinot Griggio
+Caldora-Ortonese,wine-white,Malvasia / Chardonnay,0.75,25.5,5.1,Caldora Ortonese
+Kalsa-Grillo-Cantine-Grasso,wine-white,Grillo,0.75,35,6.1,Kalsa Grillo Cantine Grasso
+Castello-Monaci-Acante-Fiano-Salentino,wine-white,Fiano,0.75,37,6.5,Castello Monaci Acante Fiano Salentino
+La-Spinetta-Vermentino,wine-white,Vermentino,0.75,42,,La Spinetta Vermentino
+Soave-Classico,wine-white,Garganega,0.75,42,,Soave Classico
+Cantine-del-Notaio-La-Raccolta,wine-white,Aglianico/ Chardonnay/ Moscato/ Sauvignon blanc/ Malvasia,0.75,46.5,,Cantine del Notaio La Raccolta
+Cielo-Pinot-Griggio-Blush,wine rose,Pinot griggio,0.75,25.5,5.1,Cielo Pinot Griggio Blush
+Calalenta-Rosato-Farnese,wine rose,Merlot,0.75,30.5,6.1,Calalenta Rosato Farnese
+Caldora-Ortonese,wine-red,Sangiovese / Merlot,0.75,25.5,5.1,Caldora Ortonese
+Cielo-Apposionante-Rosso,wine-red,Corvina / Rondinella / Primitivo,0.75,30.5,6.1,Cielo Apposionante Rosso
+Antiche-Terre-Venete-Valpolicella-Superiore,wine-red,Corvina Veronese / Rondinella,0.75,30.5,6.1,Antiche Terre Venete Valpolicella Superiore
+Baldovina-IGP-Cantine-Grasso,wine-red,Nero d'Avola,0.75,30.5,6.1,Baldovina IGP Cantine Grasso
+Frappato-Cantine-Grasso,wine-red,Frappato,0.75,31.5,6.5,Frappato Cantine Grasso
+Paradiso-Posta-Piana-Primitivo,wine-red,Primitivo,0.75,31.5,,Paradiso Posta Piana Primitivo
+Fosso-Corno-Mayro,wine-red,Montepulciano,0.75,38,,Fosso Corno Mayro
+Tasmorcan-Barbera-d'Asti,wine-red,Barbera,0.75,38,,Tasmorcan Barbera d'Asti
+Cantine-del-Noraio-L'Atto-Rosso,wine-red,Aglianico,0.75,40,,Cantine del Noraio L'Atto Rosso
+Cantine-del-Noraio-L'Atto-Rosso,wine-red,Aglianico,1.5,73.5,,Cantine del Noraio L'Atto Rosso
+Valpolicella-Ripasso-Superiore-DOC-Monte-Tondo,wine-topper,Corvinone en Rondinella,0.75,47.5,,Valpolicella Ripasso Superiore DOC Monte Tondo
+La-Spinetta-Il-Nero-di-Casanova,wine-topper,Sangiovese,0.75,47.5,,La Spinetta Il Nero di Casanova
+Kettemeir-Lagrein-Alto-adige,wine-topper,Lagrein,0.75,52.5,,Kettemeir Lagrein Alto adige
+Amarone-Della-Valpolicella-DOVG-Monte-Tondo,wine-topper,Corvina en Rondinella,0.75,84,,Amarone Della Valpolicella DOVG Monte Tondo
+Amarone-Della-Valpolicella-DOVG-Monte-Tondo,wine-topper,Corvina en Rondinella,0.375,42,,Amarone Della Valpolicella DOVG Monte Tondo
+Barolo-Paolo-Manzone-Meriame,wine-topper,Nebiolo,0.75,90,,Barolo Paolo Manzone Meriame
+Brunello-di-Montalcino-Callochio-Fanti,wine-topper,Sangiovese,0.75,104,,Brunello di Montalcino Callochio Fanti
+Moscato-d'Asti-Marco-Porello,wine-dessert,Moscato,0.5,39,5.1,Moscato d' Asti Marco Porello
+Marsala-Superiore-Dolce,wine-dessert,Cantarratto / Grillo / Inzolia,0.5,39,5.1,Marsala Superiore Dolce
+"Recioto-di-Soave-DOCG-""Nettare-di-Bacco""",wine-dessert,Garganega,0.5,44,,"Recioto di Soave DOCG ""Nettare di Bacco"""
