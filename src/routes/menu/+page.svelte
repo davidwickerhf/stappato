@@ -60,7 +60,7 @@
 <!-- Landing picture -->
 <LandingPicture title={$_('contents.menu.title')} />
 
-<div class=" {padding} {paddingY} flex flex-col gap-20">
+<div class=" {padding} {paddingY} flex flex-col gap-20 overflow-x-clip">
 	<div class="flex flex-row gap-20 max-h-fit">
 		<!-- Sidebar -->
 		<div class="flex-col hidden max-h-full text-darkbrown-three lg:flex" bind:this={nav}>
