@@ -91,8 +91,8 @@ export const employees: Employee[] = [
 		id: 'david',
 		name: 'David Wicker',
 		joined: 2022,
-		position: 'Waiter and Webmaster',
-		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.',
+		position: 'Waiter and Bartender',
+		bio: 'database.bio.david',
 		src: '/images/images/david.png',
 		srcColored: '/images/images/david-colored.png'
 	},
@@ -101,7 +101,7 @@ export const employees: Employee[] = [
 		name: 'Alessia Burigo',
 		joined: 2022,
 		position: 'Waiter and Bartender',
-		bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		bio: 'database.bio.alessia',
 		src: '/images/images/alessia.png',
 		srcColored: '/images/images/alessia-colored.png'
 	}
