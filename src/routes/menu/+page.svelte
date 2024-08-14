@@ -68,8 +68,6 @@
 			<!-- Sidebar item -->
 			<dvi class="flex flex-col gap-8 min-w-max">
 				{#each data.sections as section, index}
-					<MenuSectionButton bind:inView bind:selected={selected[index]} {section} />
-
 					<!-- Show border between menu categories -->
 					{#if index == 0 ? false : data.sections[index - 1].category != section.category}
 						<!-- Menu category border -->
@@ -79,6 +77,8 @@
 							/>
 						</div>
 					{/if}
+
+					<MenuSectionButton bind:inView bind:selected={selected[index]} {section} />
 				{/each}
 			</dvi>
 		</div>
