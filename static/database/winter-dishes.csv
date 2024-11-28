@@ -12,7 +12,7 @@ carpaccio-truffle,lunch,main,,14.5,FALSE,Carpaccio with Truffle,"Carpaccio, truf
 tosti-mozzarella,lunch,main,,9.5,TRUE,Tosti Mozzarella,"Tosti Italiana, mozzarella, tomaat en pesto",Tostato con Mozzarella
 tosti-prosciutto,lunch,main,TRUE,2.5,FALSE,With Prosiutto di Parma,Met Prosciutto di Parma,Con Prosciutto di Parma
 insalata-mare,lunch,main,,14.5,FALSE,"Insalata di Mare with Scampi, tuna salad and anchovies","Insalata di Mare, scampi, tonijn en ansjovis",Insalata di Mare
-insalata-pollo,lunch,main,,14.5,FALSE,Insalata di Pollo with tomatoes and aioli,"Insalata di Pollo, gebakken kip, tomaten en a•oli","Insalata di Pollo, gebakken kip, tomaten en a•oli"
+insalata-pollo,lunch,main,,14.5,FALSE,Insalata di Pollo with tomatoes and aioli,"Insalata di Pollo, gebakken kip, tomaten en aioli","Insalata di Pollo, gebakken kip, tomaten en a•oli"
 burrata-pomodori,lunch,main,,14.5,TRUE,"Burrata and Tomatoes, with aceto balsamico","Buratta e pomodori*, cherry tomaten, burrata en Aceto balsamico",Burrata e Pomodori con Aceto Balsamico
 burrata-pomodori-param,lunch,main,TRUE,2.5,FALSE,With Prosiutto di Parma,Met Prosciutto di Parma,Con Prosciutto di Parma
 appetizer,lunch,,,,,Appetizers,Appetizers,Antipasti
