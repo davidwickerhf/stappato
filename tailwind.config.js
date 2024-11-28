@@ -1,3 +1,6 @@
+import containerQueries from '@tailwindcss/container-queries';
+import aspectRatio from '@tailwindcss/aspect-ratio';
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
@@ -25,5 +28,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require('@tailwindcss/container-queries'), require('@tailwindcss/aspect-ratio'),]
+	plugins: [containerQueries, aspectRatio]
 };

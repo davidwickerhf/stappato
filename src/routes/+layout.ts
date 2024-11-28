@@ -20,10 +20,10 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 		locale.set('nl');
 	}
 
-	const sectionRes = await fetch(`/database/sections.csv`, {
+	const sectionRes = await fetch(`/database/winter-sections.csv`, {
 		headers: { 'content-type': 'text/csv;charset=UTF-8' }
 	});
-	const dishRes = await fetch(`/database/dishes.csv`, {
+	const dishRes = await fetch(`/database/winter-dishes.csv`, {
 		headers: { 'content-type': 'text/csv;charset=UTF-8' }
 	});
 	const wineRes = await fetch(`/database/wines.csv`, {
@@ -154,8 +154,8 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 			title_it: rawWine.title,
 			title_nl: rawWine.title,
 			description_en: `(${rawWine.liters}) ` + rawWine.grapes,
-			description_it: `(${rawWine.liters}) ` +rawWine.grapes,
-			description_nl: `(${rawWine.liters}) ` +rawWine.grapes,
+			description_it: `(${rawWine.liters}) ` + rawWine.grapes,
+			description_nl: `(${rawWine.liters}) ` + rawWine.grapes,
 		}
 
 		if (glassPrice) {
@@ -166,7 +166,7 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 		if (bottlePrice) {
 			if (wine.options == undefined) wine.options = [];
 			wine.options.push(bottlePrice);
-		}		
+		}
 		wines.push(wine);
 	}
 
@@ -183,15 +183,15 @@ export const load: LayoutLoad = async ({ fetch, params }) => {
 			title_nl: el.title_nl,
 			fromTime: el.from
 				? {
-						hour: el.from,
-						minutes: 0
-				  }
+					hour: el.from,
+					minutes: 0
+				}
 				: undefined,
 			toTime: el.to
 				? {
-						hour: el.to,
-						minutes: 0
-				  }
+					hour: el.to,
+					minutes: 0
+				}
 				: undefined,
 			dishes: dishes.filter((dish) => dish.section_id == el.id),
 			category: el.category

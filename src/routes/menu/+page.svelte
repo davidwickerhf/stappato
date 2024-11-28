@@ -92,7 +92,7 @@
 				<MenuSection bind:selected={selected[index]} {section} />
 
 				<!-- Show border between menu categories -->
-				{#if index == 0 ? false : data.sections[index - 1].category != section.category}
+				{#if index < data.sections.length - 1 && data.sections[index].category != data.sections[index + 1].category}
 					<!-- Menu category border -->
 					<div class="relative w-full h-[1px]">
 						<div class="absolute w-[200%] h-full bg-darkbrown-three opacity-20" />
@@ -102,9 +102,14 @@
 		</div>
 	</div>
 	<div class="flex flex-col flex-wrap w-full gap-6 md:flex-row">
-		<Button url="/menus/Menukaart.pdf" bgColor={theme.colors.darkbrown.three} textColor={'white'}
+		<Button url="/menus/Winterlunch.pdf" bgColor={theme.colors.darkbrown.three} textColor={'white'}
 			>{$_('contents.menu.downloadMenu')}</Button
 		>
+
+		<Button url="/menus/Winterdinner.pdf" bgColor={theme.colors.darkbrown.three} textColor={'white'}
+			>{$_('contents.menu.downloadMenu')}</Button
+		>
+
 		<Button url="/menus/Wijnkaart.pdf" bgColor={theme.colors.darkbrown.three} textColor={'white'}
 			>{$_('contents.menu.downloadWines')}</Button
 		>
