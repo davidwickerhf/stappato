@@ -3,7 +3,7 @@
 
 	import { h2 } from '$lib/constants/theme';
 	import type { MenuSection } from '$lib/constants/types';
-	import { locale } from 'svelte-i18n';
+	import { locale, _ } from 'svelte-i18n';
 
 	export let section: MenuSection;
 	export let selected: boolean;
@@ -31,13 +31,17 @@
 				</h2>
 				{#if section.fromTime != undefined}
 					<p class="font-thin">
+						{$_('contents.menu.from')}
 						{section.fromTime.hour}:{section.fromTime.minutes != 0
 							? section.fromTime.minutes
 							: '00'}
-						{#if section.toTime}
-							to
-							{section.toTime.hour}:{section.toTime.minutes != 0 ? section.toTime.minutes : '00'}
-						{/if}
+					</p>
+				{/if}
+
+				{#if section.toTime}
+					<p class="font-thin">
+						{$_('contents.menu.to')}
+						{section.toTime.hour}:{section.toTime.minutes != 0 ? section.toTime.minutes : '00'}
 					</p>
 				{/if}
 			</div>

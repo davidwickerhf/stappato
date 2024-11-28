@@ -29,7 +29,9 @@
       "downloadMenu": "Download the menu",
       "downloadWines": "Download the wine card",
       "downloadDrinks": "Download the drinks menu",
-      "priceOfDay": "Price of the day"
+      "priceOfDay": "Price of the day",
+      "from": "from",
+      "to": "to"
     },
     "team": {
       "title": "Our team",

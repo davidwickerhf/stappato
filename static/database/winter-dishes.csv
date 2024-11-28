@@ -1,38 +1,38 @@
 id,section_id,dish_id,addition,price,vegetarian,title_en,title_nl,title_it
 main,lunch,,,,,Lunch,Lunch,Pranzo
-soup,lunch,main,,8,FALSE,Chef's Soup,Soup van de chef,Zuppa dello Chef
-pinsa-mortadella,lunch,main,,14,FALSE,Pinsa Romana with Mortadella en mozarella uit de oven,"Pinsa romana, Mortadella en mozarella uit de oven",
+soup,lunch,main,,8,FALSE,Chef's Soup,Soep van de chef,Zuppa dello Chef
+pinsa-mortadella,lunch,main,,14,FALSE,Pinsa Romana with Mortadella en mozarella uit de oven,"Pinsa romana, Mortadella en mozarella uit de oven",Pinsa Romana alla Mortadella
 pinsa-salami-rucola,lunch,main,,13.5,FALSE,Pinsa with Salami and Arugula,"Pinsa Romana Salami, rucola en knoflookolie","Pinsa Salame, Rucola e Olio d'Aglio"
 pinsa-caprese,lunch,main,,14.5,TRUE,Pinsa Caprese,Pinsa Romana Caprese,Pinsa Caprese
 pinsa-prosciutto,lunch,main,,14.5,FALSE,Pinsa with Prosciutto,Pinsa Romana met Prosciutto di Parma,Pinsa con Prosciutto di Parma
-pinsa-chicken-aioli,lunch,main,,14.5,FALSE,Pinsa with Chicken and Aioli,"Pinsa Romana Gebakken kip, a√Øoli en tomaat",Pinsa con Pollo e Aioli
+pinsa-chicken-aioli,lunch,main,,14.5,FALSE,Pinsa with Chicken and Aioli,"Pinsa Romana Gebakken kip, aioli en tomaat",Pinsa con Pollo e Aioli
 pinsa-tuna-salad,lunch,main,,13.5,FALSE,Pinsa with Tuna Salad,Pinsa Romana Huisgemaakte tonijnsalade,Pinsa con Insalata di Tonno
 pane-vitello-tonnato,lunch,main,,14.5,FALSE,Pane Vitello Tonnato,Pane Vitello Tonnato,Pane con Vitello Tonnato
 carpaccio-truffle,lunch,main,,14.5,FALSE,Carpaccio with Truffle,"Carpaccio, truffelmayonaise",Carpaccio al Tartufo
 tosti-mozzarella,lunch,main,,9.5,TRUE,Tosti Mozzarella,"Tosti Italiana, mozzarella, tomaat en pesto",Tostato con Mozzarella
 tosti-prosciutto,lunch,main,TRUE,2.5,FALSE,With Prosiutto di Parma,Met Prosciutto di Parma,Con Prosciutto di Parma
-insalata-mare,lunch,main,,14.5,FALSE,"Insalata di Mare with Scampi, tuna salad and anchovies","Insalata di Mare, scampi, tonijn en ansjovis",
+insalata-mare,lunch,main,,14.5,FALSE,"Insalata di Mare with Scampi, tuna salad and anchovies","Insalata di Mare, scampi, tonijn en ansjovis",Insalata di Mare
 insalata-pollo,lunch,main,,14.5,FALSE,Insalata di Pollo with tomatoes and aioli,"Insalata di Pollo, gebakken kip, tomaten en aïoli","Insalata di Pollo, gebakken kip, tomaten en aïoli"
-burrata-pomodori,lunch,main,,14.5,TRUE,"Burrata and Tomatoes, with aceto balsamico","Buratta e pomodori*, cherry tomaten, burrata en Aceto balsamico",
+burrata-pomodori,lunch,main,,14.5,TRUE,"Burrata and Tomatoes, with aceto balsamico","Buratta e pomodori*, cherry tomaten, burrata en Aceto balsamico",Burrata e Pomodori con Aceto Balsamico
 burrata-pomodori-param,lunch,main,TRUE,2.5,FALSE,With Prosiutto di Parma,Met Prosciutto di Parma,Con Prosciutto di Parma
 appetizer,lunch,,,,,Appetizers,Appetizers,Antipasti
 bruschetta-tomato,lunch,appetizer,,7.5,TRUE,Bruschetta with Tomato,"Bruschetta, tomaat en basilicum",Bruschetta con Pomodoro e Basilico
 bruschetta-chef,lunch,appetizer,,7.5,,Bruschetta Chef,"Bruschetta, van de chef",Bruschetta dello Chef
 focaccia-pesto,lunch,appetizer,,7.5,TRUE,Focaccia with Pesto,Focaccia met pesto,Focaccia al Pesto
 olijven-marinated,lunch,appetizer,,5,TRUE,Marinated Olives,"Olijven, huisgemarineerd",Olive Marinate
-carne-mista,lunch,appetizer,,10,FALSE,Carne Mista,"Carne mista, Italiaanse vleeswaren",Carne Mista
-formaggio-misti,lunch,appetizer,,10,TRUE,Formaggio Misti,"Formaggio misti, Italiaanse kazen",Formaggi Misti
-misto-formaggio-carne,lunch,appetizer,,15,FALSE,"Misto, Formaggio e Carne","Misto, formaggio e carne, mix van vleeswaren en kazen",
-scampi,lunch,appetizer,,9.5,FALSE,Scampi from the oven,"Scampi, uit de oven",
-polpette,lunch,appetizer,,9.5,FALSE,Polpette in tomato sauce,"Polpette al pomodoro, gehaktballetjes in tomatensaus",
+carne-mista,lunch,appetizer,,10,FALSE,Carne Mista,"Carne mista, Italiaanse vleeswaren",Tagliere di Salumi
+formaggio-misti,lunch,appetizer,,10,TRUE,Formaggio Misti,"Formaggio misti, Italiaanse kazen",Tagliere di Formaggi
+misto-formaggio-carne,lunch,appetizer,,15,FALSE,"Misto, Formaggio e Carne","Misto, formaggio e carne, mix van vleeswaren en kazen",Tagliere di Salumi e Formaggi
+scampi,lunch,appetizer,,9.5,FALSE,Scampi from the oven,"Scampi, uit de oven",Scampi al Forno
+polpette,lunch,appetizer,,9.5,FALSE,Polpette in tomato sauce,"Polpette al pomodoro, gehaktballetjes in tomatensaus",Polpette al Pomodoro
 dessert,lunch,,,,,Desserts,Desserts,Dolci
 affogato-vanilla,lunch,dessert,,9.5,TRUE,Affogato,"Affogato, vanille-ijs en espresso",Affogato con Gelato alla Vaniglia
-affogato-amaretto,lunch,dessert,TRUE,3.5,TRUE,With Grappa di Amaretto,Daarbij Grappa of Amaretto,
-duo-cannoli,lunch,dessert,,7,,Duo of Cannoli,"Duo van Cannoli, heerlijk krokant Siciliaans",
+affogato-amaretto,lunch,dessert,TRUE,3.5,TRUE,With Grappa di Amaretto,Daarbij Grappa of Amaretto,Con Grappa di Amaretto
+duo-cannoli,lunch,dessert,,7,,Duo of Cannoli,"Duo van Cannoli, heerlijk krokant Siciliaans",Duo di Cannoli
 panna-cotta,lunch,dessert,,7.5,TRUE,Panna Cotta,"Panna Cotta, seizoensfruit",Panna Cotta
-tiramisu-amaretto,lunch,dessert,,7.5,TRUE,Tiramisu,"Tiramisù, Amaretto, koffie en chocolade",Tiramisù all'Amaretto
-sgroppino,lunch,dessert,,9,,Sgroppino,"Sgroppino, citroensorbet met Prosecco",
-torta-caprese,lunch,dessert,,9,,Torta Caprese,"Torta Caprese, chocolade taart met vanille ijs en slagroom",
+tiramisu-amaretto,lunch,dessert,,7.5,TRUE,Tiramisu,"Tiramisu, Amaretto, koffie en chocolade",Tiramisu all'Amaretto
+sgroppino,lunch,dessert,,9,,Sgroppino,"Sgroppino, citroensorbet met Prosecco",Sgroppino
+torta-caprese,lunch,dessert,,9,,Torta Caprese,"Torta Caprese, chocolade taart met vanille ijs en slagroom",Torta Caprese
 appetizer-dinner,dinner,,,,,Appetizers,Appetizers,Antipasti
 bruschetta-tomato-dinner,dinner,appetizer-dinner,,7.5,,Bruschetta with Tomato,"Bruschetta, tomaat en basilicum",Bruschetta al Pomodoro
 bruschetta-chef-dinner,dinner,appetizer-dinner,,7.5,,Bruschetta Chef,"Bruschetta, van de chef",Bruschetta dello Chef
@@ -45,7 +45,7 @@ polpette-al-pomodoro-dinner,dinner,appetizer-dinner,,9.5,,Polpette al Pomodoro,"
 main-dinner,dinner,,,,,Primi,Primi,Primi
 vitello-tonnato-dinner,dinner,main-dinner,,14,,Vitello Tonnato,"Vitello Tonnato, kalfsmuis en tonijnmayonaise",Vitello Tonnato
 carpaccio-dinner,dinner,main-dinner,,14,,Carpaccio with Truffle,"Carpaccio, truffelmayonaise",Carpaccio al Tartufo
-burrata-pomodori,dinner,main-dinner,,14.5,TRUE,"Burrata and Tomatoes, with aceto balsamico","Buratta e pomodori*, cherry tomaten, burrata en Aceto balsamico",
+burrata-pomodori,dinner,main-dinner,,14.5,TRUE,"Burrata and Tomatoes, with aceto balsamico","Buratta e pomodori*, cherry tomaten, burrata en Aceto balsamico",Burrata e Pomodori con Aceto Balsamico
 burrata-pomodori-param,dinner,main-dinner,TRUE,2.5,FALSE,With Prosiutto di Parma,Met Prosciutto di Parma,Con Prosciutto di Parma
 coquille-dinner,dinner,main-dinner,,14,,Coquille with Prosciutto,"Coquille, crumble van Prosciutto di Parma en boter-saliesaus",Coquille con Prosciutto di Parma
 secondi-dinner,dinner,,,,,Secondi,Secondi,Secondi
@@ -57,9 +57,9 @@ pork-fillet-dinner,dinner,secondi-dinner,,27,,Pork Fillet with Pesto and Mozzare
 seawolf-dinner,dinner,secondi-dinner,,27,,Seawolf with Prosciutto,"Zeewolf, omwikkeld met Prosciutto di Parma",Lupo di Mare con Prosciutto di Parma
 dessert-dinner,dinner,,,,,Secondi,Secondi,Secondi
 affogato-vanilla-dinner,dinner,dessert-dinner,,9.5,TRUE,Affogato,"Affogato, vanille-ijs en espresso",Affogato con Gelato alla Vaniglia
-affogato-amaretto-dinner,dinner,dessert-dinner,TRUE,3.5,TRUE,With Grappa di Amaretto,Daarbij Grappa of Amaretto,
-duo-cannoli-dinner,dinner,dessert-dinner,,7,,Duo of Cannoli,"Duo van Cannoli, heerlijk krokant Siciliaans",
+affogato-amaretto-dinner,dinner,dessert-dinner,TRUE,3.5,TRUE,With Grappa di Amaretto,Daarbij Grappa of Amaretto,Con Grappa di Amaretto
+duo-cannoli-dinner,dinner,dessert-dinner,,7,,Duo of Cannoli,"Duo van Cannoli, heerlijk krokant Siciliaans",Duo di Cannoli
 panna-cotta-dinner,dinner,dessert-dinner,,7.5,TRUE,Panna Cotta,"Panna Cotta, seizoensfruit",Panna Cotta
-tiramisu-amaretto-dinner,dinner,dessert-dinner,,7.5,TRUE,Tiramisu,"Tiramisù, Amaretto, koffie en chocolade",Tiramisù all'Amaretto
-sgroppino-dinner,dinner,dessert-dinner,,9,,Sgroppino,"Sgroppino, citroensorbet met Prosecco",
-torta-caprese-dinner,dinner,dessert-dinner,,9,,Torta Caprese,"Torta Caprese, chocolade taart met vanille ijs en slagroom",
+tiramisu-amaretto-dinner,dinner,dessert-dinner,,7.5,TRUE,Tiramisu,"Tiramisu, Amaretto, koffie en chocolade",Tiramisu all'Amaretto
+sgroppino-dinner,dinner,dessert-dinner,,9,,Sgroppino,"Sgroppino, citroensorbet met Prosecco",Sgroppino
+torta-caprese-dinner,dinner,dessert-dinner,,9,,Torta Caprese,"Torta Caprese, chocolade taart met vanille ijs en slagroom",Torta Caprese
