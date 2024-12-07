@@ -110,8 +110,16 @@ export const employees: Employee[] = [
 // Opening times
 export const times: OpeningTime[] = [
 	{
-		day: 'contents.days.monday',
-		open: false
+		day: 'contents.days.tuesday',
+		open: true,
+		fromTime: {
+			hour: 10,
+			minutes: 0
+		},
+		toTime: {
+			hour: 23,
+			minutes: 0
+		}
 	},
 	{
 		day: 'contents.days.tuesday',
