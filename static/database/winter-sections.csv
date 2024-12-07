@@ -1,14 +1,14 @@
 id,category,title_en,title_nl,title_it,from,to
 lunch,food,Winter Lunch Menu,Winter Lunch Menu,Menu di Pranzo,12,17
 dinner,food,Winter Dinner Menu,Winter Dinner Menu,Menu di Cena,17,21
-wine-white,wines,White Wines,White Wines,Vini Bianchi,,
-wine-red,wines,Red Wines,Red Wines,Vini Rossi,,
-wine-rose,wines,Rose Wines,Rose Wines,Vini Rose',,
-wine-sparkling,wines,Sparkling Wines,Sparkling Wines,Vini Frizzanti,,
-wine-topper,wines,Topper Wines,Topper Wines,Topper Wines,,
-wine-dessert,wines,Dessert Wines,Dessert Wines,Vini per il dolce,,
-warme-dranken,wines,Warme dranken,Warm drinks,Bevande calde,,
-frisdranken,drinks,Frisdranken,Drinks,Bevande calde,,
+wine-white,wines,Vini Bianchi,Vini Bianchi,Vini Bianchi,,
+wine-red,wines,Vini Rossi,Vini Rossi,Vini Rossi,,
+wine-rose,wines,Vini Rose',Vini Rose',Vini Rose',,
+wine-sparkling,wines,Vini Frizzanti,Vini Frizzanti,Vini Frizzanti,,
+wine-topper,wines,Vini in cantina,Vini in cantina,Vini in cantina,,
+wine-dessert,wines,Vini per il dolce,Vini per il dolce,Vini per il dolce,,
+warme-dranken,wines,Warme dranken,Warme dranken,Bevande calde,,
+frisdranken,drinks,Frisdranken,Frisdranken,Bevande calde,,
 bieren-op-tap,beers,Bieren op tap,Beers on tap,Birre alla spina,,
 bieren-op-fles,beers,Bieren op fles,Bottled beers,Birre in bottiglia,,
 bieren-op-fles-zero,beers,Bieren op fles 0.0,Bottled beers 0.0,Birre in bottiglia 0.0,,
